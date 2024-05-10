@@ -1,0 +1,1000 @@
+Apr/02/2024 21:40:46 hotspot,account,info,debug ->: dekbit (172.16.12.69): logged in
+Apr/02/2024 21:40:46 hotspot,account,info,debug adminReset: dekbit (172.16.12.69): logged in
+Apr/02/2024 21:42:26 hotspot,info,debug ->: gmwRs9 (172.16.13.153): logged out: keepalive timeout
+Apr/02/2024 21:42:26 hotspot,info,debug adminReset: gmwRs9 (172.16.13.153): logged out: keepalive timeout
+Apr/02/2024 21:42:35 hotspot,info,debug ->: A6:7F:67:E9:0F:54 (172.16.12.74): trying to log in by mac
+Apr/02/2024 21:42:35 hotspot,info,debug adminReset: A6:7F:67:E9:0F:54 (172.16.12.74): trying to log in by mac
+Apr/02/2024 21:42:35 hotspot,info,debug ->: A6:7F:67:E9:0F:54 (172.16.12.74): login failed: invalid username or password
+Apr/02/2024 21:42:35 hotspot,info,debug adminReset: A6:7F:67:E9:0F:54 (172.16.12.74): login failed: invalid username or password
+Apr/02/2024 21:42:39 hotspot,info,debug ->: T-A6:7F:67:E9:0F:54 (172.16.12.74): trying to log in by trial
+Apr/02/2024 21:42:39 hotspot,info,debug adminReset: T-A6:7F:67:E9:0F:54 (172.16.12.74): trying to log in by trial
+Apr/02/2024 21:42:39 hotspot,account,info,debug ->: T-A6:7F:67:E9:0F:54 (172.16.12.74): logged in
+Apr/02/2024 21:42:39 hotspot,account,info,debug adminReset: T-A6:7F:67:E9:0F:54 (172.16.12.74): logged in
+Apr/02/2024 21:42:59 hotspot,info,debug ->: 7C:CC:7F:25:64:B2 (172.16.12.75): trying to log in by mac
+Apr/02/2024 21:42:59 hotspot,info,debug adminReset: 7C:CC:7F:25:64:B2 (172.16.12.75): trying to log in by mac
+Apr/02/2024 21:42:59 hotspot,info,debug ->: 7C:CC:7F:25:64:B2 (172.16.12.75): login failed: invalid username or password
+Apr/02/2024 21:42:59 hotspot,info,debug adminReset: 7C:CC:7F:25:64:B2 (172.16.12.75): login failed: invalid username or password
+Apr/02/2024 21:43:39 hotspot,info,debug ->: T-20:5E:F7:B0:FC:2C (172.16.12.61): logged out: session timeout
+Apr/02/2024 21:43:39 hotspot,info,debug adminReset: T-20:5E:F7:B0:FC:2C (172.16.12.61): logged out: session timeout
+Apr/02/2024 21:46:11 hotspot,info,debug ->: Fayyadh (172.16.12.67): logged out: keepalive timeout
+Apr/02/2024 21:46:11 hotspot,info,debug adminReset: Fayyadh (172.16.12.67): logged out: keepalive timeout
+Apr/02/2024 21:46:27 hotspot,info,debug ->: dekbit (172.16.12.69): logged out: keepalive timeout
+Apr/02/2024 21:46:27 hotspot,info,debug adminReset: dekbit (172.16.12.69): logged out: keepalive timeout
+Apr/02/2024 21:46:45 hotspot,info,debug ->: aisya (172.16.12.19): logged out: keepalive timeout
+Apr/02/2024 21:46:45 hotspot,info,debug adminReset: aisya (172.16.12.19): logged out: keepalive timeout
+Apr/02/2024 21:47:17 hotspot,info,debug ->: F2:AF:64:D8:80:67 (10.183.63.19): trying to log in by mac
+Apr/02/2024 21:47:17 hotspot,info,debug adminReset: F2:AF:64:D8:80:67 (10.183.63.19): trying to log in by mac
+Apr/02/2024 21:47:17 hotspot,info,debug ->: F2:AF:64:D8:80:67 (10.183.63.19): login failed: invalid username or password
+Apr/02/2024 21:47:17 hotspot,info,debug adminReset: F2:AF:64:D8:80:67 (10.183.63.19): login failed: invalid username or password
+Apr/02/2024 21:47:52 hotspot,info,debug ->: 7A:59:50:B3:C4:94 (172.16.12.77): trying to log in by mac
+Apr/02/2024 21:47:52 hotspot,info,debug adminReset: 7A:59:50:B3:C4:94 (172.16.12.77): trying to log in by mac
+Apr/02/2024 21:47:52 hotspot,info,debug ->: 7A:59:50:B3:C4:94 (172.16.12.77): login failed: invalid username or password
+Apr/02/2024 21:47:52 hotspot,info,debug adminReset: 7A:59:50:B3:C4:94 (172.16.12.77): login failed: invalid username or password
+Apr/02/2024 21:48:45 hotspot,info,debug ->: aldi (172.16.12.156): trying to log in by mac-cookie
+Apr/02/2024 21:48:45 hotspot,info,debug adminReset: aldi (172.16.12.156): trying to log in by mac-cookie
+Apr/02/2024 21:48:45 hotspot,info,debug ->: aldi (172.16.12.156): login failed: no more sessions are allowed for user
+Apr/02/2024 21:48:45 hotspot,info,debug adminReset: aldi (172.16.12.156): login failed: no more sessions are allowed for user
+Apr/02/2024 21:49:06 hotspot,info,debug ->: gN44FR (172.16.13.132): logged out: keepalive timeout
+Apr/02/2024 21:49:06 hotspot,info,debug adminReset: gN44FR (172.16.13.132): logged out: keepalive timeout
+Apr/02/2024 21:49:31 hotspot,info,debug ->: T-A6:7F:67:E9:0F:54 (172.16.12.74): logged out: keepalive timeout
+Apr/02/2024 21:49:31 hotspot,info,debug adminReset: T-A6:7F:67:E9:0F:54 (172.16.12.74): logged out: keepalive timeout
+Apr/02/2024 21:50:33 hotspot,info,debug ->: umi (172.16.13.31): logged out: keepalive timeout
+Apr/02/2024 21:50:33 hotspot,info,debug adminReset: umi (172.16.13.31): logged out: keepalive timeout
+Apr/02/2024 21:50:48 hotspot,info,debug ->: T-7A:59:50:B3:C4:94 (172.16.12.77): trying to log in by trial
+Apr/02/2024 21:50:48 hotspot,info,debug adminReset: T-7A:59:50:B3:C4:94 (172.16.12.77): trying to log in by trial
+Apr/02/2024 21:50:48 hotspot,account,info,debug ->: T-7A:59:50:B3:C4:94 (172.16.12.77): logged in
+Apr/02/2024 21:50:48 hotspot,account,info,debug adminReset: T-7A:59:50:B3:C4:94 (172.16.12.77): logged in
+Apr/02/2024 21:51:42 hotspot,info,debug ->: T-7E:E2:AA:9C:34:35 (172.16.12.78): trying to log in by mac-cookie
+Apr/02/2024 21:51:42 hotspot,info,debug adminReset: T-7E:E2:AA:9C:34:35 (172.16.12.78): trying to log in by mac-cookie
+Apr/02/2024 21:51:42 hotspot,info,debug ->: T-7E:E2:AA:9C:34:35 (172.16.12.78): login failed: invalid username or password
+Apr/02/2024 21:51:42 hotspot,info,debug adminReset: T-7E:E2:AA:9C:34:35 (172.16.12.78): login failed: invalid username or password
+Apr/02/2024 21:52:07 hotspot,info,debug ->: T-7E:E2:AA:9C:34:35 (172.16.12.78): trying to log in by trial
+Apr/02/2024 21:52:07 hotspot,info,debug adminReset: T-7E:E2:AA:9C:34:35 (172.16.12.78): trying to log in by trial
+Apr/02/2024 21:52:07 hotspot,account,info,debug ->: T-7E:E2:AA:9C:34:35 (172.16.12.78): logged in
+Apr/02/2024 21:52:07 hotspot,account,info,debug adminReset: T-7E:E2:AA:9C:34:35 (172.16.12.78): logged in
+Apr/02/2024 21:52:23 hotspot,info,debug ->: aldi (172.16.13.119): logged out: keepalive timeout
+Apr/02/2024 21:52:23 hotspot,info,debug adminReset: aldi (172.16.13.119): logged out: keepalive timeout
+Apr/02/2024 21:52:57 hotspot,info,debug ->: aldi (172.16.12.156): trying to log in by http-chap
+Apr/02/2024 21:52:57 hotspot,info,debug adminReset: aldi (172.16.12.156): trying to log in by http-chap
+Apr/02/2024 21:52:57 hotspot,account,info,debug ->: aldi (172.16.12.156): logged in
+Apr/02/2024 21:52:57 hotspot,account,info,debug adminReset: aldi (172.16.12.156): logged in
+Apr/02/2024 21:53:34 hotspot,info,debug ->: T-7A:59:50:B3:C4:94 (172.16.12.77): logged out: keepalive timeout
+Apr/02/2024 21:53:34 hotspot,info,debug adminReset: T-7A:59:50:B3:C4:94 (172.16.12.77): logged out: keepalive timeout
+Apr/02/2024 21:53:46 hotspot,info,debug ->: 1mZFyN (172.16.12.4): logged out: keepalive timeout
+Apr/02/2024 21:53:46 hotspot,info,debug adminReset: 1mZFyN (172.16.12.4): logged out: keepalive timeout
+Apr/02/2024 21:55:43 hotspot,info,debug ->: gE2yuZ (172.16.12.123): logged out: keepalive timeout
+Apr/02/2024 21:55:43 hotspot,info,debug adminReset: gE2yuZ (172.16.12.123): logged out: keepalive timeout
+Apr/02/2024 21:56:02 hotspot,info,debug ->: 1GWFvV (172.16.13.121): logged out: keepalive timeout
+Apr/02/2024 21:56:02 hotspot,info,debug adminReset: 1GWFvV (172.16.13.121): logged out: keepalive timeout
+Apr/02/2024 21:56:40 hotspot,info,debug ->: T-AE:69:85:90:79:6D (172.16.12.72): logged out: session timeout
+Apr/02/2024 21:56:40 hotspot,info,debug adminReset: T-AE:69:85:90:79:6D (172.16.12.72): logged out: session timeout
+Apr/02/2024 21:58:24 hotspot,info,debug ->: T-7E:E2:AA:9C:34:35 (172.16.12.78): logged out: keepalive timeout
+Apr/02/2024 21:58:24 hotspot,info,debug adminReset: T-7E:E2:AA:9C:34:35 (172.16.12.78): logged out: keepalive timeout
+Apr/02/2024 22:00:03 hotspot,info,debug ->: T-16:7C:93:7F:23:82 (172.16.12.73): logged out: session timeout
+Apr/02/2024 22:00:03 hotspot,info,debug adminReset: T-16:7C:93:7F:23:82 (172.16.12.73): logged out: session timeout
+Apr/02/2024 22:01:57 hotspot,info,debug ->: Fayyadh (172.16.12.60): trying to log in by mac-cookie
+Apr/02/2024 22:01:57 hotspot,info,debug adminReset: Fayyadh (172.16.12.60): trying to log in by mac-cookie
+Apr/02/2024 22:01:57 hotspot,account,info,debug ->: Fayyadh (172.16.12.60): logged in
+Apr/02/2024 22:01:57 hotspot,account,info,debug adminReset: Fayyadh (172.16.12.60): logged in
+Apr/02/2024 22:02:01 hotspot,info,debug ->: D2:7A:D4:1E:DE:1F (172.16.12.79): trying to log in by mac
+Apr/02/2024 22:02:01 hotspot,info,debug adminReset: D2:7A:D4:1E:DE:1F (172.16.12.79): trying to log in by mac
+Apr/02/2024 22:02:01 hotspot,info,debug ->: D2:7A:D4:1E:DE:1F (172.16.12.79): login failed: invalid username or password
+Apr/02/2024 22:02:01 hotspot,info,debug adminReset: D2:7A:D4:1E:DE:1F (172.16.12.79): login failed: invalid username or password
+Apr/02/2024 22:03:09 hotspot,info,debug ->: B4:A5:AC:CA:34:9F (172.16.12.80): trying to log in by mac
+Apr/02/2024 22:03:09 hotspot,info,debug adminReset: B4:A5:AC:CA:34:9F (172.16.12.80): trying to log in by mac
+Apr/02/2024 22:03:09 hotspot,info,debug ->: B4:A5:AC:CA:34:9F (172.16.12.80): login failed: invalid username or password
+Apr/02/2024 22:03:09 hotspot,info,debug adminReset: B4:A5:AC:CA:34:9F (172.16.12.80): login failed: invalid username or password
+Apr/02/2024 22:03:56 hotspot,info,debug ->: aceholi (172.16.13.23): logged out: keepalive timeout
+Apr/02/2024 22:03:56 hotspot,info,debug adminReset: aceholi (172.16.13.23): logged out: keepalive timeout
+Apr/02/2024 22:05:10 hotspot,info,debug ->: 1kNP47 (172.16.12.92): trying to log in by http-chap
+Apr/02/2024 22:05:10 hotspot,info,debug adminReset: 1kNP47 (172.16.12.92): trying to log in by http-chap
+Apr/02/2024 22:05:12 hotspot,info,debug ->: 1kNP47 (172.16.12.92): login failed: invalid username or password
+Apr/02/2024 22:05:12 hotspot,info,debug adminReset: 1kNP47 (172.16.12.92): login failed: invalid username or password
+Apr/02/2024 22:05:32 hotspot,info,debug ->: 1kNP47 (172.16.12.92): trying to log in by http-chap
+Apr/02/2024 22:05:32 hotspot,info,debug adminReset: 1kNP47 (172.16.12.92): trying to log in by http-chap
+Apr/02/2024 22:05:32 hotspot,account,info,debug ->: 1kNP47 (172.16.12.92): logged in
+Apr/02/2024 22:05:32 hotspot,account,info,debug adminReset: 1kNP47 (172.16.12.92): logged in
+Apr/02/2024 22:06:19 hotspot,info,debug ->: dekbit (172.16.12.69): trying to log in by mac-cookie
+Apr/02/2024 22:06:19 hotspot,info,debug adminReset: dekbit (172.16.12.69): trying to log in by mac-cookie
+Apr/02/2024 22:06:19 hotspot,account,info,debug ->: dekbit (172.16.12.69): logged in
+Apr/02/2024 22:06:19 hotspot,account,info,debug adminReset: dekbit (172.16.12.69): logged in
+Apr/02/2024 22:06:28 hotspot,info,debug ->: BE:59:63:83:72:5E (172.16.12.81): trying to log in by mac
+Apr/02/2024 22:06:28 hotspot,info,debug adminReset: BE:59:63:83:72:5E (172.16.12.81): trying to log in by mac
+Apr/02/2024 22:06:28 hotspot,info,debug ->: BE:59:63:83:72:5E (172.16.12.81): login failed: invalid username or password
+Apr/02/2024 22:06:28 hotspot,info,debug adminReset: BE:59:63:83:72:5E (172.16.12.81): login failed: invalid username or password
+Apr/02/2024 22:08:12 hotspot,info,debug ->: 96:14:95:5F:0F:54 (172.16.12.82): trying to log in by mac
+Apr/02/2024 22:08:12 hotspot,info,debug adminReset: 96:14:95:5F:0F:54 (172.16.12.82): trying to log in by mac
+Apr/02/2024 22:08:12 hotspot,info,debug ->: 96:14:95:5F:0F:54 (172.16.12.82): login failed: invalid username or password
+Apr/02/2024 22:08:12 hotspot,info,debug adminReset: 96:14:95:5F:0F:54 (172.16.12.82): login failed: invalid username or password
+Apr/02/2024 22:08:30 hotspot,info,debug ->: aisya (172.16.12.82): trying to log in by http-chap
+Apr/02/2024 22:08:30 hotspot,info,debug adminReset: aisya (172.16.12.82): trying to log in by http-chap
+Apr/02/2024 22:08:32 hotspot,info,debug ->: aisya (172.16.12.82): login failed: invalid username or password
+Apr/02/2024 22:08:32 hotspot,info,debug adminReset: aisya (172.16.12.82): login failed: invalid username or password
+Apr/02/2024 22:08:51 hotspot,info,debug ->: aisya (172.16.12.82): trying to log in by http-chap
+Apr/02/2024 22:08:51 hotspot,info,debug adminReset: aisya (172.16.12.82): trying to log in by http-chap
+Apr/02/2024 22:08:51 hotspot,account,info,debug ->: aisya (172.16.12.82): logged in
+Apr/02/2024 22:08:51 hotspot,account,info,debug adminReset: aisya (172.16.12.82): logged in
+Apr/02/2024 22:09:10 hotspot,info,debug ->: ratih (172.16.13.19): logged out: keepalive timeout
+Apr/02/2024 22:09:10 hotspot,info,debug adminReset: ratih (172.16.13.19): logged out: keepalive timeout
+Apr/02/2024 22:10:57 hotspot,info,debug ->: dekbit (172.16.12.69): logged out: keepalive timeout
+Apr/02/2024 22:10:57 hotspot,info,debug adminReset: dekbit (172.16.12.69): logged out: keepalive timeout
+Apr/02/2024 22:11:59 hotspot,info,debug ->: Fayyadh (172.16.12.60): logged out: keepalive timeout
+Apr/02/2024 22:11:59 hotspot,info,debug adminReset: Fayyadh (172.16.12.60): logged out: keepalive timeout
+Apr/02/2024 22:12:01 hotspot,info,debug ->: dekbit (172.16.12.69): trying to log in by mac-cookie
+Apr/02/2024 22:12:01 hotspot,info,debug adminReset: dekbit (172.16.12.69): trying to log in by mac-cookie
+Apr/02/2024 22:12:01 hotspot,account,info,debug ->: dekbit (172.16.12.69): logged in
+Apr/02/2024 22:12:01 hotspot,account,info,debug adminReset: dekbit (172.16.12.69): logged in
+Apr/02/2024 22:14:15 hotspot,info,debug ->: ghNgE7 (172.16.13.171): logged out: user request
+Apr/02/2024 22:14:15 hotspot,info,debug adminReset: ghNgE7 (172.16.13.171): logged out: user request
+Apr/02/2024 22:14:24 hotspot,info,debug ->: 3C:B6:B7:31:B1:3D (172.16.12.83): trying to log in by mac
+Apr/02/2024 22:14:24 hotspot,info,debug adminReset: 3C:B6:B7:31:B1:3D (172.16.12.83): trying to log in by mac
+Apr/02/2024 22:14:24 hotspot,info,debug ->: 3C:B6:B7:31:B1:3D (172.16.12.83): login failed: invalid username or password
+Apr/02/2024 22:14:24 hotspot,info,debug adminReset: 3C:B6:B7:31:B1:3D (172.16.12.83): login failed: invalid username or password
+Apr/02/2024 22:14:30 hotspot,info,debug ->: dekbit (172.16.13.99): trying to log in by mac-cookie
+Apr/02/2024 22:14:30 hotspot,info,debug adminReset: dekbit (172.16.13.99): trying to log in by mac-cookie
+Apr/02/2024 22:14:30 hotspot,account,info,debug ->: dekbit (172.16.13.99): logged in
+Apr/02/2024 22:14:30 hotspot,account,info,debug adminReset: dekbit (172.16.13.99): logged in
+Apr/02/2024 22:14:42 hotspot,info,debug ->: ghNgE7 (172.16.12.83): trying to log in by http-chap
+Apr/02/2024 22:14:42 hotspot,info,debug adminReset: ghNgE7 (172.16.12.83): trying to log in by http-chap
+Apr/02/2024 22:14:42 hotspot,account,info,debug ->: ghNgE7 (172.16.12.83): logged in
+Apr/02/2024 22:14:42 hotspot,account,info,debug adminReset: ghNgE7 (172.16.12.83): logged in
+Apr/02/2024 22:19:47 hotspot,info,debug ->: umi (172.16.13.31): trying to log in by mac-cookie
+Apr/02/2024 22:19:47 hotspot,info,debug adminReset: umi (172.16.13.31): trying to log in by mac-cookie
+Apr/02/2024 22:19:47 hotspot,account,info,debug ->: umi (172.16.13.31): logged in
+Apr/02/2024 22:19:47 hotspot,account,info,debug adminReset: umi (172.16.13.31): logged in
+Apr/02/2024 22:22:06 hotspot,info,debug ->: aisya (172.16.13.81): logged out: keepalive timeout
+Apr/02/2024 22:22:06 hotspot,info,debug adminReset: aisya (172.16.13.81): logged out: keepalive timeout
+Apr/02/2024 22:22:35 hotspot,info,debug ->: aceholi (172.16.13.23): trying to log in by mac-cookie
+Apr/02/2024 22:22:35 hotspot,info,debug adminReset: aceholi (172.16.13.23): trying to log in by mac-cookie
+Apr/02/2024 22:22:35 hotspot,account,info,debug ->: aceholi (172.16.13.23): logged in
+Apr/02/2024 22:22:35 hotspot,account,info,debug adminReset: aceholi (172.16.13.23): logged in
+Apr/02/2024 22:25:05 hotspot,info,debug ->: gkcGBW (172.16.12.180): logged out: keepalive timeout
+Apr/02/2024 22:25:05 hotspot,info,debug adminReset: gkcGBW (172.16.12.180): logged out: keepalive timeout
+Apr/02/2024 22:27:36 hotspot,info,debug ->: aceholi (172.16.13.23): logged out: keepalive timeout
+Apr/02/2024 22:27:36 hotspot,info,debug adminReset: aceholi (172.16.13.23): logged out: keepalive timeout
+Apr/02/2024 22:31:07 hotspot,info,debug ->: mimi (172.16.12.145): logged out: keepalive timeout
+Apr/02/2024 22:31:07 hotspot,info,debug adminReset: mimi (172.16.12.145): logged out: keepalive timeout
+Apr/02/2024 22:32:25 hotspot,info,debug ->: aisya (172.16.12.2): logged out: keepalive timeout
+Apr/02/2024 22:32:25 hotspot,info,debug adminReset: aisya (172.16.12.2): logged out: keepalive timeout
+Apr/02/2024 22:32:36 hotspot,info,debug ->: 48:2C:A0:A3:63:DE (172.16.12.85): trying to log in by mac
+Apr/02/2024 22:32:36 hotspot,info,debug adminReset: 48:2C:A0:A3:63:DE (172.16.12.85): trying to log in by mac
+Apr/02/2024 22:32:36 hotspot,info,debug ->: 48:2C:A0:A3:63:DE (172.16.12.85): login failed: invalid username or password
+Apr/02/2024 22:32:36 hotspot,info,debug adminReset: 48:2C:A0:A3:63:DE (172.16.12.85): login failed: invalid username or password
+Apr/02/2024 22:33:26 hotspot,info,debug ->: aceholi (172.16.13.23): trying to log in by mac-cookie
+Apr/02/2024 22:33:26 hotspot,info,debug adminReset: aceholi (172.16.13.23): trying to log in by mac-cookie
+Apr/02/2024 22:33:26 hotspot,account,info,debug ->: aceholi (172.16.13.23): logged in
+Apr/02/2024 22:33:26 hotspot,account,info,debug adminReset: aceholi (172.16.13.23): logged in
+Apr/02/2024 22:35:03 hotspot,info,debug ->: ghNgE7 (172.16.12.83): logged out: admin reset
+Apr/02/2024 22:35:03 hotspot,info,debug adminReset: ghNgE7 (172.16.12.83): logged out: admin reset
+Apr/02/2024 22:36:03 hotspot,info,debug ->: F0:67:28:77:AF:C7 (172.16.12.86): trying to log in by mac
+Apr/02/2024 22:36:03 hotspot,info,debug adminReset: F0:67:28:77:AF:C7 (172.16.12.86): trying to log in by mac
+Apr/02/2024 22:36:03 hotspot,info,debug ->: F0:67:28:77:AF:C7 (172.16.12.86): login failed: invalid username or password
+Apr/02/2024 22:36:03 hotspot,info,debug adminReset: F0:67:28:77:AF:C7 (172.16.12.86): login failed: invalid username or password
+Apr/02/2024 22:37:29 hotspot,info,debug ->: 8C:F8:C5:40:FF:EC (172.16.12.99): trying to log in by mac
+Apr/02/2024 22:37:29 hotspot,info,debug adminReset: 8C:F8:C5:40:FF:EC (172.16.12.99): trying to log in by mac
+Apr/02/2024 22:37:29 hotspot,info,debug ->: 8C:F8:C5:40:FF:EC (172.16.12.99): login failed: invalid username or password
+Apr/02/2024 22:37:29 hotspot,info,debug adminReset: 8C:F8:C5:40:FF:EC (172.16.12.99): login failed: invalid username or password
+Apr/02/2024 22:38:22 hotspot,info,debug ->: abi2 (172.16.12.99): trying to log in by http-chap
+Apr/02/2024 22:38:22 hotspot,info,debug adminReset: abi2 (172.16.12.99): trying to log in by http-chap
+Apr/02/2024 22:38:22 hotspot,account,info,debug ->: abi2 (172.16.12.99): logged in
+Apr/02/2024 22:38:22 hotspot,account,info,debug adminReset: abi2 (172.16.12.99): logged in
+Apr/02/2024 22:39:36 hotspot,info,debug ->: C6:E1:D6:AA:6F:60 (172.16.12.87): trying to log in by mac
+Apr/02/2024 22:39:36 hotspot,info,debug adminReset: C6:E1:D6:AA:6F:60 (172.16.12.87): trying to log in by mac
+Apr/02/2024 22:39:36 hotspot,info,debug ->: C6:E1:D6:AA:6F:60 (172.16.12.87): login failed: invalid username or password
+Apr/02/2024 22:39:36 hotspot,info,debug adminReset: C6:E1:D6:AA:6F:60 (172.16.12.87): login failed: invalid username or password
+Apr/02/2024 22:39:50 hotspot,info,debug ->: gctywm (172.16.12.53): logged out: keepalive timeout
+Apr/02/2024 22:39:50 hotspot,info,debug adminReset: gctywm (172.16.12.53): logged out: keepalive timeout
+Apr/02/2024 22:40:34 hotspot,info,debug ->: 1u974z (172.16.12.6): logged out: keepalive timeout
+Apr/02/2024 22:40:34 hotspot,info,debug adminReset: 1u974z (172.16.12.6): logged out: keepalive timeout
+Apr/02/2024 22:41:43 hotspot,info,debug ->: 0A:7D:2A:A1:3F:1E (172.16.12.88): trying to log in by mac
+Apr/02/2024 22:41:43 hotspot,info,debug adminReset: 0A:7D:2A:A1:3F:1E (172.16.12.88): trying to log in by mac
+Apr/02/2024 22:41:43 hotspot,info,debug ->: 0A:7D:2A:A1:3F:1E (172.16.12.88): login failed: invalid username or password
+Apr/02/2024 22:41:43 hotspot,info,debug adminReset: 0A:7D:2A:A1:3F:1E (172.16.12.88): login failed: invalid username or password
+Apr/02/2024 22:42:48 hotspot,info,debug ->: gctywm (172.16.12.87): trying to log in by http-chap
+Apr/02/2024 22:42:48 hotspot,info,debug adminReset: gctywm (172.16.12.87): trying to log in by http-chap
+Apr/02/2024 22:42:48 hotspot,account,info,debug ->: gctywm (172.16.12.87): logged in
+Apr/02/2024 22:42:48 hotspot,account,info,debug adminReset: gctywm (172.16.12.87): logged in
+Apr/02/2024 22:42:59 hotspot,info,debug ->: aisya (172.16.12.82): logged out: keepalive timeout
+Apr/02/2024 22:42:59 hotspot,info,debug adminReset: aisya (172.16.12.82): logged out: keepalive timeout
+Apr/02/2024 22:47:27 hotspot,info,debug ->: F2:AF:64:D8:80:67 (10.205.75.108): trying to log in by mac
+Apr/02/2024 22:47:27 hotspot,info,debug adminReset: F2:AF:64:D8:80:67 (10.205.75.108): trying to log in by mac
+Apr/02/2024 22:47:27 hotspot,info,debug ->: F2:AF:64:D8:80:67 (10.205.75.108): login failed: invalid username or password
+Apr/02/2024 22:47:27 hotspot,info,debug adminReset: F2:AF:64:D8:80:67 (10.205.75.108): login failed: invalid username or password
+Apr/02/2024 22:52:07 hotspot,info,debug ->: 26:92:54:4B:5F:7E (172.16.12.89): trying to log in by mac
+Apr/02/2024 22:52:07 hotspot,info,debug adminReset: 26:92:54:4B:5F:7E (172.16.12.89): trying to log in by mac
+Apr/02/2024 22:52:07 hotspot,info,debug ->: 26:92:54:4B:5F:7E (172.16.12.89): login failed: invalid username or password
+Apr/02/2024 22:52:07 hotspot,info,debug adminReset: 26:92:54:4B:5F:7E (172.16.12.89): login failed: invalid username or password
+Apr/02/2024 22:52:15 hotspot,info,debug ->: BE:07:04:00:01:12 (172.16.12.90): trying to log in by mac
+Apr/02/2024 22:52:15 hotspot,info,debug adminReset: BE:07:04:00:01:12 (172.16.12.90): trying to log in by mac
+Apr/02/2024 22:52:15 hotspot,info,debug ->: BE:07:04:00:01:12 (172.16.12.90): login failed: invalid username or password
+Apr/02/2024 22:52:15 hotspot,info,debug adminReset: BE:07:04:00:01:12 (172.16.12.90): login failed: invalid username or password
+Apr/02/2024 22:54:34 hotspot,info,debug ->: 66:8F:4E:44:4A:00 (172.16.12.91): trying to log in by mac
+Apr/02/2024 22:54:34 hotspot,info,debug adminReset: 66:8F:4E:44:4A:00 (172.16.12.91): trying to log in by mac
+Apr/02/2024 22:54:34 hotspot,info,debug ->: 66:8F:4E:44:4A:00 (172.16.12.91): login failed: invalid username or password
+Apr/02/2024 22:54:34 hotspot,info,debug adminReset: 66:8F:4E:44:4A:00 (172.16.12.91): login failed: invalid username or password
+Apr/02/2024 22:54:51 hotspot,info,debug ->: E0:1F:88:51:A9:D6 (172.16.12.93): trying to log in by mac
+Apr/02/2024 22:54:51 hotspot,info,debug adminReset: E0:1F:88:51:A9:D6 (172.16.12.93): trying to log in by mac
+Apr/02/2024 22:54:51 hotspot,info,debug ->: E0:1F:88:51:A9:D6 (172.16.12.93): login failed: invalid username or password
+Apr/02/2024 22:54:51 hotspot,info,debug adminReset: E0:1F:88:51:A9:D6 (172.16.12.93): login failed: invalid username or password
+Apr/02/2024 22:56:18 hotspot,info,debug ->: B2:5D:C4:57:C4:5E (172.16.12.94): trying to log in by mac
+Apr/02/2024 22:56:18 hotspot,info,debug adminReset: B2:5D:C4:57:C4:5E (172.16.12.94): trying to log in by mac
+Apr/02/2024 22:56:18 hotspot,info,debug ->: B2:5D:C4:57:C4:5E (172.16.12.94): login failed: invalid username or password
+Apr/02/2024 22:56:18 hotspot,info,debug adminReset: B2:5D:C4:57:C4:5E (172.16.12.94): login failed: invalid username or password
+Apr/02/2024 22:58:40 hotspot,info,debug ->: 04:E5:98:32:B7:BC (172.16.12.95): trying to log in by mac
+Apr/02/2024 22:58:40 hotspot,info,debug adminReset: 04:E5:98:32:B7:BC (172.16.12.95): trying to log in by mac
+Apr/02/2024 22:58:40 hotspot,info,debug ->: 04:E5:98:32:B7:BC (172.16.12.95): login failed: invalid username or password
+Apr/02/2024 22:58:40 hotspot,info,debug adminReset: 04:E5:98:32:B7:BC (172.16.12.95): login failed: invalid username or password
+Apr/02/2024 22:59:16 hotspot,info,debug ->: 7diX73 (172.16.12.5): logged out: keepalive timeout
+Apr/02/2024 22:59:16 hotspot,info,debug adminReset: 7diX73 (172.16.12.5): logged out: keepalive timeout
+Apr/02/2024 23:01:48 hotspot,info,debug ->: ghNgE7 (172.16.12.83): trying to log in by http-chap
+Apr/02/2024 23:01:48 hotspot,info,debug adminReset: ghNgE7 (172.16.12.83): trying to log in by http-chap
+Apr/02/2024 23:01:50 hotspot,info,debug ->: ghNgE7 (172.16.12.83): login failed: your uptime limit is reached
+Apr/02/2024 23:01:50 hotspot,info,debug adminReset: ghNgE7 (172.16.12.83): login failed: your uptime limit is reached
+Apr/02/2024 23:04:31 hotspot,info,debug ->: BA:A0:40:F1:5A:72 (172.16.12.96): trying to log in by mac
+Apr/02/2024 23:04:31 hotspot,info,debug adminReset: BA:A0:40:F1:5A:72 (172.16.12.96): trying to log in by mac
+Apr/02/2024 23:04:31 hotspot,info,debug ->: BA:A0:40:F1:5A:72 (172.16.12.96): login failed: invalid username or password
+Apr/02/2024 23:04:31 hotspot,info,debug adminReset: BA:A0:40:F1:5A:72 (172.16.12.96): login failed: invalid username or password
+Apr/02/2024 23:06:21 hotspot,info,debug ->: aisya (172.16.12.2): trying to log in by mac-cookie
+Apr/02/2024 23:06:21 hotspot,info,debug adminReset: aisya (172.16.12.2): trying to log in by mac-cookie
+Apr/02/2024 23:06:21 hotspot,account,info,debug ->: aisya (172.16.12.2): logged in
+Apr/02/2024 23:06:21 hotspot,account,info,debug adminReset: aisya (172.16.12.2): logged in
+Apr/02/2024 23:07:24 hotspot,info,debug ->: aceholi (172.16.13.23): logged out: keepalive timeout
+Apr/02/2024 23:07:24 hotspot,info,debug adminReset: aceholi (172.16.13.23): logged out: keepalive timeout
+Apr/02/2024 23:08:41 hotspot,info,debug ->: 4E:81:2D:F8:03:0A (172.16.12.97): trying to log in by mac
+Apr/02/2024 23:08:41 hotspot,info,debug adminReset: 4E:81:2D:F8:03:0A (172.16.12.97): trying to log in by mac
+Apr/02/2024 23:08:41 hotspot,info,debug ->: 4E:81:2D:F8:03:0A (172.16.12.97): login failed: invalid username or password
+Apr/02/2024 23:08:41 hotspot,info,debug adminReset: 4E:81:2D:F8:03:0A (172.16.12.97): login failed: invalid username or password
+Apr/02/2024 23:09:38 hotspot,info,debug ->: Fayyadh (172.16.12.98): trying to log in by mac-cookie
+Apr/02/2024 23:09:38 hotspot,info,debug adminReset: Fayyadh (172.16.12.98): trying to log in by mac-cookie
+Apr/02/2024 23:09:38 hotspot,account,info,debug ->: Fayyadh (172.16.12.98): logged in
+Apr/02/2024 23:09:38 hotspot,account,info,debug adminReset: Fayyadh (172.16.12.98): logged in
+Apr/02/2024 23:13:13 hotspot,info,debug ->: ratih (172.16.13.19): trying to log in by mac-cookie
+Apr/02/2024 23:13:13 hotspot,info,debug adminReset: ratih (172.16.13.19): trying to log in by mac-cookie
+Apr/02/2024 23:13:13 hotspot,account,info,debug ->: ratih (172.16.13.19): logged in
+Apr/02/2024 23:13:13 hotspot,account,info,debug adminReset: ratih (172.16.13.19): logged in
+Apr/02/2024 23:14:56 hotspot,info,debug ->: B6:68:4F:1D:44:5C (172.16.12.100): trying to log in by mac
+Apr/02/2024 23:14:56 hotspot,info,debug adminReset: B6:68:4F:1D:44:5C (172.16.12.100): trying to log in by mac
+Apr/02/2024 23:14:56 hotspot,info,debug ->: B6:68:4F:1D:44:5C (172.16.12.100): login failed: invalid username or password
+Apr/02/2024 23:14:56 hotspot,info,debug adminReset: B6:68:4F:1D:44:5C (172.16.12.100): login failed: invalid username or password
+Apr/02/2024 23:15:11 hotspot,info,debug ->: 82:D0:94:29:68:12 (172.16.12.180): trying to log in by mac
+Apr/02/2024 23:15:11 hotspot,info,debug adminReset: 82:D0:94:29:68:12 (172.16.12.180): trying to log in by mac
+Apr/02/2024 23:15:11 hotspot,info,debug ->: 82:D0:94:29:68:12 (172.16.12.180): login failed: invalid username or password
+Apr/02/2024 23:15:11 hotspot,info,debug adminReset: 82:D0:94:29:68:12 (172.16.12.180): login failed: invalid username or password
+Apr/02/2024 23:15:45 hotspot,info,debug ->: A4:12:32:F9:AB:23 (172.16.12.101): trying to log in by mac
+Apr/02/2024 23:15:45 hotspot,info,debug adminReset: A4:12:32:F9:AB:23 (172.16.12.101): trying to log in by mac
+Apr/02/2024 23:15:45 hotspot,info,debug ->: A4:12:32:F9:AB:23 (172.16.12.101): login failed: invalid username or password
+Apr/02/2024 23:15:45 hotspot,info,debug adminReset: A4:12:32:F9:AB:23 (172.16.12.101): login failed: invalid username or password
+Apr/02/2024 23:27:51 hotspot,info,debug ->: Fayyadh (172.16.12.102): trying to log in by mac-cookie
+Apr/02/2024 23:27:51 hotspot,info,debug adminReset: Fayyadh (172.16.12.102): trying to log in by mac-cookie
+Apr/02/2024 23:27:51 hotspot,account,info,debug ->: Fayyadh (172.16.12.102): logged in
+Apr/02/2024 23:27:51 hotspot,account,info,debug adminReset: Fayyadh (172.16.12.102): logged in
+Apr/02/2024 23:31:36 hotspot,info,debug ->: T-9A:C7:74:1A:02:EF (172.16.12.103): trying to log in by mac-cookie
+Apr/02/2024 23:31:36 hotspot,info,debug adminReset: T-9A:C7:74:1A:02:EF (172.16.12.103): trying to log in by mac-cookie
+Apr/02/2024 23:31:36 hotspot,info,debug ->: T-9A:C7:74:1A:02:EF (172.16.12.103): login failed: invalid username or password
+Apr/02/2024 23:31:36 hotspot,info,debug adminReset: T-9A:C7:74:1A:02:EF (172.16.12.103): login failed: invalid username or password
+Apr/02/2024 23:31:38 hotspot,info,debug ->: T-9A:C7:74:1A:02:EF (172.16.12.103): trying to log in by trial
+Apr/02/2024 23:31:38 hotspot,info,debug adminReset: T-9A:C7:74:1A:02:EF (172.16.12.103): trying to log in by trial
+Apr/02/2024 23:31:38 hotspot,account,info,debug ->: T-9A:C7:74:1A:02:EF (172.16.12.103): logged in
+Apr/02/2024 23:31:38 hotspot,account,info,debug adminReset: T-9A:C7:74:1A:02:EF (172.16.12.103): logged in
+Apr/02/2024 23:31:46 hotspot,info,debug ->: F2:FE:89:28:FE:2A (172.16.12.104): trying to log in by mac
+Apr/02/2024 23:31:46 hotspot,info,debug adminReset: F2:FE:89:28:FE:2A (172.16.12.104): trying to log in by mac
+Apr/02/2024 23:31:46 hotspot,info,debug ->: F2:FE:89:28:FE:2A (172.16.12.104): login failed: invalid username or password
+Apr/02/2024 23:31:46 hotspot,info,debug adminReset: F2:FE:89:28:FE:2A (172.16.12.104): login failed: invalid username or password
+Apr/02/2024 23:32:23 hotspot,info,debug ->: gJGRdn (172.16.12.104): trying to log in by http-chap
+Apr/02/2024 23:32:23 hotspot,info,debug adminReset: gJGRdn (172.16.12.104): trying to log in by http-chap
+Apr/02/2024 23:32:23 hotspot,account,info,debug ->: gJGRdn (172.16.12.104): logged in
+Apr/02/2024 23:32:23 hotspot,account,info,debug adminReset: gJGRdn (172.16.12.104): logged in
+Apr/02/2024 23:36:59 hotspot,info,debug ->: A4:F0:5E:21:88:B5 (172.16.12.105): trying to log in by mac
+Apr/02/2024 23:36:59 hotspot,info,debug adminReset: A4:F0:5E:21:88:B5 (172.16.12.105): trying to log in by mac
+Apr/02/2024 23:36:59 hotspot,info,debug ->: A4:F0:5E:21:88:B5 (172.16.12.105): login failed: invalid username or password
+Apr/02/2024 23:36:59 hotspot,info,debug adminReset: A4:F0:5E:21:88:B5 (172.16.12.105): login failed: invalid username or password
+Apr/02/2024 23:37:32 hotspot,info,debug ->: abi2 (172.16.12.105): trying to log in by http-chap
+Apr/02/2024 23:37:32 hotspot,info,debug adminReset: abi2 (172.16.12.105): trying to log in by http-chap
+Apr/02/2024 23:37:34 hotspot,info,debug ->: abi2 (172.16.12.105): login failed: no more sessions are allowed for user
+Apr/02/2024 23:37:34 hotspot,info,debug adminReset: abi2 (172.16.12.105): login failed: no more sessions are allowed for user
+Apr/02/2024 23:37:43 hotspot,info,debug ->: abi2 (172.16.12.105): trying to log in by http-chap
+Apr/02/2024 23:37:43 hotspot,info,debug adminReset: abi2 (172.16.12.105): trying to log in by http-chap
+Apr/02/2024 23:37:45 hotspot,info,debug ->: abi2 (172.16.12.105): login failed: no more sessions are allowed for user
+Apr/02/2024 23:37:45 hotspot,info,debug adminReset: abi2 (172.16.12.105): login failed: no more sessions are allowed for user
+Apr/02/2024 23:37:49 hotspot,info,debug ->: T-A4:F0:5E:21:88:B5 (172.16.12.105): trying to log in by trial
+Apr/02/2024 23:37:49 hotspot,info,debug adminReset: T-A4:F0:5E:21:88:B5 (172.16.12.105): trying to log in by trial
+Apr/02/2024 23:37:49 hotspot,account,info,debug ->: T-A4:F0:5E:21:88:B5 (172.16.12.105): logged in
+Apr/02/2024 23:37:49 hotspot,account,info,debug adminReset: T-A4:F0:5E:21:88:B5 (172.16.12.105): logged in
+Apr/02/2024 23:38:16 hotspot,info,debug ->: fatin (172.16.12.106): trying to log in by mac-cookie
+Apr/02/2024 23:38:16 hotspot,info,debug adminReset: fatin (172.16.12.106): trying to log in by mac-cookie
+Apr/02/2024 23:38:16 hotspot,account,info,debug ->: fatin (172.16.12.106): logged in
+Apr/02/2024 23:38:16 hotspot,account,info,debug adminReset: fatin (172.16.12.106): logged in
+Apr/02/2024 23:38:29 hotspot,info,debug ->: abi2 (172.16.12.57): logged out: keepalive timeout
+Apr/02/2024 23:38:29 hotspot,info,debug adminReset: abi2 (172.16.12.57): logged out: keepalive timeout
+Apr/02/2024 23:40:06 hotspot,info,debug ->: ratih (172.16.13.19): logged out: keepalive timeout
+Apr/02/2024 23:40:06 hotspot,info,debug adminReset: ratih (172.16.13.19): logged out: keepalive timeout
+Apr/02/2024 23:42:30 hotspot,info,debug ->: T-A4:F0:5E:21:88:B5 (172.16.12.105): logged out: keepalive timeout
+Apr/02/2024 23:42:30 hotspot,info,debug adminReset: T-A4:F0:5E:21:88:B5 (172.16.12.105): logged out: keepalive timeout
+Apr/02/2024 23:42:31 hotspot,info,debug ->: umi (172.16.13.31): logged out: keepalive timeout
+Apr/02/2024 23:42:31 hotspot,info,debug adminReset: umi (172.16.13.31): logged out: keepalive timeout
+Apr/02/2024 23:42:35 hotspot,info,debug ->: 5E:3F:90:A0:CE:5F (172.16.12.108): trying to log in by mac
+Apr/02/2024 23:42:35 hotspot,info,debug adminReset: 5E:3F:90:A0:CE:5F (172.16.12.108): trying to log in by mac
+Apr/02/2024 23:42:35 hotspot,info,debug ->: 5E:3F:90:A0:CE:5F (172.16.12.108): login failed: invalid username or password
+Apr/02/2024 23:42:35 hotspot,info,debug adminReset: 5E:3F:90:A0:CE:5F (172.16.12.108): login failed: invalid username or password
+Apr/02/2024 23:42:37 hotspot,info,debug ->: taufik (172.16.12.109): trying to log in by mac-cookie
+Apr/02/2024 23:42:37 hotspot,info,debug adminReset: taufik (172.16.12.109): trying to log in by mac-cookie
+Apr/02/2024 23:42:37 hotspot,info,debug ->: taufik (172.16.12.109): login failed: no more sessions are allowed for user
+Apr/02/2024 23:42:37 hotspot,info,debug adminReset: taufik (172.16.12.109): login failed: no more sessions are allowed for user
+Apr/02/2024 23:42:45 hotspot,info,debug ->: T-8A:B3:9D:5E:F3:A2 (172.16.12.109): trying to log in by trial
+Apr/02/2024 23:42:45 hotspot,info,debug adminReset: T-8A:B3:9D:5E:F3:A2 (172.16.12.109): trying to log in by trial
+Apr/02/2024 23:42:45 hotspot,account,info,debug ->: T-8A:B3:9D:5E:F3:A2 (172.16.12.109): logged in
+Apr/02/2024 23:42:45 hotspot,account,info,debug adminReset: T-8A:B3:9D:5E:F3:A2 (172.16.12.109): logged in
+Apr/02/2024 23:43:25 hotspot,info,debug ->: taufik (172.16.12.230): logged out: keepalive timeout
+Apr/02/2024 23:43:25 hotspot,info,debug adminReset: taufik (172.16.12.230): logged out: keepalive timeout
+Apr/02/2024 23:45:09 hotspot,info,debug ->: 26:2F:65:C2:6C:89 (172.16.12.110): trying to log in by mac
+Apr/02/2024 23:45:09 hotspot,info,debug adminReset: 26:2F:65:C2:6C:89 (172.16.12.110): trying to log in by mac
+Apr/02/2024 23:45:09 hotspot,info,debug ->: 26:2F:65:C2:6C:89 (172.16.12.110): login failed: invalid username or password
+Apr/02/2024 23:45:09 hotspot,info,debug adminReset: 26:2F:65:C2:6C:89 (172.16.12.110): login failed: invalid username or password
+Apr/02/2024 23:45:11 hotspot,info,debug ->: 1E:BF:D9:54:BA:EF (172.16.12.111): trying to log in by mac
+Apr/02/2024 23:45:11 hotspot,info,debug adminReset: 1E:BF:D9:54:BA:EF (172.16.12.111): trying to log in by mac
+Apr/02/2024 23:45:11 hotspot,info,debug ->: 1E:BF:D9:54:BA:EF (172.16.12.111): login failed: invalid username or password
+Apr/02/2024 23:45:11 hotspot,info,debug adminReset: 1E:BF:D9:54:BA:EF (172.16.12.111): login failed: invalid username or password
+Apr/02/2024 23:45:13 hotspot,info,debug ->: EA:3C:E6:56:65:4C (172.16.12.112): trying to log in by mac
+Apr/02/2024 23:45:13 hotspot,info,debug adminReset: EA:3C:E6:56:65:4C (172.16.12.112): trying to log in by mac
+Apr/02/2024 23:45:13 hotspot,info,debug ->: EA:3C:E6:56:65:4C (172.16.12.112): login failed: invalid username or password
+Apr/02/2024 23:45:13 hotspot,info,debug adminReset: EA:3C:E6:56:65:4C (172.16.12.112): login failed: invalid username or password
+Apr/02/2024 23:45:22 hotspot,info,debug ->: T-EA:3C:E6:56:65:4C (172.16.12.112): trying to log in by trial
+Apr/02/2024 23:45:22 hotspot,info,debug adminReset: T-EA:3C:E6:56:65:4C (172.16.12.112): trying to log in by trial
+Apr/02/2024 23:45:22 hotspot,account,info,debug ->: T-EA:3C:E6:56:65:4C (172.16.12.112): logged in
+Apr/02/2024 23:45:22 hotspot,account,info,debug adminReset: T-EA:3C:E6:56:65:4C (172.16.12.112): logged in
+Apr/02/2024 23:45:38 hotspot,info,debug ->: T-A6:7F:67:E9:0F:54 (172.16.12.113): trying to log in by mac-cookie
+Apr/02/2024 23:45:38 hotspot,info,debug adminReset: T-A6:7F:67:E9:0F:54 (172.16.12.113): trying to log in by mac-cookie
+Apr/02/2024 23:45:38 hotspot,account,info,debug ->: T-A6:7F:67:E9:0F:54 (172.16.12.113): logged in
+Apr/02/2024 23:45:38 hotspot,account,info,debug adminReset: T-A6:7F:67:E9:0F:54 (172.16.12.113): logged in
+Apr/02/2024 23:45:39 hotspot,info,debug ->: 64:78:C3:18:42:27 (172.16.12.114): trying to log in by mac
+Apr/02/2024 23:45:39 hotspot,info,debug adminReset: 64:78:C3:18:42:27 (172.16.12.114): trying to log in by mac
+Apr/02/2024 23:45:39 hotspot,info,debug ->: 64:78:C3:18:42:27 (172.16.12.114): login failed: invalid username or password
+Apr/02/2024 23:45:39 hotspot,info,debug adminReset: 64:78:C3:18:42:27 (172.16.12.114): login failed: invalid username or password
+Apr/02/2024 23:45:43 hotspot,info,debug ->: Fayyadh (172.16.12.115): trying to log in by mac-cookie
+Apr/02/2024 23:45:43 hotspot,info,debug adminReset: Fayyadh (172.16.12.115): trying to log in by mac-cookie
+Apr/02/2024 23:45:43 hotspot,account,info,debug ->: Fayyadh (172.16.12.115): logged in
+Apr/02/2024 23:45:43 hotspot,account,info,debug adminReset: Fayyadh (172.16.12.115): logged in
+Apr/02/2024 23:47:35 hotspot,info,debug ->: F2:AF:64:D8:80:67 (10.39.218.240): trying to log in by mac
+Apr/02/2024 23:47:35 hotspot,info,debug adminReset: F2:AF:64:D8:80:67 (10.39.218.240): trying to log in by mac
+Apr/02/2024 23:47:35 hotspot,info,debug ->: F2:AF:64:D8:80:67 (10.39.218.240): login failed: invalid username or password
+Apr/02/2024 23:47:35 hotspot,info,debug adminReset: F2:AF:64:D8:80:67 (10.39.218.240): login failed: invalid username or password
+Apr/02/2024 23:47:41 hotspot,info,debug ->: T-9A:C7:74:1A:02:EF (172.16.12.103): logged out: keepalive timeout
+Apr/02/2024 23:47:41 hotspot,info,debug adminReset: T-9A:C7:74:1A:02:EF (172.16.12.103): logged out: keepalive timeout
+Apr/02/2024 23:48:03 hotspot,info,debug ->: Fayyadh (172.16.12.60): trying to log in by mac-cookie
+Apr/02/2024 23:48:03 hotspot,info,debug adminReset: Fayyadh (172.16.12.60): trying to log in by mac-cookie
+Apr/02/2024 23:48:03 hotspot,account,info,debug ->: Fayyadh (172.16.12.60): logged in
+Apr/02/2024 23:48:03 hotspot,account,info,debug adminReset: Fayyadh (172.16.12.60): logged in
+Apr/02/2024 23:48:32 hotspot,info,debug ->: T-A6:7F:67:E9:0F:54 (172.16.12.113): logged out: keepalive timeout
+Apr/02/2024 23:48:32 hotspot,info,debug adminReset: T-A6:7F:67:E9:0F:54 (172.16.12.113): logged out: keepalive timeout
+Apr/02/2024 23:49:48 hotspot,info,debug ->: T-7A:59:50:B3:C4:94 (172.16.12.116): trying to log in by mac-cookie
+Apr/02/2024 23:49:48 hotspot,info,debug adminReset: T-7A:59:50:B3:C4:94 (172.16.12.116): trying to log in by mac-cookie
+Apr/02/2024 23:49:48 hotspot,account,info,debug ->: T-7A:59:50:B3:C4:94 (172.16.12.116): logged in
+Apr/02/2024 23:49:48 hotspot,account,info,debug adminReset: T-7A:59:50:B3:C4:94 (172.16.12.116): logged in
+Apr/02/2024 23:49:49 hotspot,info,debug ->: T-3C:B6:B7:31:B1:3D (172.16.12.83): trying to log in by trial
+Apr/02/2024 23:49:49 hotspot,info,debug adminReset: T-3C:B6:B7:31:B1:3D (172.16.12.83): trying to log in by trial
+Apr/02/2024 23:49:49 hotspot,account,info,debug ->: T-3C:B6:B7:31:B1:3D (172.16.12.83): logged in
+Apr/02/2024 23:49:49 hotspot,account,info,debug adminReset: T-3C:B6:B7:31:B1:3D (172.16.12.83): logged in
+Apr/02/2024 23:50:04 hotspot,info,debug ->: 7diX73 (172.16.12.5): trying to log in by mac-cookie
+Apr/02/2024 23:50:04 hotspot,info,debug adminReset: 7diX73 (172.16.12.5): trying to log in by mac-cookie
+Apr/02/2024 23:50:04 hotspot,account,info,debug ->: 7diX73 (172.16.12.5): logged in
+Apr/02/2024 23:50:04 hotspot,account,info,debug adminReset: 7diX73 (172.16.12.5): logged in
+Apr/02/2024 23:52:56 hotspot,info,debug ->: 86:5D:B3:AC:7B:CB (172.16.12.117): trying to log in by mac
+Apr/02/2024 23:52:56 hotspot,info,debug adminReset: 86:5D:B3:AC:7B:CB (172.16.12.117): trying to log in by mac
+Apr/02/2024 23:52:56 hotspot,info,debug ->: 86:5D:B3:AC:7B:CB (172.16.12.117): login failed: invalid username or password
+Apr/02/2024 23:52:56 hotspot,info,debug adminReset: 86:5D:B3:AC:7B:CB (172.16.12.117): login failed: invalid username or password
+Apr/02/2024 23:53:00 hotspot,info,debug ->: T-86:5D:B3:AC:7B:CB (172.16.12.117): trying to log in by trial
+Apr/02/2024 23:53:00 hotspot,info,debug adminReset: T-86:5D:B3:AC:7B:CB (172.16.12.117): trying to log in by trial
+Apr/02/2024 23:53:00 hotspot,account,info,debug ->: T-86:5D:B3:AC:7B:CB (172.16.12.117): logged in
+Apr/02/2024 23:53:00 hotspot,account,info,debug adminReset: T-86:5D:B3:AC:7B:CB (172.16.12.117): logged in
+Apr/02/2024 23:53:25 hotspot,info,debug ->: umi (172.16.13.31): trying to log in by mac-cookie
+Apr/02/2024 23:53:25 hotspot,info,debug adminReset: umi (172.16.13.31): trying to log in by mac-cookie
+Apr/02/2024 23:53:25 hotspot,account,info,debug ->: umi (172.16.13.31): logged in
+Apr/02/2024 23:53:25 hotspot,account,info,debug adminReset: umi (172.16.13.31): logged in
+Apr/02/2024 23:54:47 hotspot,info,debug ->: T-EA:3C:E6:56:65:4C (172.16.12.112): logged out: keepalive timeout
+Apr/02/2024 23:54:47 hotspot,info,debug adminReset: T-EA:3C:E6:56:65:4C (172.16.12.112): logged out: keepalive timeout
+Apr/02/2024 23:56:16 hotspot,info,debug ->: C6:C0:9E:FD:07:AB (172.16.12.118): trying to log in by mac
+Apr/02/2024 23:56:16 hotspot,info,debug adminReset: C6:C0:9E:FD:07:AB (172.16.12.118): trying to log in by mac
+Apr/02/2024 23:56:16 hotspot,info,debug ->: C6:C0:9E:FD:07:AB (172.16.12.118): login failed: invalid username or password
+Apr/02/2024 23:56:16 hotspot,info,debug adminReset: C6:C0:9E:FD:07:AB (172.16.12.118): login failed: invalid username or password
+Apr/02/2024 23:56:42 hotspot,info,debug ->: Fayyadh (172.16.12.118): trying to log in by http-chap
+Apr/02/2024 23:56:42 hotspot,info,debug adminReset: Fayyadh (172.16.12.118): trying to log in by http-chap
+Apr/02/2024 23:56:44 hotspot,info,debug ->: Fayyadh (172.16.12.118): login failed: invalid username or password
+Apr/02/2024 23:56:44 hotspot,info,debug adminReset: Fayyadh (172.16.12.118): login failed: invalid username or password
+Apr/02/2024 23:57:14 hotspot,info,debug ->: aceholi (172.16.13.23): trying to log in by mac-cookie
+Apr/02/2024 23:57:14 hotspot,info,debug adminReset: aceholi (172.16.13.23): trying to log in by mac-cookie
+Apr/02/2024 23:57:14 hotspot,account,info,debug ->: aceholi (172.16.13.23): logged in
+Apr/02/2024 23:57:14 hotspot,account,info,debug adminReset: aceholi (172.16.13.23): logged in
+Apr/02/2024 23:57:19 hotspot,info,debug ->: Fayyadh (172.16.12.118): trying to log in by http-chap
+Apr/02/2024 23:57:19 hotspot,info,debug adminReset: Fayyadh (172.16.12.118): trying to log in by http-chap
+Apr/02/2024 23:57:21 hotspot,info,debug ->: Fayyadh (172.16.12.118): login failed: invalid username or password
+Apr/02/2024 23:57:21 hotspot,info,debug adminReset: Fayyadh (172.16.12.118): login failed: invalid username or password
+Apr/02/2024 23:57:30 hotspot,info,debug ->: 84:D1:5A:7E:8B:AE (172.16.12.119): trying to log in by mac
+Apr/02/2024 23:57:30 hotspot,info,debug adminReset: 84:D1:5A:7E:8B:AE (172.16.12.119): trying to log in by mac
+Apr/02/2024 23:57:30 hotspot,info,debug ->: 84:D1:5A:7E:8B:AE (172.16.12.119): login failed: invalid username or password
+Apr/02/2024 23:57:30 hotspot,info,debug adminReset: 84:D1:5A:7E:8B:AE (172.16.12.119): login failed: invalid username or password
+Apr/02/2024 23:57:42 hotspot,info,debug ->: Fayyadh (172.16.12.118): trying to log in by http-chap
+Apr/02/2024 23:57:42 hotspot,info,debug adminReset: Fayyadh (172.16.12.118): trying to log in by http-chap
+Apr/02/2024 23:57:42 hotspot,account,info,debug ->: Fayyadh (172.16.12.118): logged in
+Apr/02/2024 23:57:42 hotspot,account,info,debug adminReset: Fayyadh (172.16.12.118): logged in
+Apr/02/2024 23:57:44 hotspot,info,debug ->: Fayyadh (172.16.12.115): logged out: keepalive timeout
+Apr/02/2024 23:57:44 hotspot,info,debug adminReset: Fayyadh (172.16.12.115): logged out: keepalive timeout
+Apr/02/2024 23:57:58 hotspot,info,debug ->: T-EA:3C:E6:56:65:4C (172.16.12.112): trying to log in by mac-cookie
+Apr/02/2024 23:57:58 hotspot,info,debug adminReset: T-EA:3C:E6:56:65:4C (172.16.12.112): trying to log in by mac-cookie
+Apr/02/2024 23:57:58 hotspot,account,info,debug ->: T-EA:3C:E6:56:65:4C (172.16.12.112): logged in
+Apr/02/2024 23:57:58 hotspot,account,info,debug adminReset: T-EA:3C:E6:56:65:4C (172.16.12.112): logged in
+Apr/02/2024 23:58:32 hotspot,info,debug ->: C0:87:EB:58:1D:27 (172.16.12.120): trying to log in by mac
+Apr/02/2024 23:58:32 hotspot,info,debug adminReset: C0:87:EB:58:1D:27 (172.16.12.120): trying to log in by mac
+Apr/02/2024 23:58:32 hotspot,info,debug ->: C0:87:EB:58:1D:27 (172.16.12.120): login failed: invalid username or password
+Apr/02/2024 23:58:32 hotspot,info,debug adminReset: C0:87:EB:58:1D:27 (172.16.12.120): login failed: invalid username or password
+Apr/03/2024 00:01:42 hotspot,info,debug ->: 7diX73 (172.16.12.5): logged out: keepalive timeout
+Apr/03/2024 00:01:42 hotspot,info,debug adminReset: 7diX73 (172.16.12.5): logged out: keepalive timeout
+Apr/03/2024 00:02:09 hotspot,info,debug ->: T-7E:E2:AA:9C:34:35 (172.16.12.122): trying to log in by mac-cookie
+Apr/03/2024 00:02:09 hotspot,info,debug adminReset: T-7E:E2:AA:9C:34:35 (172.16.12.122): trying to log in by mac-cookie
+Apr/03/2024 00:02:09 hotspot,account,info,debug ->: T-7E:E2:AA:9C:34:35 (172.16.12.122): logged in
+Apr/03/2024 00:02:09 hotspot,account,info,debug adminReset: T-7E:E2:AA:9C:34:35 (172.16.12.122): logged in
+Apr/03/2024 00:02:23 hotspot,info,debug ->: Fayyadh (172.16.12.16): logged out: keepalive timeout
+Apr/03/2024 00:02:23 hotspot,info,debug adminReset: Fayyadh (172.16.12.16): logged out: keepalive timeout
+Apr/03/2024 00:02:45 hotspot,info,debug ->: T-8A:B3:9D:5E:F3:A2 (172.16.12.109): logged out: session timeout
+Apr/03/2024 00:02:45 hotspot,info,debug adminReset: T-8A:B3:9D:5E:F3:A2 (172.16.12.109): logged out: session timeout
+Apr/03/2024 00:03:27 hotspot,info,debug ->: T-86:5D:B3:AC:7B:CB (172.16.12.117): logged out: keepalive timeout
+Apr/03/2024 00:03:27 hotspot,info,debug adminReset: T-86:5D:B3:AC:7B:CB (172.16.12.117): logged out: keepalive timeout
+Apr/03/2024 00:03:43 hotspot,info,debug ->: aisya (172.16.13.59): logged out: keepalive timeout
+Apr/03/2024 00:03:43 hotspot,info,debug adminReset: aisya (172.16.13.59): logged out: keepalive timeout
+Apr/03/2024 00:04:01 hotspot,info,debug ->: T-7A:59:50:B3:C4:94 (172.16.12.116): logged out: keepalive timeout
+Apr/03/2024 00:04:01 hotspot,info,debug adminReset: T-7A:59:50:B3:C4:94 (172.16.12.116): logged out: keepalive timeout
+Apr/03/2024 00:04:04 hotspot,info,debug ->: taufik (172.16.12.109): trying to log in by http-chap
+Apr/03/2024 00:04:04 hotspot,info,debug adminReset: taufik (172.16.12.109): trying to log in by http-chap
+Apr/03/2024 00:04:04 hotspot,account,info,debug ->: taufik (172.16.12.109): logged in
+Apr/03/2024 00:04:04 hotspot,account,info,debug adminReset: taufik (172.16.12.109): logged in
+Apr/03/2024 00:05:00 hotspot,info,debug ->: C6:E1:D6:AA:6F:60 (10.8.0.42): trying to log in by mac
+Apr/03/2024 00:05:00 hotspot,info,debug adminReset: C6:E1:D6:AA:6F:60 (10.8.0.42): trying to log in by mac
+Apr/03/2024 00:05:00 hotspot,info,debug ->: C6:E1:D6:AA:6F:60 (10.8.0.42): login failed: invalid username or password
+Apr/03/2024 00:05:00 hotspot,info,debug adminReset: C6:E1:D6:AA:6F:60 (10.8.0.42): login failed: invalid username or password
+Apr/03/2024 00:05:32 hotspot,info,debug ->: T-7E:E2:AA:9C:34:35 (172.16.12.122): logged out: keepalive timeout
+Apr/03/2024 00:05:32 hotspot,info,debug adminReset: T-7E:E2:AA:9C:34:35 (172.16.12.122): logged out: keepalive timeout
+Apr/03/2024 00:06:36 hotspot,info,debug ->: Fayyadh (172.16.12.102): logged out: keepalive timeout
+Apr/03/2024 00:06:36 hotspot,info,debug adminReset: Fayyadh (172.16.12.102): logged out: keepalive timeout
+Apr/03/2024 00:08:06 hotspot,info,debug ->: T-EA:3C:E6:56:65:4C (172.16.12.112): logged out: keepalive timeout
+Apr/03/2024 00:08:06 hotspot,info,debug adminReset: T-EA:3C:E6:56:65:4C (172.16.12.112): logged out: keepalive timeout
+Apr/03/2024 00:08:44 hotspot,info,debug ->: B4:A5:AC:B4:B5:EF (172.16.12.123): trying to log in by mac
+Apr/03/2024 00:08:44 hotspot,info,debug adminReset: B4:A5:AC:B4:B5:EF (172.16.12.123): trying to log in by mac
+Apr/03/2024 00:08:44 hotspot,info,debug ->: B4:A5:AC:B4:B5:EF (172.16.12.123): login failed: invalid username or password
+Apr/03/2024 00:08:44 hotspot,info,debug adminReset: B4:A5:AC:B4:B5:EF (172.16.12.123): login failed: invalid username or password
+Apr/03/2024 00:09:27 hotspot,info,debug ->: gE2yuZ (172.16.12.123): trying to log in by http-chap
+Apr/03/2024 00:09:27 hotspot,info,debug adminReset: gE2yuZ (172.16.12.123): trying to log in by http-chap
+Apr/03/2024 00:09:27 hotspot,account,info,debug ->: gE2yuZ (172.16.12.123): logged in
+Apr/03/2024 00:09:27 hotspot,account,info,debug adminReset: gE2yuZ (172.16.12.123): logged in
+Apr/03/2024 00:09:49 hotspot,info,debug ->: T-3C:B6:B7:31:B1:3D (172.16.12.83): logged out: session timeout
+Apr/03/2024 00:09:49 hotspot,info,debug adminReset: T-3C:B6:B7:31:B1:3D (172.16.12.83): logged out: session timeout
+Apr/03/2024 00:11:35 hotspot,info,debug ->: T-3C:B6:B7:31:B1:3D (172.16.12.83): trying to log in by cookie
+Apr/03/2024 00:11:35 hotspot,info,debug adminReset: T-3C:B6:B7:31:B1:3D (172.16.12.83): trying to log in by cookie
+Apr/03/2024 00:11:35 hotspot,info,debug ->: T-3C:B6:B7:31:B1:3D (172.16.12.83): login failed: your uptime limit is reached
+Apr/03/2024 00:11:35 hotspot,info,debug adminReset: T-3C:B6:B7:31:B1:3D (172.16.12.83): login failed: your uptime limit is reached
+Apr/03/2024 00:11:54 hotspot,info,debug ->: gctywm (172.16.12.87): logged out: keepalive timeout
+Apr/03/2024 00:11:54 hotspot,info,debug adminReset: gctywm (172.16.12.87): logged out: keepalive timeout
+Apr/03/2024 00:12:58 hotspot,info,debug ->: fatin (172.16.12.124): trying to log in by mac-cookie
+Apr/03/2024 00:12:58 hotspot,info,debug adminReset: fatin (172.16.12.124): trying to log in by mac-cookie
+Apr/03/2024 00:12:58 hotspot,account,info,debug ->: fatin (172.16.12.124): logged in
+Apr/03/2024 00:12:58 hotspot,account,info,debug adminReset: fatin (172.16.12.124): logged in
+Apr/03/2024 00:13:33 hotspot,info,debug ->: edy (172.16.12.125): trying to log in by mac-cookie
+Apr/03/2024 00:13:33 hotspot,info,debug adminReset: edy (172.16.12.125): trying to log in by mac-cookie
+Apr/03/2024 00:13:33 hotspot,account,info,debug ->: edy (172.16.12.125): logged in
+Apr/03/2024 00:13:33 hotspot,account,info,debug adminReset: edy (172.16.12.125): logged in
+Apr/03/2024 00:13:46 hotspot,info,debug ->: edy (172.16.12.125): logged out: keepalive timeout
+Apr/03/2024 00:13:46 hotspot,info,debug adminReset: edy (172.16.12.125): logged out: keepalive timeout
+Apr/03/2024 00:15:31 hotspot,info,debug ->: 82:D0:94:29:68:12 (172.16.12.180): trying to log in by mac
+Apr/03/2024 00:15:31 hotspot,info,debug adminReset: 82:D0:94:29:68:12 (172.16.12.180): trying to log in by mac
+Apr/03/2024 00:15:31 hotspot,info,debug ->: 82:D0:94:29:68:12 (172.16.12.180): login failed: invalid username or password
+Apr/03/2024 00:15:31 hotspot,info,debug adminReset: 82:D0:94:29:68:12 (172.16.12.180): login failed: invalid username or password
+Apr/03/2024 00:15:43 hotspot,info,debug ->: gkcGBW (172.16.12.180): trying to log in by http-chap
+Apr/03/2024 00:15:43 hotspot,info,debug adminReset: gkcGBW (172.16.12.180): trying to log in by http-chap
+Apr/03/2024 00:15:43 hotspot,account,info,debug ->: gkcGBW (172.16.12.180): logged in
+Apr/03/2024 00:15:43 hotspot,account,info,debug adminReset: gkcGBW (172.16.12.180): logged in
+Apr/03/2024 00:15:53 hotspot,info,debug ->: D6:D4:28:70:97:E3 (172.16.12.126): trying to log in by mac
+Apr/03/2024 00:15:53 hotspot,info,debug adminReset: D6:D4:28:70:97:E3 (172.16.12.126): trying to log in by mac
+Apr/03/2024 00:15:53 hotspot,info,debug ->: D6:D4:28:70:97:E3 (172.16.12.126): login failed: invalid username or password
+Apr/03/2024 00:15:53 hotspot,info,debug adminReset: D6:D4:28:70:97:E3 (172.16.12.126): login failed: invalid username or password
+Apr/03/2024 00:16:07 hotspot,info,debug ->: fatin (172.16.12.124): logged out: keepalive timeout
+Apr/03/2024 00:16:07 hotspot,info,debug adminReset: fatin (172.16.12.124): logged out: keepalive timeout
+Apr/03/2024 00:16:57 hotspot,info,debug ->: 46:F5:F8:99:9D:38 (172.16.12.127): trying to log in by mac
+Apr/03/2024 00:16:57 hotspot,info,debug adminReset: 46:F5:F8:99:9D:38 (172.16.12.127): trying to log in by mac
+Apr/03/2024 00:16:57 hotspot,info,debug ->: 46:F5:F8:99:9D:38 (172.16.12.127): login failed: invalid username or password
+Apr/03/2024 00:16:57 hotspot,info,debug adminReset: 46:F5:F8:99:9D:38 (172.16.12.127): login failed: invalid username or password
+Apr/03/2024 00:17:15 hotspot,info,debug ->: 6E:3D:D5:8F:07:3C (172.16.12.128): trying to log in by mac
+Apr/03/2024 00:17:15 hotspot,info,debug adminReset: 6E:3D:D5:8F:07:3C (172.16.12.128): trying to log in by mac
+Apr/03/2024 00:17:15 hotspot,info,debug ->: 6E:3D:D5:8F:07:3C (172.16.12.128): login failed: invalid username or password
+Apr/03/2024 00:17:15 hotspot,info,debug adminReset: 6E:3D:D5:8F:07:3C (172.16.12.128): login failed: invalid username or password
+Apr/03/2024 00:17:58 hotspot,info,debug ->: aceholi (172.16.13.23): logged out: keepalive timeout
+Apr/03/2024 00:17:58 hotspot,info,debug adminReset: aceholi (172.16.13.23): logged out: keepalive timeout
+Apr/03/2024 00:18:50 hotspot,info,debug ->: fatin (172.16.12.124): trying to log in by mac-cookie
+Apr/03/2024 00:18:50 hotspot,info,debug adminReset: fatin (172.16.12.124): trying to log in by mac-cookie
+Apr/03/2024 00:18:50 hotspot,account,info,debug ->: fatin (172.16.12.124): logged in
+Apr/03/2024 00:18:50 hotspot,account,info,debug adminReset: fatin (172.16.12.124): logged in
+Apr/03/2024 00:18:50 hotspot,info,debug ->: aceholi (172.16.13.23): trying to log in by mac-cookie
+Apr/03/2024 00:18:50 hotspot,info,debug adminReset: aceholi (172.16.13.23): trying to log in by mac-cookie
+Apr/03/2024 00:18:50 hotspot,account,info,debug ->: aceholi (172.16.13.23): logged in
+Apr/03/2024 00:18:50 hotspot,account,info,debug adminReset: aceholi (172.16.13.23): logged in
+Apr/03/2024 00:20:17 hotspot,info,debug ->: A2:BA:0D:7D:9D:CD (172.16.12.129): trying to log in by mac
+Apr/03/2024 00:20:17 hotspot,info,debug adminReset: A2:BA:0D:7D:9D:CD (172.16.12.129): trying to log in by mac
+Apr/03/2024 00:20:17 hotspot,info,debug ->: A2:BA:0D:7D:9D:CD (172.16.12.129): login failed: invalid username or password
+Apr/03/2024 00:20:17 hotspot,info,debug adminReset: A2:BA:0D:7D:9D:CD (172.16.12.129): login failed: invalid username or password
+Apr/03/2024 00:20:59 hotspot,info,debug ->: aisya (172.16.12.130): trying to log in by mac-cookie
+Apr/03/2024 00:20:59 hotspot,info,debug adminReset: aisya (172.16.12.130): trying to log in by mac-cookie
+Apr/03/2024 00:20:59 hotspot,account,info,debug ->: aisya (172.16.12.130): logged in
+Apr/03/2024 00:20:59 hotspot,account,info,debug adminReset: aisya (172.16.12.130): logged in
+Apr/03/2024 00:21:34 hotspot,info,debug ->: Fayyadh (172.16.12.16): trying to log in by mac-cookie
+Apr/03/2024 00:21:34 hotspot,info,debug adminReset: Fayyadh (172.16.12.16): trying to log in by mac-cookie
+Apr/03/2024 00:21:34 hotspot,account,info,debug ->: Fayyadh (172.16.12.16): logged in
+Apr/03/2024 00:21:34 hotspot,account,info,debug adminReset: Fayyadh (172.16.12.16): logged in
+Apr/03/2024 00:22:13 hotspot,info,debug ->: gsdEve (172.16.12.119): trying to log in by http-chap
+Apr/03/2024 00:22:13 hotspot,info,debug adminReset: gsdEve (172.16.12.119): trying to log in by http-chap
+Apr/03/2024 00:22:13 hotspot,account,info,debug ->: gsdEve (172.16.12.119): logged in
+Apr/03/2024 00:22:13 hotspot,account,info,debug adminReset: gsdEve (172.16.12.119): logged in
+Apr/03/2024 00:22:17 hotspot,info,debug ->: aceholi (172.16.13.23): logged out: keepalive timeout
+Apr/03/2024 00:22:17 hotspot,info,debug adminReset: aceholi (172.16.13.23): logged out: keepalive timeout
+Apr/03/2024 00:23:14 hotspot,info,debug ->: aceholi (172.16.13.23): trying to log in by mac-cookie
+Apr/03/2024 00:23:14 hotspot,info,debug adminReset: aceholi (172.16.13.23): trying to log in by mac-cookie
+Apr/03/2024 00:23:14 hotspot,account,info,debug ->: aceholi (172.16.13.23): logged in
+Apr/03/2024 00:23:14 hotspot,account,info,debug adminReset: aceholi (172.16.13.23): logged in
+Apr/03/2024 00:25:50 hotspot,info,debug ->: gmwRs9 (172.16.12.128): trying to log in by http-chap
+Apr/03/2024 00:25:50 hotspot,info,debug adminReset: gmwRs9 (172.16.12.128): trying to log in by http-chap
+Apr/03/2024 00:25:50 hotspot,account,info,debug ->: gmwRs9 (172.16.12.128): logged in
+Apr/03/2024 00:25:50 hotspot,account,info,debug adminReset: gmwRs9 (172.16.12.128): logged in
+Apr/03/2024 00:26:31 hotspot,info,debug ->: 62:8A:7D:19:41:CA (172.16.12.131): trying to log in by mac
+Apr/03/2024 00:26:31 hotspot,info,debug adminReset: 62:8A:7D:19:41:CA (172.16.12.131): trying to log in by mac
+Apr/03/2024 00:26:31 hotspot,info,debug ->: 62:8A:7D:19:41:CA (172.16.12.131): login failed: invalid username or password
+Apr/03/2024 00:26:31 hotspot,info,debug adminReset: 62:8A:7D:19:41:CA (172.16.12.131): login failed: invalid username or password
+Apr/03/2024 00:36:39 hotspot,info,debug ->: Fayyadh (172.16.12.16): logged out: keepalive timeout
+Apr/03/2024 00:36:39 hotspot,info,debug adminReset: Fayyadh (172.16.12.16): logged out: keepalive timeout
+Apr/03/2024 00:44:54 hotspot,info,debug ->: 52:72:EF:A7:26:9A (172.16.12.132): trying to log in by mac
+Apr/03/2024 00:44:54 hotspot,info,debug adminReset: 52:72:EF:A7:26:9A (172.16.12.132): trying to log in by mac
+Apr/03/2024 00:44:54 hotspot,info,debug ->: 52:72:EF:A7:26:9A (172.16.12.132): login failed: invalid username or password
+Apr/03/2024 00:44:54 hotspot,info,debug adminReset: 52:72:EF:A7:26:9A (172.16.12.132): login failed: invalid username or password
+Apr/03/2024 00:46:27 hotspot,info,debug ->: aceholi (172.16.12.148): trying to log in by mac-cookie
+Apr/03/2024 00:46:27 hotspot,info,debug adminReset: aceholi (172.16.12.148): trying to log in by mac-cookie
+Apr/03/2024 00:46:27 hotspot,account,info,debug ->: aceholi (172.16.12.148): logged in
+Apr/03/2024 00:46:27 hotspot,account,info,debug adminReset: aceholi (172.16.12.148): logged in
+Apr/03/2024 00:46:31 hotspot,info,debug ->: 6E:27:92:1B:61:93 (172.16.12.133): trying to log in by mac
+Apr/03/2024 00:46:31 hotspot,info,debug adminReset: 6E:27:92:1B:61:93 (172.16.12.133): trying to log in by mac
+Apr/03/2024 00:46:31 hotspot,info,debug ->: 6E:27:92:1B:61:93 (172.16.12.133): login failed: invalid username or password
+Apr/03/2024 00:46:31 hotspot,info,debug adminReset: 6E:27:92:1B:61:93 (172.16.12.133): login failed: invalid username or password
+Apr/03/2024 00:46:41 hotspot,info,debug ->: aceholi (172.16.12.133): trying to log in by http-chap
+Apr/03/2024 00:46:41 hotspot,info,debug adminReset: aceholi (172.16.12.133): trying to log in by http-chap
+Apr/03/2024 00:46:41 hotspot,account,info,debug ->: aceholi (172.16.12.133): logged in
+Apr/03/2024 00:46:41 hotspot,account,info,debug adminReset: aceholi (172.16.12.133): logged in
+Apr/03/2024 00:47:26 hotspot,info,debug ->: 42:3E:43:C9:09:F3 (172.16.12.134): trying to log in by mac
+Apr/03/2024 00:47:26 hotspot,info,debug adminReset: 42:3E:43:C9:09:F3 (172.16.12.134): trying to log in by mac
+Apr/03/2024 00:47:26 hotspot,info,debug ->: 42:3E:43:C9:09:F3 (172.16.12.134): login failed: invalid username or password
+Apr/03/2024 00:47:26 hotspot,info,debug adminReset: 42:3E:43:C9:09:F3 (172.16.12.134): login failed: invalid username or password
+Apr/03/2024 00:47:32 hotspot,info,debug ->: 36:DA:20:A0:B6:1B (172.16.12.135): trying to log in by mac
+Apr/03/2024 00:47:32 hotspot,info,debug adminReset: 36:DA:20:A0:B6:1B (172.16.12.135): trying to log in by mac
+Apr/03/2024 00:47:32 hotspot,info,debug ->: 36:DA:20:A0:B6:1B (172.16.12.135): login failed: invalid username or password
+Apr/03/2024 00:47:32 hotspot,info,debug adminReset: 36:DA:20:A0:B6:1B (172.16.12.135): login failed: invalid username or password
+Apr/03/2024 00:47:45 hotspot,info,debug ->: F2:AF:64:D8:80:67 (10.217.9.96): trying to log in by mac
+Apr/03/2024 00:47:45 hotspot,info,debug adminReset: F2:AF:64:D8:80:67 (10.217.9.96): trying to log in by mac
+Apr/03/2024 00:47:45 hotspot,info,debug ->: F2:AF:64:D8:80:67 (10.217.9.96): login failed: invalid username or password
+Apr/03/2024 00:47:45 hotspot,info,debug adminReset: F2:AF:64:D8:80:67 (10.217.9.96): login failed: invalid username or password
+Apr/03/2024 00:47:59 hotspot,info,debug ->: gN44FR (172.16.12.134): trying to log in by http-chap
+Apr/03/2024 00:47:59 hotspot,info,debug adminReset: gN44FR (172.16.12.134): trying to log in by http-chap
+Apr/03/2024 00:47:59 hotspot,account,info,debug ->: gN44FR (172.16.12.134): logged in
+Apr/03/2024 00:47:59 hotspot,account,info,debug adminReset: gN44FR (172.16.12.134): logged in
+Apr/03/2024 00:48:29 hotspot,info,debug ->: aceholi (172.16.12.148): logged out: keepalive timeout
+Apr/03/2024 00:48:29 hotspot,info,debug adminReset: aceholi (172.16.12.148): logged out: keepalive timeout
+Apr/03/2024 00:50:26 hotspot,info,debug ->: aceholi (172.16.12.133): logged out: keepalive timeout
+Apr/03/2024 00:50:26 hotspot,info,debug adminReset: aceholi (172.16.12.133): logged out: keepalive timeout
+Apr/03/2024 00:51:33 hotspot,info,debug ->: C6:E1:D6:AA:6F:60 (172.16.12.87): trying to log in by mac
+Apr/03/2024 00:51:33 hotspot,info,debug adminReset: C6:E1:D6:AA:6F:60 (172.16.12.87): trying to log in by mac
+Apr/03/2024 00:51:33 hotspot,info,debug ->: C6:E1:D6:AA:6F:60 (172.16.12.87): login failed: invalid username or password
+Apr/03/2024 00:51:33 hotspot,info,debug adminReset: C6:E1:D6:AA:6F:60 (172.16.12.87): login failed: invalid username or password
+Apr/03/2024 00:51:45 hotspot,info,debug ->: gctywm (172.16.12.87): trying to log in by http-chap
+Apr/03/2024 00:51:45 hotspot,info,debug adminReset: gctywm (172.16.12.87): trying to log in by http-chap
+Apr/03/2024 00:51:45 hotspot,account,info,debug ->: gctywm (172.16.12.87): logged in
+Apr/03/2024 00:51:45 hotspot,account,info,debug adminReset: gctywm (172.16.12.87): logged in
+Apr/03/2024 00:55:19 hotspot,info,debug ->: D2:5C:B0:97:CC:0D (10.185.69.241): trying to log in by mac
+Apr/03/2024 00:55:19 hotspot,info,debug adminReset: D2:5C:B0:97:CC:0D (10.185.69.241): trying to log in by mac
+Apr/03/2024 00:55:19 hotspot,info,debug ->: D2:5C:B0:97:CC:0D (10.185.69.241): login failed: invalid username or password
+Apr/03/2024 00:55:19 hotspot,info,debug adminReset: D2:5C:B0:97:CC:0D (10.185.69.241): login failed: invalid username or password
+Apr/03/2024 00:55:49 hotspot,info,debug ->: aisya (172.16.12.2): logged out: keepalive timeout
+Apr/03/2024 00:55:49 hotspot,info,debug adminReset: aisya (172.16.12.2): logged out: keepalive timeout
+Apr/03/2024 00:56:38 hotspot,info,debug ->: T-A4:F0:5E:21:88:B5 (172.16.12.105): trying to log in by mac-cookie
+Apr/03/2024 00:56:38 hotspot,info,debug adminReset: T-A4:F0:5E:21:88:B5 (172.16.12.105): trying to log in by mac-cookie
+Apr/03/2024 00:56:38 hotspot,account,info,debug ->: T-A4:F0:5E:21:88:B5 (172.16.12.105): logged in
+Apr/03/2024 00:56:38 hotspot,account,info,debug adminReset: T-A4:F0:5E:21:88:B5 (172.16.12.105): logged in
+Apr/03/2024 00:58:40 hotspot,info,debug ->: B2:33:5A:34:B2:80 (172.16.12.136): trying to log in by mac
+Apr/03/2024 00:58:40 hotspot,info,debug adminReset: B2:33:5A:34:B2:80 (172.16.12.136): trying to log in by mac
+Apr/03/2024 00:58:40 hotspot,info,debug ->: B2:33:5A:34:B2:80 (172.16.12.136): login failed: invalid username or password
+Apr/03/2024 00:58:40 hotspot,info,debug adminReset: B2:33:5A:34:B2:80 (172.16.12.136): login failed: invalid username or password
+Apr/03/2024 00:58:47 hotspot,info,debug ->: 6A:6E:26:75:D6:BB (172.16.12.57): trying to log in by mac
+Apr/03/2024 00:58:47 hotspot,info,debug adminReset: 6A:6E:26:75:D6:BB (172.16.12.57): trying to log in by mac
+Apr/03/2024 00:58:47 hotspot,info,debug ->: 6A:6E:26:75:D6:BB (172.16.12.57): login failed: invalid username or password
+Apr/03/2024 00:58:47 hotspot,info,debug adminReset: 6A:6E:26:75:D6:BB (172.16.12.57): login failed: invalid username or password
+Apr/03/2024 00:58:52 hotspot,info,debug ->: T-A4:F0:5E:21:88:B5 (172.16.12.105): logged out: keepalive timeout
+Apr/03/2024 00:58:52 hotspot,info,debug adminReset: T-A4:F0:5E:21:88:B5 (172.16.12.105): logged out: keepalive timeout
+Apr/03/2024 00:58:56 hotspot,info,debug ->: abi2 (172.16.12.57): trying to log in by http-chap
+Apr/03/2024 00:58:56 hotspot,info,debug adminReset: abi2 (172.16.12.57): trying to log in by http-chap
+Apr/03/2024 00:58:56 hotspot,account,info,debug ->: abi2 (172.16.12.57): logged in
+Apr/03/2024 00:58:56 hotspot,account,info,debug adminReset: abi2 (172.16.12.57): logged in
+Apr/03/2024 00:59:56 hotspot,info,debug ->: Fayyadh (172.16.12.16): trying to log in by mac-cookie
+Apr/03/2024 00:59:56 hotspot,info,debug adminReset: Fayyadh (172.16.12.16): trying to log in by mac-cookie
+Apr/03/2024 00:59:56 hotspot,account,info,debug ->: Fayyadh (172.16.12.16): logged in
+Apr/03/2024 00:59:56 hotspot,account,info,debug adminReset: Fayyadh (172.16.12.16): logged in
+Apr/03/2024 01:04:06 hotspot,info,debug ->: f3ca2p (172.16.12.197): logged out: keepalive timeout
+Apr/03/2024 01:04:06 hotspot,info,debug adminReset: f3ca2p (172.16.12.197): logged out: keepalive timeout
+Apr/03/2024 01:05:33 hotspot,info,debug ->: gkcGBW (172.16.12.180): logged out: keepalive timeout
+Apr/03/2024 01:05:33 hotspot,info,debug adminReset: gkcGBW (172.16.12.180): logged out: keepalive timeout
+Apr/03/2024 01:10:04 hotspot,info,debug ->: AA:79:42:13:A8:E0 (172.16.12.137): trying to log in by mac
+Apr/03/2024 01:10:04 hotspot,info,debug adminReset: AA:79:42:13:A8:E0 (172.16.12.137): trying to log in by mac
+Apr/03/2024 01:10:04 hotspot,info,debug ->: AA:79:42:13:A8:E0 (172.16.12.137): login failed: invalid username or password
+Apr/03/2024 01:10:04 hotspot,info,debug adminReset: AA:79:42:13:A8:E0 (172.16.12.137): login failed: invalid username or password
+Apr/03/2024 01:10:56 hotspot,info,debug ->: Fayyadh (172.16.12.16): logged out: keepalive timeout
+Apr/03/2024 01:10:56 hotspot,info,debug adminReset: Fayyadh (172.16.12.16): logged out: keepalive timeout
+Apr/03/2024 01:11:51 hotspot,info,debug ->: fatin (172.16.12.124): logged out: keepalive timeout
+Apr/03/2024 01:11:51 hotspot,info,debug adminReset: fatin (172.16.12.124): logged out: keepalive timeout
+Apr/03/2024 01:12:49 hotspot,info,debug ->: Fayyadh (172.16.12.138): trying to log in by mac-cookie
+Apr/03/2024 01:12:49 hotspot,info,debug adminReset: Fayyadh (172.16.12.138): trying to log in by mac-cookie
+Apr/03/2024 01:12:49 hotspot,account,info,debug ->: Fayyadh (172.16.12.138): logged in
+Apr/03/2024 01:12:49 hotspot,account,info,debug adminReset: Fayyadh (172.16.12.138): logged in
+Apr/03/2024 01:13:17 hotspot,info,debug ->: baba (172.16.12.181): logged out: keepalive timeout
+Apr/03/2024 01:13:17 hotspot,info,debug adminReset: baba (172.16.12.181): logged out: keepalive timeout
+Apr/03/2024 01:13:28 hotspot,info,debug ->: dekbit (172.16.13.99): logged out: keepalive timeout
+Apr/03/2024 01:13:28 hotspot,info,debug adminReset: dekbit (172.16.13.99): logged out: keepalive timeout
+Apr/03/2024 01:14:03 hotspot,info,debug ->: gkcGBW (172.16.12.180): trying to log in by mac-cookie
+Apr/03/2024 01:14:03 hotspot,info,debug adminReset: gkcGBW (172.16.12.180): trying to log in by mac-cookie
+Apr/03/2024 01:14:03 hotspot,account,info,debug ->: gkcGBW (172.16.12.180): logged in
+Apr/03/2024 01:14:03 hotspot,account,info,debug adminReset: gkcGBW (172.16.12.180): logged in
+Apr/03/2024 01:16:57 hotspot,info,debug ->: gN44FR (172.16.12.134): logged out: admin reset
+Apr/03/2024 01:16:57 hotspot,info,debug adminReset: gN44FR (172.16.12.134): logged out: admin reset
+Apr/03/2024 01:17:45 hotspot,info,debug ->: gkcGBW (172.16.12.180): logged out: keepalive timeout
+Apr/03/2024 01:17:45 hotspot,info,debug adminReset: gkcGBW (172.16.12.180): logged out: keepalive timeout
+Apr/03/2024 01:19:00 hotspot,info,debug ->: A4:12:32:F9:AB:23 (172.16.12.101): trying to log in by mac
+Apr/03/2024 01:19:00 hotspot,info,debug adminReset: A4:12:32:F9:AB:23 (172.16.12.101): trying to log in by mac
+Apr/03/2024 01:19:00 hotspot,info,debug ->: A4:12:32:F9:AB:23 (172.16.12.101): login failed: invalid username or password
+Apr/03/2024 01:19:00 hotspot,info,debug adminReset: A4:12:32:F9:AB:23 (172.16.12.101): login failed: invalid username or password
+Apr/03/2024 01:19:46 hotspot,info,debug ->: gN44FR (172.16.12.134): trying to log in by http-chap
+Apr/03/2024 01:19:46 hotspot,info,debug adminReset: gN44FR (172.16.12.134): trying to log in by http-chap
+Apr/03/2024 01:19:48 hotspot,info,debug ->: gN44FR (172.16.12.134): login failed: your uptime limit is reached
+Apr/03/2024 01:19:48 hotspot,info,debug adminReset: gN44FR (172.16.12.134): login failed: your uptime limit is reached
+Apr/03/2024 01:19:52 hotspot,info,debug ->: T-42:3E:43:C9:09:F3 (172.16.12.134): trying to log in by trial
+Apr/03/2024 01:19:52 hotspot,info,debug adminReset: T-42:3E:43:C9:09:F3 (172.16.12.134): trying to log in by trial
+Apr/03/2024 01:19:52 hotspot,account,info,debug ->: T-42:3E:43:C9:09:F3 (172.16.12.134): logged in
+Apr/03/2024 01:19:52 hotspot,account,info,debug adminReset: T-42:3E:43:C9:09:F3 (172.16.12.134): logged in
+Apr/03/2024 01:20:51 hotspot,info,debug ->: aldi (172.16.12.156): logged out: keepalive timeout
+Apr/03/2024 01:20:51 hotspot,info,debug adminReset: aldi (172.16.12.156): logged out: keepalive timeout
+Apr/03/2024 01:22:31 hotspot,info,debug ->: Fayyadh (172.16.12.63): logged out: keepalive timeout
+Apr/03/2024 01:22:31 hotspot,info,debug adminReset: Fayyadh (172.16.12.63): logged out: keepalive timeout
+Apr/03/2024 01:23:00 hotspot,info,debug ->: gkcGBW (172.16.12.180): trying to log in by mac-cookie
+Apr/03/2024 01:23:00 hotspot,info,debug adminReset: gkcGBW (172.16.12.180): trying to log in by mac-cookie
+Apr/03/2024 01:23:00 hotspot,account,info,debug ->: gkcGBW (172.16.12.180): logged in
+Apr/03/2024 01:23:00 hotspot,account,info,debug adminReset: gkcGBW (172.16.12.180): logged in
+Apr/03/2024 01:27:59 hotspot,info,debug ->: gsdEve (172.16.12.119): logged out: admin reset
+Apr/03/2024 01:27:59 hotspot,info,debug adminReset: gsdEve (172.16.12.119): logged out: admin reset
+Apr/03/2024 01:30:03 hotspot,info,debug ->: gsdEve (172.16.12.119): trying to log in by http-chap
+Apr/03/2024 01:30:03 hotspot,info,debug adminReset: gsdEve (172.16.12.119): trying to log in by http-chap
+Apr/03/2024 01:30:05 hotspot,info,debug ->: gsdEve (172.16.12.119): login failed: your uptime limit is reached
+Apr/03/2024 01:30:05 hotspot,info,debug adminReset: gsdEve (172.16.12.119): login failed: your uptime limit is reached
+Apr/03/2024 01:31:06 hotspot,info,debug ->: 88:D5:0C:23:B8:D9 (172.16.12.139): trying to log in by mac
+Apr/03/2024 01:31:06 hotspot,info,debug adminReset: 88:D5:0C:23:B8:D9 (172.16.12.139): trying to log in by mac
+Apr/03/2024 01:31:06 hotspot,info,debug ->: 88:D5:0C:23:B8:D9 (172.16.12.139): login failed: invalid username or password
+Apr/03/2024 01:31:06 hotspot,info,debug adminReset: 88:D5:0C:23:B8:D9 (172.16.12.139): login failed: invalid username or password
+Apr/03/2024 01:31:21 hotspot,info,debug ->: T-88:D5:0C:23:B8:D9 (172.16.12.139): trying to log in by trial
+Apr/03/2024 01:31:21 hotspot,info,debug adminReset: T-88:D5:0C:23:B8:D9 (172.16.12.139): trying to log in by trial
+Apr/03/2024 01:31:21 hotspot,account,info,debug ->: T-88:D5:0C:23:B8:D9 (172.16.12.139): logged in
+Apr/03/2024 01:31:21 hotspot,account,info,debug adminReset: T-88:D5:0C:23:B8:D9 (172.16.12.139): logged in
+Apr/03/2024 01:37:32 hotspot,info,debug ->: aldi (172.16.13.119): trying to log in by mac-cookie
+Apr/03/2024 01:37:32 hotspot,info,debug adminReset: aldi (172.16.13.119): trying to log in by mac-cookie
+Apr/03/2024 01:37:32 hotspot,account,info,debug ->: aldi (172.16.13.119): logged in
+Apr/03/2024 01:37:32 hotspot,account,info,debug adminReset: aldi (172.16.13.119): logged in
+Apr/03/2024 01:37:35 hotspot,info,debug ->: 9A:53:3C:2F:D1:D9 (172.16.12.140): trying to log in by mac
+Apr/03/2024 01:37:35 hotspot,info,debug adminReset: 9A:53:3C:2F:D1:D9 (172.16.12.140): trying to log in by mac
+Apr/03/2024 01:37:35 hotspot,info,debug ->: 9A:53:3C:2F:D1:D9 (172.16.12.140): login failed: invalid username or password
+Apr/03/2024 01:37:35 hotspot,info,debug adminReset: 9A:53:3C:2F:D1:D9 (172.16.12.140): login failed: invalid username or password
+Apr/03/2024 01:37:42 hotspot,info,debug ->: aldi (172.16.13.119): logged out: keepalive timeout
+Apr/03/2024 01:37:42 hotspot,info,debug adminReset: aldi (172.16.13.119): logged out: keepalive timeout
+Apr/03/2024 01:38:01 hotspot,info,debug ->: aldi (172.16.12.140): trying to log in by http-chap
+Apr/03/2024 01:38:01 hotspot,info,debug adminReset: aldi (172.16.12.140): trying to log in by http-chap
+Apr/03/2024 01:38:01 hotspot,account,info,debug ->: aldi (172.16.12.140): logged in
+Apr/03/2024 01:38:01 hotspot,account,info,debug adminReset: aldi (172.16.12.140): logged in
+Apr/03/2024 01:39:38 hotspot,info,debug ->: T-84:D1:5A:7E:8B:AE (172.16.12.119): trying to log in by trial
+Apr/03/2024 01:39:38 hotspot,info,debug adminReset: T-84:D1:5A:7E:8B:AE (172.16.12.119): trying to log in by trial
+Apr/03/2024 01:39:38 hotspot,account,info,debug ->: T-84:D1:5A:7E:8B:AE (172.16.12.119): logged in
+Apr/03/2024 01:39:38 hotspot,account,info,debug adminReset: T-84:D1:5A:7E:8B:AE (172.16.12.119): logged in
+Apr/03/2024 01:39:52 hotspot,info,debug ->: T-42:3E:43:C9:09:F3 (172.16.12.134): logged out: session timeout
+Apr/03/2024 01:39:52 hotspot,info,debug adminReset: T-42:3E:43:C9:09:F3 (172.16.12.134): logged out: session timeout
+Apr/03/2024 01:41:04 hotspot,info,debug ->: T-88:D5:0C:23:B8:D9 (172.16.12.139): logged out: keepalive timeout
+Apr/03/2024 01:41:04 hotspot,info,debug adminReset: T-88:D5:0C:23:B8:D9 (172.16.12.139): logged out: keepalive timeout
+Apr/03/2024 01:43:19 hotspot,info,debug ->: F2:76:63:72:37:25 (172.16.12.141): trying to log in by mac
+Apr/03/2024 01:43:19 hotspot,info,debug adminReset: F2:76:63:72:37:25 (172.16.12.141): trying to log in by mac
+Apr/03/2024 01:43:19 hotspot,info,debug ->: F2:76:63:72:37:25 (172.16.12.141): login failed: invalid username or password
+Apr/03/2024 01:43:19 hotspot,info,debug adminReset: F2:76:63:72:37:25 (172.16.12.141): login failed: invalid username or password
+Apr/03/2024 01:43:33 hotspot,info,debug ->: T-42:3E:43:C9:09:F3 (172.16.12.134): trying to log in by cookie
+Apr/03/2024 01:43:33 hotspot,info,debug adminReset: T-42:3E:43:C9:09:F3 (172.16.12.134): trying to log in by cookie
+Apr/03/2024 01:43:33 hotspot,info,debug ->: T-42:3E:43:C9:09:F3 (172.16.12.134): login failed: your uptime limit is reached
+Apr/03/2024 01:43:33 hotspot,info,debug adminReset: T-42:3E:43:C9:09:F3 (172.16.12.134): login failed: your uptime limit is reached
+Apr/03/2024 01:43:41 hotspot,info,debug ->: dekbit (172.16.12.134): trying to log in by http-chap
+Apr/03/2024 01:43:41 hotspot,info,debug adminReset: dekbit (172.16.12.134): trying to log in by http-chap
+Apr/03/2024 01:43:41 hotspot,account,info,debug ->: dekbit (172.16.12.134): logged in
+Apr/03/2024 01:43:41 hotspot,account,info,debug adminReset: dekbit (172.16.12.134): logged in
+Apr/03/2024 01:44:21 hotspot,info,debug ->: CE:47:D4:02:58:C3 (172.16.12.142): trying to log in by mac
+Apr/03/2024 01:44:21 hotspot,info,debug adminReset: CE:47:D4:02:58:C3 (172.16.12.142): trying to log in by mac
+Apr/03/2024 01:44:21 hotspot,info,debug ->: CE:47:D4:02:58:C3 (172.16.12.142): login failed: invalid username or password
+Apr/03/2024 01:44:21 hotspot,info,debug adminReset: CE:47:D4:02:58:C3 (172.16.12.142): login failed: invalid username or password
+Apr/03/2024 01:44:48 hotspot,info,debug ->: aceholi (172.16.13.23): logged out: keepalive timeout
+Apr/03/2024 01:44:48 hotspot,info,debug adminReset: aceholi (172.16.13.23): logged out: keepalive timeout
+Apr/03/2024 01:45:42 hotspot,info,debug ->: B0:99:D7:DB:40:68 (172.16.12.207): trying to log in by mac
+Apr/03/2024 01:45:42 hotspot,info,debug adminReset: B0:99:D7:DB:40:68 (172.16.12.207): trying to log in by mac
+Apr/03/2024 01:45:42 hotspot,info,debug ->: B0:99:D7:DB:40:68 (172.16.12.207): login failed: invalid username or password
+Apr/03/2024 01:45:42 hotspot,info,debug adminReset: B0:99:D7:DB:40:68 (172.16.12.207): login failed: invalid username or password
+Apr/03/2024 01:48:01 hotspot,info,debug ->: F2:AF:64:D8:80:67 (10.177.40.109): trying to log in by mac
+Apr/03/2024 01:48:01 hotspot,info,debug adminReset: F2:AF:64:D8:80:67 (10.177.40.109): trying to log in by mac
+Apr/03/2024 01:48:01 hotspot,info,debug ->: F2:AF:64:D8:80:67 (10.177.40.109): login failed: invalid username or password
+Apr/03/2024 01:48:01 hotspot,info,debug adminReset: F2:AF:64:D8:80:67 (10.177.40.109): login failed: invalid username or password
+Apr/03/2024 01:48:32 hotspot,info,debug ->: 76:6B:5C:2E:E4:CF (172.16.12.143): trying to log in by mac
+Apr/03/2024 01:48:32 hotspot,info,debug adminReset: 76:6B:5C:2E:E4:CF (172.16.12.143): trying to log in by mac
+Apr/03/2024 01:48:32 hotspot,info,debug ->: 76:6B:5C:2E:E4:CF (172.16.12.143): login failed: invalid username or password
+Apr/03/2024 01:48:32 hotspot,info,debug adminReset: 76:6B:5C:2E:E4:CF (172.16.12.143): login failed: invalid username or password
+Apr/03/2024 01:51:01 hotspot,info,debug ->: Fayyadh (172.16.12.138): logged out: keepalive timeout
+Apr/03/2024 01:51:01 hotspot,info,debug adminReset: Fayyadh (172.16.12.138): logged out: keepalive timeout
+Apr/03/2024 01:51:53 hotspot,info,debug ->: Fayyadh (172.16.12.16): trying to log in by mac-cookie
+Apr/03/2024 01:51:53 hotspot,info,debug adminReset: Fayyadh (172.16.12.16): trying to log in by mac-cookie
+Apr/03/2024 01:51:53 hotspot,account,info,debug ->: Fayyadh (172.16.12.16): logged in
+Apr/03/2024 01:51:53 hotspot,account,info,debug adminReset: Fayyadh (172.16.12.16): logged in
+Apr/03/2024 01:53:18 hotspot,info,debug ->: 3E:2E:C3:26:AD:C5 (172.16.12.144): trying to log in by mac
+Apr/03/2024 01:53:18 hotspot,info,debug adminReset: 3E:2E:C3:26:AD:C5 (172.16.12.144): trying to log in by mac
+Apr/03/2024 01:53:18 hotspot,info,debug ->: 3E:2E:C3:26:AD:C5 (172.16.12.144): login failed: invalid username or password
+Apr/03/2024 01:53:18 hotspot,info,debug adminReset: 3E:2E:C3:26:AD:C5 (172.16.12.144): login failed: invalid username or password
+Apr/03/2024 01:53:37 hotspot,info,debug ->: gctywm (172.16.12.87): logged out: keepalive timeout
+Apr/03/2024 01:53:37 hotspot,info,debug adminReset: gctywm (172.16.12.87): logged out: keepalive timeout
+Apr/03/2024 01:53:50 hotspot,info,debug ->: gctywm (172.16.12.144): trying to log in by http-chap
+Apr/03/2024 01:53:50 hotspot,info,debug adminReset: gctywm (172.16.12.144): trying to log in by http-chap
+Apr/03/2024 01:53:50 hotspot,account,info,debug ->: gctywm (172.16.12.144): logged in
+Apr/03/2024 01:53:50 hotspot,account,info,debug adminReset: gctywm (172.16.12.144): logged in
+Apr/03/2024 01:53:56 hotspot,info,debug ->: 3E:2E:C3:26:AD:C5 (10.114.135.73): trying to log in by mac
+Apr/03/2024 01:53:56 hotspot,info,debug adminReset: 3E:2E:C3:26:AD:C5 (10.114.135.73): trying to log in by mac
+Apr/03/2024 01:53:56 hotspot,info,debug ->: 3E:2E:C3:26:AD:C5 (10.114.135.73): login failed: invalid username or password
+Apr/03/2024 01:53:56 hotspot,info,debug adminReset: 3E:2E:C3:26:AD:C5 (10.114.135.73): login failed: invalid username or password
+Apr/03/2024 01:58:31 hotspot,info,debug ->: gctywm (172.16.12.87): trying to log in by mac-cookie
+Apr/03/2024 01:58:31 hotspot,info,debug adminReset: gctywm (172.16.12.87): trying to log in by mac-cookie
+Apr/03/2024 01:58:31 hotspot,info,debug ->: gctywm (172.16.12.87): login failed: no more sessions are allowed for user
+Apr/03/2024 01:58:31 hotspot,info,debug adminReset: gctywm (172.16.12.87): login failed: no more sessions are allowed for user
+Apr/03/2024 01:58:36 hotspot,info,debug ->: T-C6:E1:D6:AA:6F:60 (172.16.12.87): trying to log in by trial
+Apr/03/2024 01:58:36 hotspot,info,debug adminReset: T-C6:E1:D6:AA:6F:60 (172.16.12.87): trying to log in by trial
+Apr/03/2024 01:58:36 hotspot,account,info,debug ->: T-C6:E1:D6:AA:6F:60 (172.16.12.87): logged in
+Apr/03/2024 01:58:36 hotspot,account,info,debug adminReset: T-C6:E1:D6:AA:6F:60 (172.16.12.87): logged in
+Apr/03/2024 01:59:38 hotspot,info,debug ->: T-84:D1:5A:7E:8B:AE (172.16.12.119): logged out: session timeout
+Apr/03/2024 01:59:38 hotspot,info,debug adminReset: T-84:D1:5A:7E:8B:AE (172.16.12.119): logged out: session timeout
+Apr/03/2024 02:02:27 hotspot,info,debug ->: Fayyadh (172.16.12.138): trying to log in by mac-cookie
+Apr/03/2024 02:02:27 hotspot,info,debug adminReset: Fayyadh (172.16.12.138): trying to log in by mac-cookie
+Apr/03/2024 02:02:27 hotspot,account,info,debug ->: Fayyadh (172.16.12.138): logged in
+Apr/03/2024 02:02:27 hotspot,account,info,debug adminReset: Fayyadh (172.16.12.138): logged in
+Apr/03/2024 02:03:53 hotspot,info,debug ->: E6:DE:49:9F:0C:45 (172.16.12.145): trying to log in by mac
+Apr/03/2024 02:03:53 hotspot,info,debug adminReset: E6:DE:49:9F:0C:45 (172.16.12.145): trying to log in by mac
+Apr/03/2024 02:03:53 hotspot,info,debug ->: E6:DE:49:9F:0C:45 (172.16.12.145): login failed: invalid username or password
+Apr/03/2024 02:03:53 hotspot,info,debug adminReset: E6:DE:49:9F:0C:45 (172.16.12.145): login failed: invalid username or password
+Apr/03/2024 02:04:35 hotspot,info,debug ->: gmwRs9 (172.16.12.128): logged out: keepalive timeout
+Apr/03/2024 02:04:35 hotspot,info,debug adminReset: gmwRs9 (172.16.12.128): logged out: keepalive timeout
+Apr/03/2024 02:04:50 hotspot,info,debug ->: Fayyadh (172.16.12.16): logged out: keepalive timeout
+Apr/03/2024 02:04:50 hotspot,info,debug adminReset: Fayyadh (172.16.12.16): logged out: keepalive timeout
+Apr/03/2024 02:05:24 hotspot,info,debug ->: baba (172.16.12.181): trying to log in by mac-cookie
+Apr/03/2024 02:05:24 hotspot,info,debug adminReset: baba (172.16.12.181): trying to log in by mac-cookie
+Apr/03/2024 02:05:24 hotspot,account,info,debug ->: baba (172.16.12.181): logged in
+Apr/03/2024 02:05:24 hotspot,account,info,debug adminReset: baba (172.16.12.181): logged in
+Apr/03/2024 02:05:48 hotspot,info,debug ->: gkcGBW (172.16.12.180): logged out: keepalive timeout
+Apr/03/2024 02:05:48 hotspot,info,debug adminReset: gkcGBW (172.16.12.180): logged out: keepalive timeout
+Apr/03/2024 02:06:12 hotspot,info,debug ->: gE2yuZ (172.16.12.123): logged out: keepalive timeout
+Apr/03/2024 02:06:12 hotspot,info,debug adminReset: gE2yuZ (172.16.12.123): logged out: keepalive timeout
+Apr/03/2024 02:07:21 hotspot,info,debug ->: Fayyadh (172.16.12.146): trying to log in by mac-cookie
+Apr/03/2024 02:07:21 hotspot,info,debug adminReset: Fayyadh (172.16.12.146): trying to log in by mac-cookie
+Apr/03/2024 02:07:21 hotspot,account,info,debug ->: Fayyadh (172.16.12.146): logged in
+Apr/03/2024 02:07:21 hotspot,account,info,debug adminReset: Fayyadh (172.16.12.146): logged in
+Apr/03/2024 02:17:01 hotspot,info,debug ->: C4:0B:CB:EC:DA:B8 (172.16.12.147): trying to log in by mac
+Apr/03/2024 02:17:01 hotspot,info,debug adminReset: C4:0B:CB:EC:DA:B8 (172.16.12.147): trying to log in by mac
+Apr/03/2024 02:17:01 hotspot,info,debug ->: C4:0B:CB:EC:DA:B8 (172.16.12.147): login failed: invalid username or password
+Apr/03/2024 02:17:01 hotspot,info,debug adminReset: C4:0B:CB:EC:DA:B8 (172.16.12.147): login failed: invalid username or password
+Apr/03/2024 02:17:19 hotspot,info,debug ->: Fayyadh (172.16.12.64): logged out: keepalive timeout
+Apr/03/2024 02:17:19 hotspot,info,debug adminReset: Fayyadh (172.16.12.64): logged out: keepalive timeout
+Apr/03/2024 02:17:43 hotspot,info,debug ->: CC:2D:83:A5:91:78 (10.242.147.132): trying to log in by mac
+Apr/03/2024 02:17:43 hotspot,info,debug adminReset: CC:2D:83:A5:91:78 (10.242.147.132): trying to log in by mac
+Apr/03/2024 02:17:43 hotspot,info,debug ->: CC:2D:83:A5:91:78 (10.242.147.132): login failed: invalid username or password
+Apr/03/2024 02:17:43 hotspot,info,debug adminReset: CC:2D:83:A5:91:78 (10.242.147.132): login failed: invalid username or password
+Apr/03/2024 02:17:43 hotspot,info,debug ->: CC:2D:83:A5:91:78 (172.16.12.148): trying to log in by mac
+Apr/03/2024 02:17:43 hotspot,info,debug adminReset: CC:2D:83:A5:91:78 (172.16.12.148): trying to log in by mac
+Apr/03/2024 02:17:43 hotspot,info,debug ->: CC:2D:83:A5:91:78 (172.16.12.148): login failed: invalid username or password
+Apr/03/2024 02:17:43 hotspot,info,debug adminReset: CC:2D:83:A5:91:78 (172.16.12.148): login failed: invalid username or password
+Apr/03/2024 02:18:36 hotspot,info,debug ->: T-C6:E1:D6:AA:6F:60 (172.16.12.87): logged out: session timeout
+Apr/03/2024 02:18:36 hotspot,info,debug adminReset: T-C6:E1:D6:AA:6F:60 (172.16.12.87): logged out: session timeout
+Apr/03/2024 02:18:42 hotspot,info,debug ->: yus (172.16.12.34): logged out: user request
+Apr/03/2024 02:18:42 hotspot,info,debug adminReset: yus (172.16.12.34): logged out: user request
+Apr/03/2024 02:22:20 hotspot,info,debug ->: D2:9F:80:EE:43:02 (172.16.12.149): trying to log in by mac
+Apr/03/2024 02:22:20 hotspot,info,debug adminReset: D2:9F:80:EE:43:02 (172.16.12.149): trying to log in by mac
+Apr/03/2024 02:22:20 hotspot,info,debug ->: D2:9F:80:EE:43:02 (172.16.12.149): login failed: invalid username or password
+Apr/03/2024 02:22:20 hotspot,info,debug adminReset: D2:9F:80:EE:43:02 (172.16.12.149): login failed: invalid username or password
+Apr/03/2024 02:22:38 hotspot,info,debug ->: 1mZFyN (172.16.12.148): trying to log in by http-chap
+Apr/03/2024 02:22:38 hotspot,info,debug adminReset: 1mZFyN (172.16.12.148): trying to log in by http-chap
+Apr/03/2024 02:22:38 hotspot,account,info,debug ->: 1mZFyN (172.16.12.148): logged in
+Apr/03/2024 02:22:38 hotspot,account,info,debug adminReset: 1mZFyN (172.16.12.148): logged in
+Apr/03/2024 02:22:51 hotspot,info,debug ->: gmwRs9 (172.16.12.128): trying to log in by mac-cookie
+Apr/03/2024 02:22:51 hotspot,info,debug adminReset: gmwRs9 (172.16.12.128): trying to log in by mac-cookie
+Apr/03/2024 02:22:51 hotspot,account,info,debug ->: gmwRs9 (172.16.12.128): logged in
+Apr/03/2024 02:22:51 hotspot,account,info,debug adminReset: gmwRs9 (172.16.12.128): logged in
+Apr/03/2024 02:24:11 hotspot,info,debug ->: aceholi (172.16.12.150): trying to log in by mac-cookie
+Apr/03/2024 02:24:11 hotspot,info,debug adminReset: aceholi (172.16.12.150): trying to log in by mac-cookie
+Apr/03/2024 02:24:11 hotspot,account,info,debug ->: aceholi (172.16.12.150): logged in
+Apr/03/2024 02:24:11 hotspot,account,info,debug adminReset: aceholi (172.16.12.150): logged in
+Apr/03/2024 02:25:51 hotspot,info,debug ->: gmwRs9 (172.16.12.128): logged out: keepalive timeout
+Apr/03/2024 02:25:51 hotspot,info,debug adminReset: gmwRs9 (172.16.12.128): logged out: keepalive timeout
+Apr/03/2024 02:26:22 hotspot,info,debug ->: 9E:EB:4B:DD:B2:FA (172.16.12.151): trying to log in by mac
+Apr/03/2024 02:26:22 hotspot,info,debug adminReset: 9E:EB:4B:DD:B2:FA (172.16.12.151): trying to log in by mac
+Apr/03/2024 02:26:22 hotspot,info,debug ->: 9E:EB:4B:DD:B2:FA (172.16.12.151): login failed: invalid username or password
+Apr/03/2024 02:26:22 hotspot,info,debug adminReset: 9E:EB:4B:DD:B2:FA (172.16.12.151): login failed: invalid username or password
+Apr/03/2024 02:26:22 hotspot,info,debug ->: 9E:EB:4B:DD:B2:FA (10.245.169.82): trying to log in by mac
+Apr/03/2024 02:26:22 hotspot,info,debug adminReset: 9E:EB:4B:DD:B2:FA (10.245.169.82): trying to log in by mac
+Apr/03/2024 02:26:22 hotspot,info,debug ->: 9E:EB:4B:DD:B2:FA (10.245.169.82): login failed: invalid username or password
+Apr/03/2024 02:26:22 hotspot,info,debug adminReset: 9E:EB:4B:DD:B2:FA (10.245.169.82): login failed: invalid username or password
+Apr/03/2024 02:31:41 hotspot,info,debug ->: taufik (172.16.12.109): logged out: keepalive timeout
+Apr/03/2024 02:31:41 hotspot,info,debug adminReset: taufik (172.16.12.109): logged out: keepalive timeout
+Apr/03/2024 02:31:55 hotspot,info,debug ->: Fayyadh (172.16.12.60): logged out: keepalive timeout
+Apr/03/2024 02:31:55 hotspot,info,debug adminReset: Fayyadh (172.16.12.60): logged out: keepalive timeout
+Apr/03/2024 02:33:13 hotspot,info,debug ->: ratih (172.16.12.3): logged out: keepalive timeout
+Apr/03/2024 02:33:13 hotspot,info,debug adminReset: ratih (172.16.12.3): logged out: keepalive timeout
+Apr/03/2024 02:33:34 hotspot,info,debug ->: ratih (172.16.13.117): logged out: keepalive timeout
+Apr/03/2024 02:33:34 hotspot,info,debug adminReset: ratih (172.16.13.117): logged out: keepalive timeout
+Apr/03/2024 02:35:27 hotspot,info,debug ->: aceholi (172.16.12.133): trying to log in by mac-cookie
+Apr/03/2024 02:35:27 hotspot,info,debug adminReset: aceholi (172.16.12.133): trying to log in by mac-cookie
+Apr/03/2024 02:35:27 hotspot,account,info,debug ->: aceholi (172.16.12.133): logged in
+Apr/03/2024 02:35:27 hotspot,account,info,debug adminReset: aceholi (172.16.12.133): logged in
+Apr/03/2024 02:36:07 hotspot,info,debug ->: ratih (172.16.12.152): trying to log in by mac-cookie
+Apr/03/2024 02:36:07 hotspot,info,debug adminReset: ratih (172.16.12.152): trying to log in by mac-cookie
+Apr/03/2024 02:36:07 hotspot,account,info,debug ->: ratih (172.16.12.152): logged in
+Apr/03/2024 02:36:07 hotspot,account,info,debug adminReset: ratih (172.16.12.152): logged in
+Apr/03/2024 02:38:03 hotspot,info,debug ->: ratih (172.16.13.117): trying to log in by mac-cookie
+Apr/03/2024 02:38:03 hotspot,info,debug adminReset: ratih (172.16.13.117): trying to log in by mac-cookie
+Apr/03/2024 02:38:03 hotspot,account,info,debug ->: ratih (172.16.13.117): logged in
+Apr/03/2024 02:38:03 hotspot,account,info,debug adminReset: ratih (172.16.13.117): logged in
+Apr/03/2024 02:38:04 hotspot,info,debug ->: ratih (172.16.12.3): trying to log in by mac-cookie
+Apr/03/2024 02:38:04 hotspot,info,debug adminReset: ratih (172.16.12.3): trying to log in by mac-cookie
+Apr/03/2024 02:38:04 hotspot,account,info,debug ->: ratih (172.16.12.3): logged in
+Apr/03/2024 02:38:04 hotspot,account,info,debug adminReset: ratih (172.16.12.3): logged in
+Apr/03/2024 02:39:16 hotspot,info,debug ->: 3E:2E:C3:26:AD:C5 (10.199.6.164): trying to log in by mac
+Apr/03/2024 02:39:16 hotspot,info,debug adminReset: 3E:2E:C3:26:AD:C5 (10.199.6.164): trying to log in by mac
+Apr/03/2024 02:39:16 hotspot,info,debug ->: 3E:2E:C3:26:AD:C5 (10.199.6.164): login failed: invalid username or password
+Apr/03/2024 02:39:16 hotspot,info,debug adminReset: 3E:2E:C3:26:AD:C5 (10.199.6.164): login failed: invalid username or password
+Apr/03/2024 02:42:13 hotspot,info,debug ->: 1u974z (172.16.12.147): trying to log in by http-chap
+Apr/03/2024 02:42:13 hotspot,info,debug adminReset: 1u974z (172.16.12.147): trying to log in by http-chap
+Apr/03/2024 02:42:13 hotspot,account,info,debug ->: 1u974z (172.16.12.147): logged in
+Apr/03/2024 02:42:13 hotspot,account,info,debug adminReset: 1u974z (172.16.12.147): logged in
+Apr/03/2024 02:42:39 hotspot,info,debug ->: mimi (172.16.12.153): trying to log in by mac-cookie
+Apr/03/2024 02:42:39 hotspot,info,debug adminReset: mimi (172.16.12.153): trying to log in by mac-cookie
+Apr/03/2024 02:42:39 hotspot,account,info,debug ->: mimi (172.16.12.153): logged in
+Apr/03/2024 02:42:39 hotspot,account,info,debug adminReset: mimi (172.16.12.153): logged in
+Apr/03/2024 02:43:22 hotspot,info,debug ->: taufik (172.16.12.109): trying to log in by mac-cookie
+Apr/03/2024 02:43:22 hotspot,info,debug adminReset: taufik (172.16.12.109): trying to log in by mac-cookie
+Apr/03/2024 02:43:22 hotspot,account,info,debug ->: taufik (172.16.12.109): logged in
+Apr/03/2024 02:43:22 hotspot,account,info,debug adminReset: taufik (172.16.12.109): logged in
+Apr/03/2024 02:48:19 hotspot,info,debug ->: F2:AF:64:D8:80:67 (10.173.37.108): trying to log in by mac
+Apr/03/2024 02:48:19 hotspot,info,debug adminReset: F2:AF:64:D8:80:67 (10.173.37.108): trying to log in by mac
+Apr/03/2024 02:48:19 hotspot,info,debug ->: F2:AF:64:D8:80:67 (10.173.37.108): login failed: invalid username or password
+Apr/03/2024 02:48:19 hotspot,info,debug adminReset: F2:AF:64:D8:80:67 (10.173.37.108): login failed: invalid username or password
+Apr/03/2024 02:49:01 hotspot,info,debug ->: baba (172.16.12.155): trying to log in by mac-cookie
+Apr/03/2024 02:49:01 hotspot,info,debug adminReset: baba (172.16.12.155): trying to log in by mac-cookie
+Apr/03/2024 02:49:01 hotspot,account,info,debug ->: baba (172.16.12.155): logged in
+Apr/03/2024 02:49:01 hotspot,account,info,debug adminReset: baba (172.16.12.155): logged in
+Apr/03/2024 02:53:45 hotspot,info,debug ->: baba (172.16.12.181): logged out: keepalive timeout
+Apr/03/2024 02:53:45 hotspot,info,debug adminReset: baba (172.16.12.181): logged out: keepalive timeout
+Apr/03/2024 02:59:48 hotspot,info,debug ->: baba (172.16.12.181): trying to log in by mac-cookie
+Apr/03/2024 02:59:48 hotspot,info,debug adminReset: baba (172.16.12.181): trying to log in by mac-cookie
+Apr/03/2024 02:59:48 hotspot,account,info,debug ->: baba (172.16.12.181): logged in
+Apr/03/2024 02:59:48 hotspot,account,info,debug adminReset: baba (172.16.12.181): logged in
+Apr/03/2024 03:04:32 hotspot,info,debug ->: aisya (172.16.12.160): trying to log in by mac-cookie
+Apr/03/2024 03:04:32 hotspot,info,debug adminReset: aisya (172.16.12.160): trying to log in by mac-cookie
+Apr/03/2024 03:04:32 hotspot,account,info,debug ->: aisya (172.16.12.160): logged in
+Apr/03/2024 03:04:32 hotspot,account,info,debug adminReset: aisya (172.16.12.160): logged in
+Apr/03/2024 03:11:24 hotspot,info,debug ->: baba (172.16.12.155): logged out: keepalive timeout
+Apr/03/2024 03:11:24 hotspot,info,debug adminReset: baba (172.16.12.155): logged out: keepalive timeout
+Apr/03/2024 03:13:54 hotspot,info,debug ->: aceholi (172.16.12.133): logged out: keepalive timeout
+Apr/03/2024 03:13:54 hotspot,info,debug adminReset: aceholi (172.16.12.133): logged out: keepalive timeout
+Apr/03/2024 03:44:20 hotspot,info,debug ->: gadngj (172.16.12.192): logged out: keepalive timeout
+Apr/03/2024 03:44:20 hotspot,info,debug adminReset: gadngj (172.16.12.192): logged out: keepalive timeout
+Apr/03/2024 03:47:10 hotspot,info,debug ->: aisya (172.16.12.160): logged out: keepalive timeout
+Apr/03/2024 03:47:10 hotspot,info,debug adminReset: aisya (172.16.12.160): logged out: keepalive timeout
+Apr/03/2024 03:51:19 hotspot,info,debug ->: 64:78:C3:18:42:27 (172.16.12.161): trying to log in by mac
+Apr/03/2024 03:51:19 hotspot,info,debug adminReset: 64:78:C3:18:42:27 (172.16.12.161): trying to log in by mac
+Apr/03/2024 03:51:19 hotspot,info,debug ->: 64:78:C3:18:42:27 (172.16.12.161): login failed: invalid username or password
+Apr/03/2024 03:51:19 hotspot,info,debug adminReset: 64:78:C3:18:42:27 (172.16.12.161): login failed: invalid username or password
+Apr/03/2024 03:55:46 hotspot,info,debug ->: D2:5C:B0:97:CC:0D (10.180.151.224): trying to log in by mac
+Apr/03/2024 03:55:46 hotspot,info,debug adminReset: D2:5C:B0:97:CC:0D (10.180.151.224): trying to log in by mac
+Apr/03/2024 03:55:46 hotspot,info,debug ->: D2:5C:B0:97:CC:0D (10.180.151.224): login failed: invalid username or password
+Apr/03/2024 03:55:46 hotspot,info,debug adminReset: D2:5C:B0:97:CC:0D (10.180.151.224): login failed: invalid username or password
+Apr/03/2024 03:57:44 hotspot,info,debug ->: baba (172.16.12.181): logged out: keepalive timeout
+Apr/03/2024 03:57:44 hotspot,info,debug adminReset: baba (172.16.12.181): logged out: keepalive timeout
+Apr/03/2024 03:59:50 hotspot,info,debug ->: Fayyadh (172.16.12.163): trying to log in by mac-cookie
+Apr/03/2024 03:59:50 hotspot,info,debug adminReset: Fayyadh (172.16.12.163): trying to log in by mac-cookie
+Apr/03/2024 03:59:50 hotspot,account,info,debug ->: Fayyadh (172.16.12.163): logged in
+Apr/03/2024 03:59:50 hotspot,account,info,debug adminReset: Fayyadh (172.16.12.163): logged in
+Apr/03/2024 04:00:17 hotspot,info,debug ->: Fayyadh (172.16.12.64): trying to log in by mac-cookie
+Apr/03/2024 04:00:17 hotspot,info,debug adminReset: Fayyadh (172.16.12.64): trying to log in by mac-cookie
+Apr/03/2024 04:00:17 hotspot,account,info,debug ->: Fayyadh (172.16.12.64): logged in
+Apr/03/2024 04:00:17 hotspot,account,info,debug adminReset: Fayyadh (172.16.12.64): logged in
+Apr/03/2024 04:00:18 hotspot,info,debug ->: 4E:0A:E7:04:38:14 (100.66.22.37): trying to log in by mac
+Apr/03/2024 04:00:18 hotspot,info,debug adminReset: 4E:0A:E7:04:38:14 (100.66.22.37): trying to log in by mac
+Apr/03/2024 04:00:18 hotspot,info,debug ->: 4E:0A:E7:04:38:14 (100.66.22.37): login failed: invalid username or password
+Apr/03/2024 04:00:18 hotspot,info,debug adminReset: 4E:0A:E7:04:38:14 (100.66.22.37): login failed: invalid username or password
+Apr/03/2024 04:00:55 hotspot,info,debug ->: 6A:09:FD:15:FB:77 (172.16.12.164): trying to log in by mac
+Apr/03/2024 04:00:55 hotspot,info,debug adminReset: 6A:09:FD:15:FB:77 (172.16.12.164): trying to log in by mac
+Apr/03/2024 04:00:55 hotspot,info,debug ->: 6A:09:FD:15:FB:77 (172.16.12.164): login failed: invalid username or password
+Apr/03/2024 04:00:55 hotspot,info,debug adminReset: 6A:09:FD:15:FB:77 (172.16.12.164): login failed: invalid username or password
+Apr/03/2024 04:01:43 hotspot,info,debug ->: B4:A5:AC:B4:B5:EF (172.16.12.165): trying to log in by mac
+Apr/03/2024 04:01:43 hotspot,info,debug adminReset: B4:A5:AC:B4:B5:EF (172.16.12.165): trying to log in by mac
+Apr/03/2024 04:01:43 hotspot,info,debug ->: B4:A5:AC:B4:B5:EF (172.16.12.165): login failed: invalid username or password
+Apr/03/2024 04:01:43 hotspot,info,debug adminReset: B4:A5:AC:B4:B5:EF (172.16.12.165): login failed: invalid username or password
+Apr/03/2024 04:02:27 hotspot,info,debug ->: gE2yuZ  (172.16.12.165): trying to log in by http-chap
+Apr/03/2024 04:02:27 hotspot,info,debug adminReset: gE2yuZ  (172.16.12.165): trying to log in by http-chap
+Apr/03/2024 04:02:29 hotspot,info,debug ->: gE2yuZ  (172.16.12.165): login failed: invalid username or password
+Apr/03/2024 04:02:29 hotspot,info,debug adminReset: gE2yuZ  (172.16.12.165): login failed: invalid username or password
+Apr/03/2024 04:02:35 hotspot,info,debug ->: E0:1F:88:51:A9:D6 (172.16.12.166): trying to log in by mac
+Apr/03/2024 04:02:35 hotspot,info,debug adminReset: E0:1F:88:51:A9:D6 (172.16.12.166): trying to log in by mac
+Apr/03/2024 04:02:35 hotspot,info,debug ->: E0:1F:88:51:A9:D6 (172.16.12.166): login failed: invalid username or password
+Apr/03/2024 04:02:35 hotspot,info,debug adminReset: E0:1F:88:51:A9:D6 (172.16.12.166): login failed: invalid username or password
+Apr/03/2024 04:03:02 hotspot,info,debug ->: gE2yuZ (172.16.12.165): trying to log in by http-chap
+Apr/03/2024 04:03:02 hotspot,info,debug adminReset: gE2yuZ (172.16.12.165): trying to log in by http-chap
+Apr/03/2024 04:03:02 hotspot,account,info,debug ->: gE2yuZ (172.16.12.165): logged in
+Apr/03/2024 04:03:02 hotspot,account,info,debug adminReset: gE2yuZ (172.16.12.165): logged in
+Apr/03/2024 04:03:19 hotspot,info,debug ->: aceholi (172.16.13.23): trying to log in by mac-cookie
+Apr/03/2024 04:03:19 hotspot,info,debug adminReset: aceholi (172.16.13.23): trying to log in by mac-cookie
+Apr/03/2024 04:03:19 hotspot,account,info,debug ->: aceholi (172.16.13.23): logged in
+Apr/03/2024 04:03:19 hotspot,account,info,debug adminReset: aceholi (172.16.13.23): logged in
+Apr/03/2024 04:07:17 hotspot,info,debug ->: f3ca2p (172.16.12.167): trying to log in by mac-cookie
+Apr/03/2024 04:07:17 hotspot,info,debug adminReset: f3ca2p (172.16.12.167): trying to log in by mac-cookie
+Apr/03/2024 04:07:17 hotspot,account,info,debug ->: f3ca2p (172.16.12.167): logged in
+Apr/03/2024 04:07:17 hotspot,account,info,debug adminReset: f3ca2p (172.16.12.167): logged in
+Apr/03/2024 04:09:24 hotspot,info,debug ->: 6E:3D:D5:8F:07:3C (172.16.12.128): trying to log in by mac
+Apr/03/2024 04:09:24 hotspot,info,debug adminReset: 6E:3D:D5:8F:07:3C (172.16.12.128): trying to log in by mac
+Apr/03/2024 04:09:24 hotspot,info,debug ->: 6E:3D:D5:8F:07:3C (172.16.12.128): login failed: invalid username or password
+Apr/03/2024 04:09:24 hotspot,info,debug adminReset: 6E:3D:D5:8F:07:3C (172.16.12.128): login failed: invalid username or password
+Apr/03/2024 04:09:43 hotspot,info,debug ->: Fayyadh (172.16.12.138): logged out: keepalive timeout
+Apr/03/2024 04:09:43 hotspot,info,debug adminReset: Fayyadh (172.16.12.138): logged out: keepalive timeout
+Apr/03/2024 04:10:02 hotspot,info,debug ->: Fayyadh (172.16.12.146): logged out: keepalive timeout
+Apr/03/2024 04:10:02 hotspot,info,debug adminReset: Fayyadh (172.16.12.146): logged out: keepalive timeout
+Apr/03/2024 04:10:02 hotspot,info,debug ->: 82:D0:94:29:68:12 (172.16.12.180): trying to log in by mac
+Apr/03/2024 04:10:02 hotspot,info,debug adminReset: 82:D0:94:29:68:12 (172.16.12.180): trying to log in by mac
+Apr/03/2024 04:10:02 hotspot,info,debug ->: 82:D0:94:29:68:12 (172.16.12.180): login failed: invalid username or password
+Apr/03/2024 04:10:02 hotspot,info,debug adminReset: 82:D0:94:29:68:12 (172.16.12.180): login failed: invalid username or password
+Apr/03/2024 04:10:06 hotspot,info,debug ->: 82:D0:94:29:68:12 (172.16.12.168): trying to log in by mac
+Apr/03/2024 04:10:06 hotspot,info,debug adminReset: 82:D0:94:29:68:12 (172.16.12.168): trying to log in by mac
+Apr/03/2024 04:10:06 hotspot,info,debug ->: 82:D0:94:29:68:12 (172.16.12.168): login failed: invalid username or password
+Apr/03/2024 04:10:06 hotspot,info,debug adminReset: 82:D0:94:29:68:12 (172.16.12.168): login failed: invalid username or password
+Apr/03/2024 04:10:22 hotspot,info,debug ->: Fayyadh (172.16.12.169): trying to log in by mac-cookie
+Apr/03/2024 04:10:22 hotspot,info,debug adminReset: Fayyadh (172.16.12.169): trying to log in by mac-cookie
+Apr/03/2024 04:10:22 hotspot,account,info,debug ->: Fayyadh (172.16.12.169): logged in
+Apr/03/2024 04:10:22 hotspot,account,info,debug adminReset: Fayyadh (172.16.12.169): logged in
+Apr/03/2024 04:10:38 hotspot,info,debug ->: gkcGBW (172.16.12.168): trying to log in by http-chap
+Apr/03/2024 04:10:38 hotspot,info,debug adminReset: gkcGBW (172.16.12.168): trying to log in by http-chap
+Apr/03/2024 04:10:38 hotspot,account,info,debug ->: gkcGBW (172.16.12.168): logged in
+Apr/03/2024 04:10:38 hotspot,account,info,debug adminReset: gkcGBW (172.16.12.168): logged in
+Apr/03/2024 04:11:28 hotspot,info,debug ->: 82:F9:9D:F8:48:6A (172.16.12.170): trying to log in by mac
+Apr/03/2024 04:11:28 hotspot,info,debug adminReset: 82:F9:9D:F8:48:6A (172.16.12.170): trying to log in by mac
+Apr/03/2024 04:11:28 hotspot,info,debug ->: 82:F9:9D:F8:48:6A (172.16.12.170): login failed: invalid username or password
+Apr/03/2024 04:11:28 hotspot,info,debug adminReset: 82:F9:9D:F8:48:6A (172.16.12.170): login failed: invalid username or password
+Apr/03/2024 04:11:54 hotspot,info,debug ->: AE:69:85:90:79:6D (172.16.12.172): trying to log in by mac
+Apr/03/2024 04:11:54 hotspot,info,debug adminReset: AE:69:85:90:79:6D (172.16.12.172): trying to log in by mac
+Apr/03/2024 04:11:54 hotspot,info,debug ->: AE:69:85:90:79:6D (172.16.12.172): login failed: invalid username or password
+Apr/03/2024 04:11:54 hotspot,info,debug adminReset: AE:69:85:90:79:6D (172.16.12.172): login failed: invalid username or password
+Apr/03/2024 04:13:07 hotspot,info,debug ->: AE:1B:0A:C1:9B:9E (172.16.12.173): trying to log in by mac
+Apr/03/2024 04:13:07 hotspot,info,debug adminReset: AE:1B:0A:C1:9B:9E (172.16.12.173): trying to log in by mac
+Apr/03/2024 04:13:07 hotspot,info,debug ->: AE:1B:0A:C1:9B:9E (172.16.12.173): login failed: invalid username or password
+Apr/03/2024 04:13:07 hotspot,info,debug adminReset: AE:1B:0A:C1:9B:9E (172.16.12.173): login failed: invalid username or password
+Apr/03/2024 04:13:12 hotspot,info,debug ->: T-AE:1B:0A:C1:9B:9E (172.16.12.173): trying to log in by trial
+Apr/03/2024 04:13:12 hotspot,info,debug adminReset: T-AE:1B:0A:C1:9B:9E (172.16.12.173): trying to log in by trial
+Apr/03/2024 04:13:12 hotspot,account,info,debug ->: T-AE:1B:0A:C1:9B:9E (172.16.12.173): logged in
+Apr/03/2024 04:13:12 hotspot,account,info,debug adminReset: T-AE:1B:0A:C1:9B:9E (172.16.12.173): logged in
+Apr/03/2024 04:15:19 hotspot,info,debug ->: Fayyadh (172.16.12.138): trying to log in by mac-cookie
+Apr/03/2024 04:15:19 hotspot,info,debug adminReset: Fayyadh (172.16.12.138): trying to log in by mac-cookie
+Apr/03/2024 04:15:19 hotspot,account,info,debug ->: Fayyadh (172.16.12.138): logged in
+Apr/03/2024 04:15:19 hotspot,account,info,debug adminReset: Fayyadh (172.16.12.138): logged in
+Apr/03/2024 04:19:29 hotspot,info,debug ->: aceholi (172.16.13.23): logged out: keepalive timeout
+Apr/03/2024 04:19:29 hotspot,info,debug adminReset: aceholi (172.16.13.23): logged out: keepalive timeout
+Apr/03/2024 04:20:52 hotspot,info,debug ->: aceholi (172.16.13.23): trying to log in by mac-cookie
+Apr/03/2024 04:20:52 hotspot,info,debug adminReset: aceholi (172.16.13.23): trying to log in by mac-cookie
+Apr/03/2024 04:20:52 hotspot,account,info,debug ->: aceholi (172.16.13.23): logged in
+Apr/03/2024 04:20:52 hotspot,account,info,debug adminReset: aceholi (172.16.13.23): logged in
+Apr/03/2024 04:21:11 hotspot,info,debug ->: gJGRdn (172.16.12.104): logged out: keepalive timeout
+Apr/03/2024 04:21:11 hotspot,info,debug adminReset: gJGRdn (172.16.12.104): logged out: keepalive timeout
