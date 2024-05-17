@@ -74,6 +74,7 @@
               </p>
             </a>
           </li>
+          <!--Menu Hotspot-->
           <li class="nav-item <?= $title == 'Users Hotspot' | $title == 'Users Active' | $title == 'Users Binding' | $title == 'Users Profile'| $title == 'Users Host'|$title == 'Users Cookies' ? 'menu-open' : '' ?>">
               <a href="#" class="nav-link <?= $title == 'Users Hotspot' | $title == 'Users Active' | $title == 'Users Profile'| $title == 'Users Host'| $title == 'Users Cookies' ? 'active' : '' ?>">
               <i class="nav-icon fas fa-wifi"></i>
@@ -117,6 +118,42 @@
                 <a href="<?= site_url('hotspot/cookies') ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Cookies</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!--Menu PPP-->
+          <li class="nav-item <?= $title == 'PPP Secret' | $title == 'PPP PPPOE' | $title == 'PPP Profile' | $title == 'PPP Active' ? 'menu-open' : '' ?>">
+              <a href="#" class="nav-link <?= $title == 'PPP Secret' | $title == 'PPP PPPOE' | $title == 'PPP Profile' | $title == 'PPP Active' ? 'active' : '' ?>">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                PPP
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?= site_url('ppp/secret') ?>" class="nav-link <?= $title == 'PPP Secret' ? 'active' : '' ?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Secret</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?= site_url('ppp/pppoe') ?>" class="nav-link <?= $title == 'PPP PPPOE' ? 'active' : '' ?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>PPPOE</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?= site_url('ppp/profile') ?>" class="nav-link <?= $title == 'PPP Profile' ? 'active' : '' ?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Profile</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?= site_url('ppp/active') ?>" class="nav-link <?= $title == 'PPP Active' ? 'active' : '' ?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Active</p>
                 </a>
               </li>
             </ul>
@@ -181,3 +218,6 @@
 </script>
 </body>
 </html>
+
+<!-- hidden error -->
+<?php ini_set('display_errors', 'off'); ?>
