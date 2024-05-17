@@ -27,7 +27,8 @@
                                 <?php foreach ($hotspotuser as $data) { ?>
                                     <tr>
                                         <?php $id = str_replace('*', '', $data['.id']); ?>
-                                        <th><a href="<?= site_url('hotspot/delUser/' . $id); ?>" onclick="return confirm('Apakah anda yakin akan hapus user <?= $data['name']; ?>')"><i class="fa fa-trash" style="color:red";></i></a></th>
+                                        <th><a href="<?= site_url('hotspot/delUser/' . $id); ?>" onclick="return confirm('Apakah anda yakin akan hapus user <?= $data['name']; ?>')"><i class="fa fa-trash" style="color:red";></i></a>
+                                        <a href="<?= site_url('hotspot/editUser/' . $id); ?>"><i class="fa fa-edit" class=" btn btn-primary";></i></a></th>
                                         <th><?= $data['name']; ?></th>
                                         <th><?= $data['password']; ?></th>
                                         <th><?= $data['profile']; ?></th>

@@ -14,7 +14,6 @@ class Hotspot extends CI_Controller
 		$hotspotuser = $API->comm('/ip/hotspot/user/print');
 		$server = $API->comm('/ip/hotspot/print');
 		$profile = $API->comm('/ip/hotspot/user/profile/print');
-		
 		$data = [
 			'title' => 'Users Hotspot',
 			'totalhotspotuser' => count($hotspotuser),
@@ -44,6 +43,56 @@ class Hotspot extends CI_Controller
 			$timelimit = $post['$timelimit'];
 		}
 		$API->comm('/ip/hotspot/user/add', array(
+			'name' => $post['user'],
+			'password' => $post['password'],
+			'server' => $post['server'],
+			'profile' => $post['profile'],
+			'limit-uptime' => $timelimit,
+			'comment' => $post['comment'],
+		));
+		redirect('hotspot/users');
+	}
+	// edit user hotspot
+	public function editUser($id)
+    {
+		$ip = $this->session->userdata('ip');
+		$user = $this->session->userdata('user');
+		$password = $this->session->userdata('password');
+        $API = new MIK_API();
+		$API->connect($ip, $user, $password);
+		$getuser = $API->comm('/ip/hotspot/user/print', array("?.id" => '*' . $id,));
+		$server = $API->comm('/ip/hotspot/print');
+		$profile = $API->comm('/ip/hotspot/user/profile/print');
+		$data = [
+			'title' => 'Edit User',
+            'user' => $getuser[0],
+            'server' => $server,
+            'profile' => $profile,
+		];
+		$this->load->view('template/main', $data);
+		$this->load->view('hotspot/edit-user', $data);
+		$this->load->view('template/footer');
+    }
+	// save edit user
+	public function saveEditUser()
+	{
+		$post = $this->input->post(null, true);
+		$ip = $this->session->userdata('ip');
+		$user = $this->session->userdata('user');
+		$password = $this->session->userdata('password');
+
+        $API = new MIK_API();
+		$API->connect($ip, $user, $password);
+		//PENGECUALIAN
+		if ($post['timelimit'] == "") {
+			$timelimit = "0";
+		}else{
+			$timelimit = $post['timelimit'];
+		}
+		// var_dump($post, $timelimit);
+		// die;
+		$API->comm('/ip/hotspot/user/set', array(
+			'.id' => $post['id'],
 			'name' => $post['user'],
 			'password' => $post['password'],
 			'server' => $post['server'],
@@ -201,6 +250,76 @@ class Hotspot extends CI_Controller
 			".id" => '*' . $id,
 		));
 		redirect('hotspot/binding');
+	}
+	//host
+	public function host()
+    {
+		$ip = $this->session->userdata('ip');
+		$user = $this->session->userdata('user');
+		$password = $this->session->userdata('password');
+
+        $API = new MIK_API();
+		$API->connect($ip, $user, $password);
+		$hotspothost = $API->comm('/ip/hotspot/host/print');
+		// var_dump($hotspothost);
+		// die;
+		$data = [
+			'title' => 'Users Host',
+			'totalhotspothost' => count($hotspothost),
+            'hotspothost' => $hotspothost
+		];
+		$this->load->view('template/main', $data);
+		$this->load->view('hotspot/host', $data);
+		$this->load->view('template/footer');
+    }
+	public function delHost($id)
+	{
+		$post = $this->input->post(null, true);
+		$ip = $this->session->userdata('ip');
+		$user = $this->session->userdata('user');
+		$password = $this->session->userdata('password');
+
+        $API = new MIK_API();
+		$API->connect($ip, $user, $password);
+		$API->comm("/ip/hotspot/host/remove", array(
+			".id" => '*' . $id,
+		));
+		redirect('hotspot/host');
+	}
+	//cookies
+	public function cookies()
+    {
+		$ip = $this->session->userdata('ip');
+		$user = $this->session->userdata('user');
+		$password = $this->session->userdata('password');
+
+        $API = new MIK_API();
+		$API->connect($ip, $user, $password);
+		$hotspotcookies = $API->comm('/ip/hotspot/cookie/print');
+		// var_dump($hotspotcookies);
+		// die;
+		$data = [
+			'title' => 'Users cookies',
+			'totalhotspotcookies' => count($hotspotcookies),
+            'hotspotcookies' => $hotspotcookies
+		];
+		$this->load->view('template/main', $data);
+		$this->load->view('hotspot/cookies', $data);
+		$this->load->view('template/footer');
+    }
+	public function delCookies($id)
+	{
+		$post = $this->input->post(null, true);
+		$ip = $this->session->userdata('ip');
+		$user = $this->session->userdata('user');
+		$password = $this->session->userdata('password');
+
+        $API = new MIK_API();
+		$API->connect($ip, $user, $password);
+		$API->comm("/ip/hotspot/cookie/remove", array(
+			".id" => '*' . $id,
+		));
+		redirect('hotspot/cookie');
 	}
 }
 

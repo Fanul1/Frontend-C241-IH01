@@ -74,8 +74,8 @@
               </p>
             </a>
           </li>
-          <li class="nav-item <?= $title == 'Users Hotspot' | $title == 'Users Active' | $title == 'Users Binding' | $title == 'Users Profile' ? 'menu-open' : '' ?>">
-              <a href="#" class="nav-link <?= $title == 'Users Hotspot' | $title == 'Users Active' | $title == 'Users Profile' ? 'active' : '' ?>">
+          <li class="nav-item <?= $title == 'Users Hotspot' | $title == 'Users Active' | $title == 'Users Binding' | $title == 'Users Profile'| $title == 'Users Host'|$title == 'Users Cookies' ? 'menu-open' : '' ?>">
+              <a href="#" class="nav-link <?= $title == 'Users Hotspot' | $title == 'Users Active' | $title == 'Users Profile'| $title == 'Users Host'| $title == 'Users Cookies' ? 'active' : '' ?>">
               <i class="nav-icon fas fa-wifi"></i>
               <p>
                 Hotspot
@@ -108,7 +108,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?= site_url('hotspot/host') ?>" class="nav-link">
+                <a href="<?= site_url('hotspot/host') ?>" class="nav-link" <?= $title == 'Users Host' ? 'active' : '' ?>>
                   <i class="far fa-circle nav-icon"></i>
                   <p>Host</p>
                 </a>
