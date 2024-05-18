@@ -11,7 +11,7 @@ class Ppp extends CI_Controller
 
         $API = new MIK_API();
 		$API->connect($ip, $user, $password);
-		$secret = $API->comm('ppp/secret/print');
+		$secret = $API->comm('/ppp/secret/print');
         // var_dump($secret);
         // die;
 		$profile = $API->comm('/ppp/profile/print');
@@ -73,4 +73,40 @@ class Ppp extends CI_Controller
 		));
 		redirect("ppp/secret");
     }
+
+	public function editpppsecret(){
+		$post = $this->input->post(null, true);
+		$ip = $this->session->userdata('ip');
+		$user = $this->session->userdata('user');
+		$password = $this->session->userdata('password');
+
+        $API = new MIK_API();
+		$API->connect($ip, $user, $password);
+
+
+		//PENGECUALIAN
+		if ($post['localaddress'] == "") {
+			$localaddress = "0.0.0.0";
+		}else{
+			$localaddress = $post['$localaddress'];
+		}
+		if ($post['remoteaddress'] == "") {
+			$remoteaddress = "0.0.0.0";
+		}else{
+			$remoteaddress = $post['$remoteaddress'];
+		}
+
+
+		$API->comm('/ppp/secret/set', array(
+			'.id' => $post['id'],
+			'name' => $post['user'],
+			'password' => $post['password'],
+			'service' => $post['service'],
+			'profile' => $post['profile'],
+			'local-address' => $localaddress,
+			'remote-address' => $remoteaddress,
+			'comment' => $post['comment'],
+		));
+		redirect('ppp/secret');
+	}
 }

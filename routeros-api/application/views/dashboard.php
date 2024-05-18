@@ -65,6 +65,21 @@
                 </div>
                 <!-- /.col -->
             </div>
+            <select name="interface" id="interface">
+                <?php foreach ($interface as $inter) { ?>
+                    <option value="<?= $inter['name'] ?>"><?= $inter['name'] ?></option>
+                <?php } ?>
+            </select>
+            <div id="reloadtraffic"></div>
         </div>
     </div>
 </div>
+
+<script>
+    setInterval("reloadtraffic();", 1000);
+
+    function reloadtraffic() {
+        var interface = $('#interface').val();
+        $('#reloadtraffic').load('<?= site_url('dashboard/traffic') ?>') + interface;
+    }
+</script>

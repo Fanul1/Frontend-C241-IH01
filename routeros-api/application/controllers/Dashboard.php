@@ -26,7 +26,7 @@ class Dashboard extends CI_Controller
             $hotspotuser = $API->comm('/ip/hotspot/user/print');
             $hotspotactive = $API->comm('/ip/hotspot/active/print');
             $resource = $API->comm('/system/resource/print');
-            $resource = json_decode(json_encode($resource), true);
+            $interface = $API->comm('/interface/print');
 
             $data = [
                 'title' => 'Dashboard PotCher',
@@ -34,6 +34,7 @@ class Dashboard extends CI_Controller
                 'hotspotactive' => count($hotspotactive),
                 'cpu' => $resource[0]['cpu-load'],
                 'uptime' => $resource[0]['uptime'],
+                'interface' => $interface,
             ];
             $this->load->view('template/main', $data);
             $this->load->view('dashboard', $data);
@@ -43,5 +44,27 @@ class Dashboard extends CI_Controller
             $this->session->set_flashdata('error', 'Connection failed. Please check your credentials.');
             redirect('auth');
         }
+    }
+    public function traffic() 
+    {
+		$ip = $this->session->userdata('ip');
+		$user = $this->session->userdata('user');
+		$password = $this->session->userdata('password');
+
+        $API = new MIK_API();
+		$API->connect($ip, $user, $password);
+        $getInterfacetraffic = $API->comm('/interface/monitor-traffic', array(
+            'interface' => 'ether1 - ISP1',
+            'once' => '',
+        ));
+
+        $rx = $getInterfacetraffic[0]['rx-bits-per-second'];
+        $tx = $getInterfacetraffic[0]['tx-bits-per-second'];
+
+        $data = [
+            'tx' => $tx,
+            'rx' => $rx,
+        ];
+        $this->load->view('traffic', $data);
     }
 }

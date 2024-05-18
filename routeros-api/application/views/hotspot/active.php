@@ -22,7 +22,8 @@
                             <tbody>
                                 <?php foreach ($hotspotactive as $data) { ?>
                                     <tr>
-                                        <th></th>
+                                        <?php $id = str_replace('*', '', $data['.id']); ?>
+                                        <th><a href="<?= site_url('hotspot/delUserActive/' . $id); ?>" onclick="return confirm('Apakah anda yakin akan hapus user <?= $data['user']; ?>')"><i class="fa fa-trash" style="color:red";></i></a>
                                         <th><?= $data['user']; ?></th>
                                         <th><?= $data['server']; ?></th>
                                         <th><?= $data['login-by']; ?></th>

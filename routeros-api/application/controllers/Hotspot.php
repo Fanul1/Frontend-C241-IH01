@@ -135,6 +135,19 @@ class Hotspot extends CI_Controller
 		$this->load->view('template/footer');
     }
 
+	public function delUserActive($id){
+		$ip = $this->session->userdata('ip');
+		$user = $this->session->userdata('user');
+		$password = $this->session->userdata('password');
+
+        $API = new MIK_API();
+		$API->connect($ip, $user, $password);
+		$API->comm("/ip/hotspot/active/remove", array(
+			".id" => '*' . $id,
+		));
+		redirect("hotspot/active");
+	}
+
 	public function profile()
     {
 		$ip = $this->session->userdata('ip');
