@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?= $title; ?></title>
-
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
@@ -86,37 +86,37 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="<?= site_url('hotspot/active') ?>" class="nav-link <?= $title == 'Users Active' ? 'active' : '' ?>">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far nav-icon ml-3"></i>
                   <p>Active</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('hotspot/users') ?>" class="nav-link <?= $title == 'Users Hotspot' ? 'active' : '' ?>">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far  nav-icon ml-3"></i>
                   <p>Users</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('hotspot/profile') ?>" class="nav-link <?= $title == 'Users Profile' ? 'active' : '' ?>">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far  nav-icon ml-3"></i>
                   <p>Profile</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('hotspot/binding') ?>" class="nav-link <?= $title == 'Users Binding' ? 'active' : '' ?>">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far  nav-icon ml-3"></i>
                   <p>Binding</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('hotspot/host') ?>" class="nav-link" <?= $title == 'Users Host' ? 'active' : '' ?>>
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far  nav-icon ml-3"></i>
                   <p>Host</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('hotspot/cookies') ?>" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far  nav-icon ml-3"></i>
                   <p>Cookies</p>
                 </a>
               </li>
@@ -134,25 +134,25 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="<?= site_url('ppp/secret') ?>" class="nav-link <?= $title == 'PPP Secret' ? 'active' : '' ?>">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far  nav-icon ml-3"></i>
                   <p>Secret</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('ppp/pppoe') ?>" class="nav-link <?= $title == 'PPP PPPOE' ? 'active' : '' ?>">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far  nav-icon ml-3"></i>
                   <p>PPPOE</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('ppp/profile') ?>" class="nav-link <?= $title == 'PPP Profile' ? 'active' : '' ?>">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far  nav-icon ml-3"></i>
                   <p>Profile</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('ppp/active') ?>" class="nav-link <?= $title == 'PPP Active' ? 'active' : '' ?>">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far  nav-icon ml-3"></i>
                   <p>Active</p>
                 </a>
               </li>

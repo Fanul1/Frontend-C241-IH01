@@ -13,20 +13,27 @@
                         <table class="table table-borderes" id="dataTable" width="100%" collspacing="0">
                             <thead>
                                 <tr>
-                                    <th><?= $totalsecret; ?></th>
-                                    <th>Username</th>
+									<th>Username</th>
                                     <th>Password</th>
                                     <th>Service</th>
                                     <th>Profile</th>                                   
                                     <th>Local Address</th>
                                     <th>Remote Address</th>
                                     <th>Comment</th>
+                                    <th><?= $totalsecret; ?></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php foreach ($secret as $data) { ?>
                                     <tr>
                                         <?php $id = str_replace('*', '', $data['.id']); ?>
+                                        <th><?= $data['name']; ?></th>
+                                        <th><?= $data['password']; ?></th>
+                                        <th><?= $data['service']; ?></th>
+                                        <th><?= $data['profile']; ?></th>
+                                        <th><?= $data['local-address']; ?></th>
+                                        <th><?= $data['remote-address']; ?></th>                                       
+                                        <th><?= $data['comment']; ?></th>
                                         <th>
                                             <a href="<?= site_url('ppp/delSecret/' . $id); ?>" onclick="return confirm('Apakah anda yakin akan hapus user <?= $data['name']; ?>')"><i class="fa fa-trash" style="color:red";></i></a>
 
@@ -37,13 +44,6 @@
                                             data-target="#modal-edit" title="Edit"><i class="fa fa-edit" style="font-size:25px"></i></a>
                                             <!-- EDIT -->
                                         </th>
-                                        <th><?= $data['name']; ?></th>
-                                        <th><?= $data['password']; ?></th>
-                                        <th><?= $data['service']; ?></th>
-                                        <th><?= $data['profile']; ?></th>
-                                        <th><?= $data['local-address']; ?></th>
-                                        <th><?= $data['remote-address']; ?></th>                                       
-                                        <th><?= $data['comment']; ?></th>
                                     </tr>
                                 <?php } ?>
                             </tbody>

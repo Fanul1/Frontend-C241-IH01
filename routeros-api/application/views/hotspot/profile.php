@@ -13,19 +13,19 @@
                         <table class="table table-borderes" id="dataTable" width="100%" collspacing="0">
                             <thead>
                                 <tr>
-                                    <th><?= $totalhotspotprofile; ?>ID</th>
-                                    <th>Name</th>
+									<th>Name</th>
                                     <th>Shared Users</th>
                                     <th>Rate limit</th>
+                                    <th><?= $totalhotspotprofile; ?>ID</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php foreach ($hotspotprofile as $data) { ?>
                                     <tr>
-                                        <th><a href="<?= site_url('hotspot/delProfile/' . $id); ?>" onclick="return confirm('Apakah anda yakin akan hapus profile <?= $data['name']; ?>')"><i class="fa fa-trash" style="color:red";></i></a></th>
-                                        <th><?= $data['name']; ?></th>
+										<th><?= $data['name']; ?></th>
                                         <th><?= $data['shared-users']; ?></th>
                                         <th><?= $data['rate-limit']; ?></th>
+                                        <th><a href="<?= site_url('hotspot/delProfile/' . $id); ?>" onclick="return confirm('Apakah anda yakin akan hapus profile <?= $data['name']; ?>')"><i class="fa fa-trash" style="color:red";></i></a></th>
                                     </tr>
                                 <?php } ?>
                             </tbody>

@@ -13,24 +13,24 @@
                         <table class="table table-borderes" id="dataTable" width="100%" collspacing="0">
                             <thead>
                                 <tr>
-                                    <th><?= $totalhotspotbinding; ?>ID</th>
-                                    <th>MAC Address</th>
+									<th>MAC Address</th>
                                     <th>Address</th>
                                     <th>To Address</th>
                                     <th>Type</th>
                                     <th>Comment</th>
+                                    <th><?= $totalhotspotbinding; ?>ID</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php foreach ($hotspotbinding as $data) { ?>
                                     <tr>
-                                        <?php $id = str_replace('*', '', $data['.id']); ?>
-                                        <th><a href="<?= site_url('hotspot/delBinding/' . $id); ?>" onclick="return confirm('Apakah anda yakin akan hapus binding mac address <?= $data['mac-address']; ?>')"><i class="fa fa-trash" style="color:red";></i></a></th>
-                                        <th><?= $data['mac-address']; ?></th>
+										<th><?= $data['mac-address']; ?></th>
                                         <th><?= $data['address']; ?></th>
                                         <th><?= $data['to-address']; ?></th>
                                         <th><?= $data['type']; ?></th>
                                         <th><?= $data['comment']; ?></th>
+                                        <?php $id = str_replace('*', '', $data['.id']); ?>
+                                        <th><a href="<?= site_url('hotspot/delBinding/' . $id); ?>" onclick="return confirm('Apakah anda yakin akan hapus binding mac address <?= $data['mac-address']; ?>')"><i class="fa fa-trash" style="color:red";></i></a></th>
                                     </tr>
                                 <?php } ?>
                             </tbody>

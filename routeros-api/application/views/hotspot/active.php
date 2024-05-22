@@ -8,8 +8,7 @@
                         <table class="table table-borderes" id="dataTable" width="100%" collspacing="0">
                             <thead>
                                 <tr>
-                                    <th><?= $totalhotspotactive; ?>ID</th>
-                                    <th>User</th>
+									<th>User</th>
                                     <th>Server</th>
                                     <th>Login By</th>
                                     <th>IP Address</th>
@@ -17,14 +16,13 @@
                                     <th>Bytes In</th>
                                     <th>Bytes Out</th>
                                     <th>Comment</th>
+                                    <th><?= $totalhotspotactive; ?>ID</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php foreach ($hotspotactive as $data) { ?>
                                     <tr>
-                                        <?php $id = str_replace('*', '', $data['.id']); ?>
-                                        <th><a href="<?= site_url('hotspot/delUserActive/' . $id); ?>" onclick="return confirm('Apakah anda yakin akan hapus user <?= $data['user']; ?>')"><i class="fa fa-trash" style="color:red";></i></a>
-                                        <th><?= $data['user']; ?></th>
+										<th><?= $data['user']; ?></th>
                                         <th><?= $data['server']; ?></th>
                                         <th><?= $data['login-by']; ?></th>
                                         <th><?= $data['address']; ?></th>
@@ -32,6 +30,8 @@
                                         <th style="text-align: right;"><?= formatBytes($data['bytes-in'], 2); ?></th>
                                         <th style="text-align: right;"><?= formatBytes($data['bytes-out'], 3); ?></th>
                                         <th><?= $data['comment']; ?></th>
+                                        <?php $id = str_replace('*', '', $data['.id']); ?>
+                                        <th><a href="<?= site_url('hotspot/delUserActive/' . $id); ?>" onclick="return confirm('Apakah anda yakin akan hapus user <?= $data['user']; ?>')"><i class="fa fa-trash" style="color:red";></i></a>
                                     </tr>
                                 <?php } ?>
                             </tbody>

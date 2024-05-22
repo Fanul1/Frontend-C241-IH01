@@ -13,29 +13,29 @@
                         <table class="table table-borderes" id="dataTable" width="100%" collspacing="0">
                             <thead>
                                 <tr>
-                                    <th><?= $totalhotspotuser; ?>ID</th>
-                                    <th>Username</th>
+									<th>Username</th>
                                     <th>Password</th>
                                     <th>Profile</th>
                                     <th>Uptime</th>
                                     <th>Bytes In</th>
                                     <th>Bytes Out</th>
                                     <th>Comment</th>
+                                    <th><?= $totalhotspotuser; ?>ID</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php foreach ($hotspotuser as $data) { ?>
                                     <tr>
-                                        <?php $id = str_replace('*', '', $data['.id']); ?>
-                                        <th><a href="<?= site_url('hotspot/delUser/' . $id); ?>" onclick="return confirm('Apakah anda yakin akan hapus user <?= $data['name']; ?>')"><i class="fa fa-trash" style="color:red";></i></a>
-                                        <a href="<?= site_url('hotspot/editUser/' . $id); ?>"><i class="fa fa-edit" class=" btn btn-primary";></i></a></th>
-                                        <th><?= $data['name']; ?></th>
-                                        <th><?= $data['password']; ?></th>
+										<th><?= $data['name']; ?></th>
+										<th><?= $data['password']; ?></th>
                                         <th><?= $data['profile']; ?></th>
                                         <th><?= $data['uptime']; ?></th>
                                         <th style="text-align: right;"><?= formatBytes($data['bytes-in'], 2); ?></th>
                                         <th style="text-align: right;"><?= formatBytes($data['bytes-out'], 3); ?></th>
                                         <th><?= $data['comment']; ?></th>
+										<?php $id = str_replace('*', '', $data['.id']); ?>
+										<th><a href="<?= site_url('hotspot/delUser/' . $id); ?>" onclick="return confirm('Apakah anda yakin akan hapus user <?= $data['name']; ?>')"><i class="fa fa-trash" style="color:red";></i></a>
+										<a href="<?= site_url('hotspot/editUser/' . $id); ?>"><i class="fa fa-edit" class=" btn btn-primary";></i></a></th>
                                     </tr>
                                 <?php } ?>
                             </tbody>

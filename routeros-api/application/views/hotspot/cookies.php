@@ -10,20 +10,20 @@
                         <table class="table table-borderes" id="dataTable" width="100%" collspacing="0">
                             <thead>
                                 <tr>
-                                    <th><?= $totalhotspotcookies; ?>ID</th>
-                                    <th>User</th>
+									<th>User</th>
                                     <th>MAC Address</th>
                                     <th>Expires In</th>
+                                    <th><?= $totalhotspotcookies; ?>ID</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php foreach ($hotspotcookies as $data) { ?>
                                     <tr>
-                                        <?php $id = str_replace('*', '', $data['.id']); ?>
-                                        <th><a href="<?= site_url('hotspot/delcookies/' . $id); ?>" onclick="return confirm('Apakah anda yakin akan hapusServert mac address <?= $data['mac-address']; ?>')"><i class="fa fa-trash" style="color:red";></i></a></th>
-                                        <th><?= $data['user']; ?></th>
+										<th><?= $data['user']; ?></th>
                                         <th><?= $data['mac-address']; ?></th>
                                         <th><?= $data['expires-in']; ?></th>
+                                        <?php $id = str_replace('*', '', $data['.id']); ?>
+                                        <th><a href="<?= site_url('hotspot/delcookies/' . $id); ?>" onclick="return confirm('Apakah anda yakin akan hapusServert mac address <?= $data['mac-address']; ?>')"><i class="fa fa-trash" style="color:red";></i></a></th>
                                     </tr>
                                 <?php } ?>
                             </tbody>
