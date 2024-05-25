@@ -198,8 +198,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="<?= site_url('log/logHotspot') ?>"
-                    class="nav-link <?= $title == 'Log Hotspot' ? 'active' : '' ?>">
+                  <a href="<?= site_url('log/logHotspot') ?>" class="nav-link <?= $title == 'Log Hotspot' ? 'active' : '' ?>">
                     <i class="nav-icon ml-3 fas fa-wifi"></i>
                     <p>Hotspot Log</p>
                   </a>
@@ -233,17 +232,17 @@
               <ul class="nav nav-treeview">
                 <!-- Submenu Upload Logo -->
                 <li class="nav-item">
-                  <a href="<?= site_url('setting/upload_logo') ?>"
+                  <a href="<?= site_url('settings/uploadLogo') ?>"
                     class="nav-link <?= $title == 'Upload Logo' ? 'active' : '' ?>">
-                    <i class="far nav-icon ml-3"></i>
+                    <i class="far nav-icon ml-3 fa fa-upload"></i>
                     <p>Upload Logo</p>
                   </a>
                 </li>
                 <!-- Submenu Edit Template Voucher -->
                 <li class="nav-item">
-                  <a href="<?= site_url('setting/edit_template_voucher') ?>"
+                  <a href="<?= site_url('settings/editVoucher') ?>"
                     class="nav-link <?= $title == 'Edit Template Voucher' ? 'active' : '' ?>">
-                    <i class="far nav-icon ml-3"></i>
+                    <i class="far nav-icon ml-3 fa fa-edit"></i>
                     <p>Edit Template Voucher</p>
                   </a>
                 </li>

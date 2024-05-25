@@ -24,17 +24,20 @@ class Settings extends CI_Controller
         }
         return $API;
     }
-    public function upload_logo() {
+    public function uploadLogo() {
         $API = $this->connectAPI();
-        $data['title'] = 'Upload Logo';
-
+        $data = [
+            'title' => 'Upload Logo',
+        ];
         $this->load->view('template/main', $data);
         $this->load->view('setting/uploadlogo', $data);
         $this->load->view('template/footer');
     }
-    public function edit_template_voucher() {
+    public function editVoucher() {
         $API = $this->connectAPI();
-        $data['title'] = 'Edit Template Voucher';
+        $data = [
+            'title' => 'Edit template Voucher',
+        ];
         $this->load->view('template/main', $data);
         $this->load->view('setting/edittemplate', $data);
         $this->load->view('template/footer');
