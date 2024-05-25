@@ -21,7 +21,7 @@
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+  <nav class="main-header navbar navbar-expand navbar-cyan navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -48,12 +48,13 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-cyan-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="<?= basename('') ?>" class="brand-link">
-        <i class="nav-icon fas fa-wifi"></i>
-      <span class="brand-text font-weight-light">PotCher</span>
-    </a>
+        <<a href="<?= base_url('') ?>" class="brand-link">
+                <img src="<?= base_url('assets/template/') ?>img/logo2.png" alt="PotCher Logo" class="brand-image">
+        </a>
+
+
 
     <!-- Sidebar -->
     <div class="sidebar">
@@ -86,37 +87,37 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="<?= site_url('hotspot/active') ?>" class="nav-link <?= $title == 'Users Active' ? 'active' : '' ?>">
-                  <i class="far nav-icon ml-3"></i>
+                  <i class="far nav-icon ml-3 fas fa-chart-line"></i>
                   <p>Active</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('hotspot/users') ?>" class="nav-link <?= $title == 'Users Hotspot' ? 'active' : '' ?>">
-                  <i class="far  nav-icon ml-3"></i>
+                  <i class="far  nav-icon ml-3 fas fa-users"></i>
                   <p>Users</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('hotspot/profile') ?>" class="nav-link <?= $title == 'Users Profile' ? 'active' : '' ?>">
-                  <i class="far  nav-icon ml-3"></i>
+                  <i class="far  nav-icon ml-3 fas fa-database"></i>
                   <p>Profile</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('hotspot/binding') ?>" class="nav-link <?= $title == 'Users Binding' ? 'active' : '' ?>">
-                  <i class="far  nav-icon ml-3"></i>
+                  <i class="far  nav-icon ml-3 fas fa-network-wired"></i>
                   <p>Binding</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('hotspot/host') ?>" class="nav-link" <?= $title == 'Users Host' ? 'active' : '' ?>>
-                  <i class="far  nav-icon ml-3"></i>
+                  <i class="far  nav-icon ml-3 fas fa-ioxhost"></i>
                   <p>Host</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('hotspot/cookies') ?>" class="nav-link">
-                  <i class="far  nav-icon ml-3"></i>
+                  <i class="far  nav-icon ml-3 fas fa-cookie"></i>
                   <p>Cookies</p>
                 </a>
               </li>
@@ -134,25 +135,25 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="<?= site_url('ppp/secret') ?>" class="nav-link <?= $title == 'PPP Secret' ? 'active' : '' ?>">
-                  <i class="far  nav-icon ml-3"></i>
+                  <i class="far  nav-icon ml-3 fas fa-secret"></i>
                   <p>Secret</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('ppp/pppoe') ?>" class="nav-link <?= $title == 'PPP PPPOE' ? 'active' : '' ?>">
-                  <i class="far  nav-icon ml-3"></i>
+                  <i class="far  nav-icon ml-3 fas fa-pied-piper-pp"></i>
                   <p>PPPOE</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('ppp/profile') ?>" class="nav-link <?= $title == 'PPP Profile' ? 'active' : '' ?>">
-                  <i class="far  nav-icon ml-3"></i>
+                  <i class="far  nav-icon ml-3 fas fa-info"></i>
                   <p>Profile</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('ppp/active') ?>" class="nav-link <?= $title == 'PPP Active' ? 'active' : '' ?>">
-                  <i class="far  nav-icon ml-3"></i>
+                  <i class="far  nav-icon ml-3 fas fa-check"></i>
                   <p>Active</p>
                 </a>
               </li>

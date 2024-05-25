@@ -134,6 +134,9 @@ body,
       transition: width $transition-speed $transition-fn;
       width: $sidebar-width;
       z-index: $zindex-main-header + 1;
+      display: flex;
+      justify-content: center; /* Menempatkan elemen di tengah secara horizontal */
+      align-items: center; 
     }
 
     // Sidebar variants brand-link fix

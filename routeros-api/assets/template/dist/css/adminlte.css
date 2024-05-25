@@ -60,7 +60,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Segoe UI", "Source Sans Pro", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -10406,6 +10406,7 @@ body:not(.layout-fixed).layout-navbar-fixed.text-sm .wrapper .main-sidebar .side
   transition: width 0.3s ease-in-out;
   width: 250px;
   z-index: 1035;
+  text-align: center;
 }
 
 .layout-navbar-fixed .wrapper .sidebar-dark-primary .brand-link:not([class*="navbar"]) {
@@ -11750,12 +11751,15 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 }
 
 .brand-link {
-  display: block;
+  display: flex;
   font-size: 1.25rem;
   line-height: 1.5;
   padding: 0.8125rem 0.5rem;
   transition: width 0.3s ease-in-out;
   white-space: nowrap;
+  text-align: center; 
+  justify-content: center; /* Menempatkan elemen di tengah secara horizontal */
+  align-items: center; 
 }
 
 .brand-link:hover {
@@ -11806,13 +11810,12 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 }
 
 .brand-link .brand-image {
-  float: left;
   line-height: .8;
   margin-left: .8rem;
   margin-right: .5rem;
   margin-top: -3px;
-  max-height: 33px;
-  width: auto;
+  max-height: 50px;
+  width: 40px;
 }
 
 .brand-link .brand-image-xs {
