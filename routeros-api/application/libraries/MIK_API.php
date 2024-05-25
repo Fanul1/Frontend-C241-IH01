@@ -19,7 +19,7 @@ class MIK_API
 {
     var $debug     = false; //  Show debug information
     var $connected = false; //  Connection state
-    var $port      = 7895;  //  Port to connect to (default 8729 for ssl)
+    var $port      = 8291;  //  Port to connect to (default 8729 for ssl)
     var $ssl       = false; //  Connect using SSL (must enable api-ssl in IP/Services)
     var $certless  = false; //  Set SSL SECLEVEL=0 to allow SSL with no certificates
     var $timeout   = 3;     //  Connection attempt timeout and data read timeout

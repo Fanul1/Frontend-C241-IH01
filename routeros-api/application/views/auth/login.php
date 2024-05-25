@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,40 +24,43 @@
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
+      <?php if($this->session->flashdata('error')): ?>
+        <div class="alert alert-danger" role="alert">
+          <?= $this->session->flashdata('error'); ?>
+        </div>
+      <?php endif; ?>
+
       <form action="<?= base_url('auth/login') ?>" method="post">
-    <div class="input-group mb-3">
-        <input type="text" name="ip" class="form-control" placeholder="IP Address / IP VPN" required>
-        <div class="input-group-append">
-            <div class="input-group-text">
-                <span class="fas fa-globe"></span>
+        <div class="input-group mb-3">
+            <input type="text" name="ip" class="form-control" placeholder="IP Address / IP VPN" required>
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-globe"></span>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="input-group mb-3">
-        <input type="text" name="user" class="form-control" placeholder="User" required>
-        <div class="input-group-append">
-            <div class="input-group-text">
-                <span class="fas fa-user"></span>
+        <div class="input-group mb-3">
+            <input type="text" name="user" class="form-control" placeholder="User" required>
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-user"></span>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="input-group mb-3">
-        <input type="password" name="password" class="form-control" placeholder="Password" required>
-        <div class="input-group-append">
-            <div class="input-group-text">
-                <span class="fas fa-lock"></span>
+        <div class="input-group mb-3">
+            <input type="password" name="password" class="form-control" placeholder="Password" required>
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-lock"></span>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+        <div class="row">
+            <div class="col-4">
+                <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            </div>
         </div>
-    </div>
-</form>
-
-
-      <!-- /.social-auth-links -->
+      </form>
     </div>
     <!-- /.login-card-body -->
   </div>

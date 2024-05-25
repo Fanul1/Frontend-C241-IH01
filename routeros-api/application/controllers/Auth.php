@@ -9,35 +9,32 @@ class Auth extends CI_Controller
         $this->load->library('session');
         $this->load->helper('url');
     }
-	public function index()
+
+    public function index()
 	{
         $this->load->view('auth/login');
 	}
+
     public function login()
 	{
-        $ip = $this->input->post('ip');
-        $user = $this->input->post('user');
-        $password = $this->input->post('password');
-
-        if (empty($ip) || empty($user) || empty($password)) {
-            // Handle empty fields
-            $this->session->set_flashdata('error', 'All fields are required.');
-            redirect('auth');
+        $data = $this->input->post();
+        if (empty($data['ip']) || empty($data['user']) || empty($data['password'])) {
+            $this->handleError('All fields are required.');
         }
-
-        $data= [
-            'ip' => $ip,
-            'user' => $user,
-            'password' => $password,
-        ];
+        
         $this->session->set_userdata($data);
         redirect('dashboard');
 	}
+
     public function logout()
     {
-        $this->session->unset_userdata('ip');
-        $this->session->unset_userdata('user');
-        $this->session->unset_userdata('password');
+        $this->session->unset_userdata(['ip', 'user', 'password']);
+        redirect('auth');
+    }
+
+    private function handleError($message)
+    {
+        $this->session->set_flashdata('error', $message);
         redirect('auth');
     }
 }
