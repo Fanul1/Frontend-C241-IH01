@@ -117,7 +117,7 @@
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('hotspot/host') ?>" class="nav-link" <?= $title == 'Users Host' ? 'active' : '' ?>>
-                  <i class="far  nav-icon ml-3 fas fa-ioxhost"></i>
+                  <i class="far  nav-icon ml-3 fas fa-ghost"></i>
                   <p>Host</p>
                 </a>
               </li>
@@ -141,13 +141,13 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="<?= site_url('ppp/secret') ?>" class="nav-link <?= $title == 'PPP Secret' ? 'active' : '' ?>">
-                  <i class="far  nav-icon ml-3 fas fa-secret"></i>
+                  <i class="far  nav-icon ml-3 fas fa-user-secret"></i>
                   <p>Secret</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('ppp/pppoe') ?>" class="nav-link <?= $title == 'PPP PPPOE' ? 'active' : '' ?>">
-                  <i class="far  nav-icon ml-3 fas fa-pied-piper-pp"></i>
+                  <i class="far  nav-icon ml-3 fas fa-chart-bar"></i>
                   <p>PPPOE</p>
                 </a>
               </li>
