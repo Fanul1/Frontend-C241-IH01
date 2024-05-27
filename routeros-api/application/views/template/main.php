@@ -57,7 +57,7 @@
   <aside class="main-sidebar sidebar-cyan-primary elevation-4">
     <!-- Brand Logo -->
         <<a href="<?= base_url('') ?>" class="brand-link">
-                <img src="<?= base_url('assets/template/') ?>img/logo2.png" alt="PotCher Logo" class="brand-image">
+                <img src="<?= base_url('assets/template/') ?>img/logo2.png" alt="PotCher Logo" class="brand-image brand-image-xl">
         </a>
 
 

@@ -1,7 +1,7 @@
 //
 // Component: Brand
 //
-
+// need revise
 .brand-link {
   $brand-link-padding-y: $navbar-brand-padding-y + $navbar-padding-y;
   display: flex;
@@ -59,26 +59,26 @@
   }
 
   .brand-image {
-    float: left;
+    // float: left;
     line-height: .8;
     margin-left: .8rem;
     margin-right: .5rem;
     margin-top: -3px;
-    max-height: 33px;
+    max-height: auto; //from 33px
     width: auto;
   }
 
   .brand-image-xs {
-    float: left;
+    // float: left;
     line-height: .8;
     margin-top: -.1rem;
-    max-height: 33px;
+    max-height: auto; //from 33px
     width: auto;
   }
 
   .brand-image-xl {
     line-height: .8;
-    max-height: 40px;
+    max-height: auto; //from 40px
     width: auto;
 
     &.single {
@@ -89,7 +89,7 @@
   &.text-sm,
   .text-sm & {
     .brand-image {
-      height: 29px;
+      height: auto; //from 29px
       margin-bottom: -.25rem;
       margin-left: .95rem;
       margin-top: -.25rem;
@@ -97,12 +97,12 @@
 
     .brand-image-xs {
       margin-top: -.2rem;
-      max-height: 29px;
+      max-height: auto; //from 29px
     }
 
     .brand-image-xl {
       margin-top: -.225rem;
-      max-height: 38px;
+      max-height: auto; //from 38px
     }
   }
 }
