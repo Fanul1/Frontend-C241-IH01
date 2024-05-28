@@ -15,7 +15,7 @@
   <link rel="stylesheet"
     href="<?= base_url('assets/template/') ?>plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="<?= base_url('assets/template/') ?>dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?= base_url('assets/template/') ?>dist/css/adminlte.css">
   <!-- DataTables -->
   <link rel="stylesheet"
     href="<?= base_url('assets/template/') ?>plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
@@ -57,7 +57,7 @@
   <aside class="main-sidebar sidebar-cyan-primary elevation-4">
     <!-- Brand Logo -->
         <<a href="<?= base_url('') ?>" class="brand-link">
-                <img src="<?= base_url('assets/template/') ?>img/logo2.png" alt="PotCher Logo" class="brand-image">
+                <img src="<?= base_url('assets/template/') ?>img/logo2.png" alt="PotCher Logo" class="brand-image img-lg">
         </a>
 
 

@@ -11814,8 +11814,8 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
   margin-left: .8rem;
   margin-right: .5rem;
   margin-top: -3px;
-  max-height: 50px;
-  width: 40px;
+  max-height: 90px;
+  width: 90px;
 }
 
 .brand-link .brand-image-xs {
@@ -28932,8 +28932,8 @@ select.form-control-sm ~ .select2-container--default .select2-selection--multipl
 }
 
 .img-md {
-  width: 3.75rem;
-  height: 3.75rem;
+  width: 100px;
+  height: 100px;
 }
 
 .img-md + .img-push {
@@ -28941,8 +28941,8 @@ select.form-control-sm ~ .select2-container--default .select2-selection--multipl
 }
 
 .img-lg {
-  width: 6.25rem;
-  height: 6.25rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .img-lg + .img-push {
