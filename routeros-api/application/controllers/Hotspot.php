@@ -95,7 +95,6 @@ class Hotspot extends CI_Controller
 		redirect('hotspot/users');
 	}
 
-
 	private function formatTimeLimit($timeLimit)
 	{
 		$validity = strtoupper(substr($timeLimit, -1));
@@ -229,28 +228,97 @@ class Hotspot extends CI_Controller
 	public function profile()
 	{
 		$API = $this->connectAPI();
+		$address_pools = $this->getAddressPools();
+		$parent_queues = $this->getParentQueues();
+	
+		// Mengambil data profil dari MikroTik
+		$hotspotprofile = $API->comm('/ip/hotspot/user/profile/print');
+	
+		// Mengambil data tambahan dari kolom "On Login"
+		foreach ($hotspotprofile as &$profile) {
+			$user = $API->comm('/ip/hotspot/user/print', ['?name' => $profile['name']]);
+			if (!empty($user)) {
+				if (isset($user[0]['on-login'])) {
+					$profile['on-login'] = $user[0]['on-login'];
+				} else {
+					$profile['on-login'] = '-';
+				}
+			} else {
+				$profile['on-login'] = '-';
+			}
+		}
 		$data = [
 			'title' => 'Users Profile',
-			'totalhotspotprofile' => count($hotspotprofile = $API->comm('/ip/hotspot/user/profile/print')),
-			'hotspotprofile' => $hotspotprofile
+			'totalhotspotprofile' => count($hotspotprofile),
+			'hotspotprofile' => $hotspotprofile,
+			'address_pools' => $address_pools,
+			'parent_queues' => $parent_queues
 		];
 		$this->load->view('template/main', $data);
 		$this->load->view('hotspot/profile', $data);
 		$this->load->view('template/footer');
+	}	
+	
+	public function getParentQueues()
+	{
+		$API = $this->connectAPI();
+		$queues = $API->comm('/queue/simple/print');
+	
+		return $queues;
+	}
+	public function getAddressPools()
+	{
+		$API = $this->connectAPI();
+		$pools = $API->comm('/ip/pool/print');
+
+		return $pools;
 	}
 
 	public function addUserProfile()
 	{
 		$post = $this->input->post(null, true);
 		$API = $this->connectAPI();
-
-		$API->comm('/ip/hotspot/user/profile/add', [
-			'name' => $post['user'],
-			'rate-limit' => $post['rate_limit'],
-			'shared-users' => $post['shared_user'],
-		]);
+	
+		$name = $post['name'];
+		$addressPool = $post['address_pool'];
+		$sharedUsers = $post['shared_users'];
+		$rateLimit = $post['rate_limit'];
+		$expiredMode = $post['expired_mode'];
+		$priceRp = $post['price_rp'];
+		$sellingPriceRp = $post['selling_price_rp'];
+		$lockUser = $post['lock_user'];
+		$parentQueue = $post['parent_queue'];
+	
+		// Mengatur nilai-nilai yang akan dikirim ke MikroTik API
+		$params = [
+			'name' => $name,
+			'address-pool' => $addressPool,
+			'shared-users' => $sharedUsers,
+			'rate-limit' => $rateLimit,
+			'expired-mode' => $expiredMode,
+			'price' => $priceRp,
+			'selling-price' => $sellingPriceRp,
+			'lock-user' => $lockUser,
+			'parent' => $parentQueue,
+		];
+	
+		// Mengirimkan request API untuk menambahkan profil baru
+		$API->comm('/ip/hotspot/user/profile/add', $params);
+	
+		// Ambil ID user terbaru untuk script on-login
+		$userID = $API->comm('/ip/hotspot/user/print', ['?name' => $name])[0]['.id'];
+	
+		// Script on-login
+		$script = ":put (\",{$expiredMode},{$priceRp},{$sharedUsers},{$sellingPriceRp},{$lockUser},\"); " .
+				  "{ " .
+				  "   /ip hotspot user set on-login=\"{$expiredMode},{$priceRp},{$sharedUsers},{$sellingPriceRp},{$lockUser}\" [find where name=\"{$name}\"]; " .
+				  "}";
+	
+		// Tambahkan script on-login
+		$API->comm('/system/script/add', ['name' => "profile_on_login_{$userID}", 'owner' => 'admin', 'source' => $script]);
+	
 		redirect('hotspot/profile');
-	}
+	}	
 
 	public function delProfile($id)
 	{
