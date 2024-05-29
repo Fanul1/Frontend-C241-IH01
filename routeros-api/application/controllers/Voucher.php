@@ -25,15 +25,28 @@ class Voucher extends CI_Controller
         return $API;
     }
 
-    public function index() {
-
+    public function index() 
+    {
         $API = $this->connectAPI();
+
+        // Fetch profiles from MikroTik
+        $profiles = $API->comm("/ip/hotspot/user/profile/print");
+
+        // Example to get count of users for each profile
+        foreach ($profiles as &$profile) {
+            $profile['user_count'] = $API->comm("/ip/hotspot/user/print", [
+                "?profile" => $profile['name']
+            ]);
+            $profile['user_count'] = count($profile['user_count']);
+        }
+
         $data = [
             'title' => 'Voucher',
+            'profiles' => $profiles,
         ];
+
         $this->load->view('template/main', $data);
         $this->load->view('voucher/index', $data);
         $this->load->view('template/footer');
     }
-    
 }
