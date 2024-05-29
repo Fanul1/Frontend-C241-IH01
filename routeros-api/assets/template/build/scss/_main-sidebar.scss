@@ -496,7 +496,7 @@
 
 // Nav Flat
 .nav-flat {
-  margin: (-$sidebar-padding-x / 2) (-$sidebar-padding-x) 0;
+  margin: (-$sidebar-padding-x / 2) (-$sidebar-padding-x) 0; //i need to change this for brand logo margin, havent got right number
 
   .nav-item {
     > .nav-link {

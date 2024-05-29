@@ -95,7 +95,6 @@ class Hotspot extends CI_Controller
 		redirect('hotspot/users');
 	}
 
-
 	private function formatTimeLimit($timeLimit)
 	{
 		$validity = strtoupper(substr($timeLimit, -1));
@@ -229,28 +228,162 @@ class Hotspot extends CI_Controller
 	public function profile()
 	{
 		$API = $this->connectAPI();
+		$address_pools = $this->getAddressPools();
+		$parent_queues = $this->getParentQueues();
+
+		// Mengambil data profil dari MikroTik
+		$hotspotprofile = $API->comm('/ip/hotspot/user/profile/print');
+
+		foreach ($hotspotprofile as &$profile) {
+			// Parsing data dari kolom "On Login"
+			if (isset($profile['on-login'])) {
+				$onLoginData = $this->parseOnLogin($profile['on-login']);
+				$profile = array_merge($profile, $onLoginData);
+			}
+		}
+
 		$data = [
 			'title' => 'Users Profile',
-			'totalhotspotprofile' => count($hotspotprofile = $API->comm('/ip/hotspot/user/profile/print')),
-			'hotspotprofile' => $hotspotprofile
+			'totalhotspotprofile' => count($hotspotprofile),
+			'hotspotprofile' => $hotspotprofile,
+			'address_pools' => $address_pools,
+			'parent_queues' => $parent_queues
 		];
+
 		$this->load->view('template/main', $data);
 		$this->load->view('hotspot/profile', $data);
 		$this->load->view('template/footer');
 	}
 
-	public function addUserProfile()
+	private function parseOnLogin($onLogin)
 	{
-		$post = $this->input->post(null, true);
-		$API = $this->connectAPI();
+		// Inisialisasi nilai default
+		$data = [
+			'expired-mode' => 'None',
+			'price' => '0',
+			'validity' => '-',
+			'selling-price' => '0',
+			'lock-user' => 'Disable'
+		];
 
-		$API->comm('/ip/hotspot/user/profile/add', [
-			'name' => $post['user'],
-			'rate-limit' => $post['rate_limit'],
-			'shared-users' => $post['shared_user'],
-		]);
-		redirect('hotspot/profile');
+		// Regex untuk memecah data on-login
+		if (preg_match('/:put \(",(.*?),(.*?),(.*?),(.*?),(.*?),(.*?)"\)/', $onLogin, $matches)) {
+			$data['expired-mode'] = $this->getExpiredMode($matches[1]);
+			$data['price'] = $matches[2];
+			$data['validity'] = $matches[3];
+			$data['selling-price'] = $matches[4];
+			$data['lock-user'] = $matches[6] == 'Enable' ? 'Enable' : 'Disable';
+		}
+
+		return $data;
 	}
+
+	private function getExpiredMode($code)
+	{
+		$modes = [
+			'rem' => 'Remove',
+			'ntf' => 'Notice',
+			'remc' => 'Remove & Record',
+			'ntfc' => 'Notice & Record'
+		];
+		return isset($modes[$code]) ? $modes[$code] : 'None';
+	}
+
+	public function getParentQueues()
+	{
+		$API = $this->connectAPI();
+		$queues = $API->comm('/queue/simple/print');
+
+		return $queues;
+	}
+	public function getAddressPools()
+	{
+		$API = $this->connectAPI();
+		$pools = $API->comm('/ip/pool/print');
+
+		return $pools;
+	}
+
+	public function addUserProfile()
+{
+    $post = $this->input->post(null, true);
+    $API = $this->connectAPI();
+
+    $name = preg_replace('/\s+/', '-', $post['name']);
+    $sharedUsers = $post['shared_users'];
+    $rateLimit = $post['rate_limit'];
+    $expiredMode = $post['expired_mode'];
+    $validity = isset($post['validity']) ? $post['validity'] : '';
+    $price = !empty($post['price_rp']) ? $post['price_rp'] : '0';
+    $sellingPrice = !empty($post['selling_price_rp']) ? $post['selling_price_rp'] : '0';
+    $addressPool = $post['address_pool'];
+    $lockUser = $post['lock_user'] == 'Enable' ? '; [:local mac $"mac-address"; /ip hotspot user set mac-address=$mac [find where name=$user]]' : '';
+    $parentQueue = $post['parent_queue'];
+    
+    $randStartTime = "0" . rand(1, 5) . ":" . rand(10, 59) . ":" . rand(10, 59);
+    $randInterval = "00:02:" . rand(10, 59);
+
+	
+    $onLogin = ':put (",'.$expiredMode.',' . $price . ',' . $validity . ',' . $sellingPrice . ',,' . $lockUser . ',"); 
+    {:local comment [ /ip hotspot user get [/ip hotspot user find where name="$user"] comment];
+    :local ucode [:pic $comment 0 2]; 
+    :if ($ucode = "vc" or $ucode = "up" or $comment = "") do={ 
+    :local date [ /system clock get date ]; 
+    :local year [ :pick $date 7 11 ]; 
+    :local month [ :pick $date 0 3 ]; 
+    /sys sch add name="$user" disable=no start-date=$date interval="' . $validity . '"; 
+    :delay 5s; 
+    :local exp [ /sys sch get [ /sys sch find where name="$user" ] next-run];
+    :local getxp [len $exp]; 
+    :if ($getxp = 15) do={ 
+    :local d [:pic $exp 0 6]; 
+    :local t [:pic $exp 7 16]; 
+    :local s ("/"); 
+    :local exp ("$d$s$year $t"); 
+    /ip hotspot user set comment="$exp" [find where name="$user"];
+    };
+    :if ($getxp = 8) do={ 
+    /ip hotspot user set comment="$date $exp" [find where name="$user"]; 
+    };
+    :if ($getxp > 15) do={ 
+    /ip hotspot user set comment="$exp" [find where name="$user"];
+    }; 
+    :delay 5s; 
+    /sys sch remove [find where name="$user"];
+    :local mac $"mac-address"; 
+    :local time [/system clock get time ]; 
+    /system script add name="$date-|-$time-|-$user-|-'.$price.'-|-$address-|-$mac-|-'.$validity.'-|-'.$name.'-|-$comment" owner="$month$year" source="$date" comment="mikhmon"';
+    
+    if ($expiredMode == 'Remove' || $expiredMode == 'Notice') {
+        $onLogin = $onLogin . $lockUser . "}}";
+    }
+
+    $API->comm("/ip/hotspot/user/profile/add", array(
+        "name" => $name,
+        "address-pool" => $addressPool,
+        "rate-limit" => $rateLimit,
+        "shared-users" => $sharedUsers,
+        "status-autorefresh" => "1m",
+        "on-login" => $onLogin,
+        "parent-queue" => $parentQueue,
+    ));
+	$bgservice = ':local dateint do={:local montharray ( "jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec" );:local days [ :pick $d 4 6 ];:local month [ :pick $d 0 3 ];:local year [ :pick $d 7 11 ];:local monthint ([ :find $montharray $month]);:local month ($monthint + 1);:if ( [len $month] = 1) do={:local zero ("0");:return [:tonum ("$year$zero$month$days")];} else={:return [:tonum ("$year$month$days")];}}; :local timeint do={ :local hours [ :pick $t 0 2 ]; :local minutes [ :pick $t 3 5 ]; :return ($hours * 60 + $minutes) ; }; :local date [ /system clock get date ]; :local time [ /system clock get time ]; :local today [$dateint d=$date] ; :local curtime [$timeint t=$time] ; :foreach i in [ /ip hotspot user find where profile="'.$name.'" ] do={ :local comment [ /ip hotspot user get $i comment]; :local name [ /ip hotspot user get $i name]; :local gettime [:pic $comment 12 20]; :if ([:pic $comment 3] = "/" and [:pic $comment 6] = "/") do={:local expd [$dateint d=$comment] ; :local expt [$timeint t=$gettime] ; :if (($expd < $today and $expt < $curtime) or ($expd < $today and $expt > $curtime) or ($expd = $today and $expt < $curtime)) do={ [ /ip hotspot user '.$mode.' $i ]; [ /ip hotspot active remove [find where user=$name] ];}}}';
+
+    if ($expiredMode != "None") {
+        $API->comm("/system/scheduler/add", array(
+            "name" => $name,
+            "start-time" => $randStartTime,
+            "interval" => $randInterval,
+            "on-event" => $bgservice,
+            "disabled" => "no",
+            "comment" => "Monitor Profile $name",
+        ));
+    }
+
+
+    redirect('hotspot/profile');
+}
+
 
 	public function delProfile($id)
 	{

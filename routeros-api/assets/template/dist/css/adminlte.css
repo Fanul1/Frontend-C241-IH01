@@ -11758,7 +11758,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
   transition: width 0.3s ease-in-out;
   white-space: nowrap;
   text-align: center; 
-  justify-content: center; /* Menempatkan elemen di tengah secara horizontal */
+  justify-content: flex-end; /* Menempatkan elemen di tengah secara horizontal */
   align-items: center; 
 }
 
@@ -11801,6 +11801,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 
 .brand-link .pushmenu {
   margin-right: 0.5rem;
+  /* margin-left: 2.0rem; */
   font-size: 1rem;
 }
 
@@ -11811,24 +11812,29 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 
 .brand-link .brand-image {
   line-height: .8;
-  margin-left: .8rem;
-  margin-right: .5rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
   margin-top: -3px;
   max-height: 90px;
   width: 90px;
+  max-height: 100px;
+  /* width: 40px; */
+  /* max-height: none; /* Remove the height restriction */
+  /* max-width: none; Remove the width restriction */ 
+  width: auto; /* Maintain aspect ratio */
 }
 
 .brand-link .brand-image-xs {
   float: left;
   line-height: .8;
   margin-top: -.1rem;
-  max-height: 33px;
+  max-height: none;
   width: auto;
 }
 
 .brand-link .brand-image-xl {
   line-height: .8;
-  max-height: 40px;
+  max-height: 100px;
   width: auto;
 }
 
