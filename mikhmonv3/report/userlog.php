@@ -79,11 +79,10 @@ if (!isset($_SESSION["mikhmon"])) {
 			  // Click download link
 			  downloadLink.click();
 			  }
-			  
+
 			  function exportTableToCSV(filename) {
 			    var csv = [];
 			    var rows = document.querySelectorAll("#dataTable tr");
-			    
 			   for (var i = 0; i < rows.length; i++) {
 			      var row = [], cols = rows[i].querySelectorAll("td, th");
 			   for (var j = 0; j < cols.length; j++)
