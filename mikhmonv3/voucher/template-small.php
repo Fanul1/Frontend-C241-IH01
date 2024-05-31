@@ -1,4 +1,4 @@
-	            	             	            	              	            	              	            	              	            	              
+							            	             	            	              	            	              	            	              	            	              
 <table class="voucher" style=" width: 160px;">
   <tbody>
     <tr>
@@ -46,4 +46,4 @@
       </td>
     </tr>
   </tbody>
-</table>	            	          	           	          	           	          
+</table>	            	          	           	          	           	          	        

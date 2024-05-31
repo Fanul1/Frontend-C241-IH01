@@ -9,11 +9,14 @@
                 <button type="button" class="btn btn-secondary ml-3" data-toggle="modal" data-target="#modal-generate">
                     Generate User
                 </button>
+                <button type="button" class="btn btn-secondary ml-3" data-toggle="modal" data-target="">
+                    Print
+                </button>
             </div>
             <div class="row">
                 <div class="col-sm-12">
                     <div class="table-responsive">
-                        <table class="table table-borderes" id="dataTable" width="100%" collspacing="0">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                                 <tr>
                                     <th>Username</th>
@@ -23,26 +26,29 @@
                                     <th>Bytes In</th>
                                     <th>Bytes Out</th>
                                     <th>Comment</th>
-                                    <th><?= $totalhotspotuser; ?>ID</th>
+                                    <th>ID</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php foreach ($hotspotuser as $data) { ?>
                                     <tr>
-                                        <th><?= $data['name']; ?></th>
-                                        <th><?= $data['password']; ?></th>
-                                        <th><?= $data['profile']; ?></th>
-                                        <th><?= $data['uptime']; ?></th>
-                                        <th style="text-align: right;"><?= formatBytes($data['bytes-in'], 2); ?></th>
-                                        <th style="text-align: right;"><?= formatBytes($data['bytes-out'], 3); ?></th>
-                                        <th><?= $data['comment']; ?></th>
+                                        <td><?= $data['name']; ?></td>
+                                        <td><?= $data['password']; ?></td>
+                                        <td><?= $data['profile']; ?></td>
+                                        <td><?= $data['uptime']; ?></td>
+                                        <td style="text-align: right;"><?= formatBytes($data['bytes-in'], 2); ?></td>
+                                        <td style="text-align: right;"><?= formatBytes($data['bytes-out'], 3); ?></td>
+                                        <td><?= $data['comment']; ?></td>
                                         <?php $id = str_replace('*', '', $data['.id']); ?>
-                                        <th><a href="<?= site_url('hotspot/delUser/' . $id); ?>"
-                                                onclick="return confirm('Apakah anda yakin akan hapus user <?= $data['name']; ?>')"><i
-                                                    class="fa fa-trash" style="color:red" ;></i></a>
-                                            <a href="<?= site_url('hotspot/editUser/' . $id); ?>"><i class="fa fa-edit"
-                                                    class=" btn btn-primary" ;></i></a>
-                                        </th>
+                                        <td>
+                                            <a href="<?= site_url('hotspot/delUser/' . $id); ?>"
+                                                onclick="return confirm('Apakah anda yakin akan hapus user <?= $data['name']; ?>')">
+                                                <i class="fa fa-trash" style="color:red;"></i>
+                                            </a>
+                                            <a href="<?= site_url('hotspot/editUser/' . $id); ?>">
+                                                <i class="fa fa-edit" style="color:blue;"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                 <?php } ?>
                             </tbody>
@@ -53,6 +59,7 @@
         </div>
     </div>
 </div>
+
 <div class="modal fade" id="modal-add-user" style="display: none;" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content bg-secondary">
@@ -104,10 +111,9 @@
                 </div>
             </form>
         </div>
-        <!-- /.modal-content -->
     </div>
-    <!-- /.modal-dialog -->
 </div>
+
 <div class="modal fade" id="modal-generate" style="display: none;" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content bg-secondary">
@@ -118,6 +124,9 @@
                 </button>
             </div>
             <div class="modal-body">
+                <!-- Add the print button here -->
+                <button onclick="window.print()" class="btn btn-secondary mb-3">Print</button>
+
                 <form id="generate-user-form" action="<?= site_url('hotspot/generateUsers') ?>" method="post">
                     <table class="table table-bordered">
                         <tbody>
@@ -195,7 +204,5 @@
                 <button type="submit" form="generate-user-form" class="btn btn-primary">Generate</button>
             </div>
         </div>
-        <!-- /.modal-content -->
     </div>
-    <!-- /.modal-dialog -->
 </div>
