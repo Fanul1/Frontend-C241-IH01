@@ -1,3 +1,6 @@
+error_reporting(0);
+?>
+
 <div class="content-wrapper mt-5">
     <div class="content-header">
         <div class="container-fluid">
@@ -12,9 +15,6 @@
                             </h3>
                         </div>
                         <div class="card-body">
-                            <div style="max-width: 350px;">
-                                <input id="filterTable" type="text" class="form-control" placeholder="Search..">
-                            </div>
                             <div style="padding: 5px; max-height: 75vh;" class="mr-t-10 overflow">
                                 <table class="table table-sm table-bordered table-hover" id="dataTable">
                                     <thead>
@@ -26,7 +26,7 @@
                                     </thead>
                                     <tbody>
                                         <?php
-                                        for ($i = 0; $i < $TotalReg; $i++) {
+                                        for ($i = 0; $i < $totalReg; $i++) {
                                             $mess = explode(":", $log[$i]['message']);
                                             $time = $log[$i]['time'];
                                             echo "<tr>";

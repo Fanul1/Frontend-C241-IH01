@@ -124,10 +124,9 @@
                 </button>
             </div>
             <div class="modal-body">
-                <!-- Add the print button here -->
                 <button onclick="window.print()" class="btn btn-secondary mb-3">Print</button>
-
                 <form id="generate-user-form" action="<?= site_url('hotspot/generateUsers') ?>" method="post">
+                    <input type="hidden" name="profile" id="modal-profile" value="<?= isset($_GET['profile']) ? $_GET['profile'] : '' ?>">
                     <table class="table table-bordered">
                         <tbody>
                             <tr>
@@ -176,7 +175,7 @@
                                 <td>
                                     <select name="profile" class="form-control" required>
                                         <?php foreach ($profile as $prof): ?>
-                                            <option value="<?= $prof['name'] ?>"><?= $prof['name'] ?></option>
+                                            <option value="<?= $prof['name'] ?>" <?= $prof['name'] == $_GET['profile'] ? 'selected' : '' ?>><?= $prof['name'] ?></option>
                                         <?php endforeach; ?>
                                     </select>
                                 </td>
@@ -206,3 +205,11 @@
         </div>
     </div>
 </div>
+
+<script>
+$(document).ready(function(){
+    <?php if (isset($_GET['generate']) && $_GET['generate'] === 'true'): ?>
+        $('#modal-generate').modal('show');
+    <?php endif; ?>
+});
+</script>

@@ -19,7 +19,7 @@
             justify-content: left;
         }
         .box-group-icon {
-            margin-right: 10px; /* Adjust this value to reduce spacing */
+            margin-right: 10px;
         }
         .box-group-icon a {
             font-size: 1.5em;
@@ -62,7 +62,7 @@
                                 <div class="box" style="background-color: <?= $profile['name'] == 'default' ? 'yellow' : 'purple'; ?>">
                                     <div class="box-group">
                                         <div class="box-group-icon">
-                                            <a title="Open User by profile <?= $profile['name'] ?>" href="./?hotspot=users&profile=<?= urlencode($profile['name']) ?>">
+                                            <a title="Open User by profile <?= $profile['name'] ?>" href="<?= site_url('hotspot/users?profile=' . urlencode($profile['name'])) ?>">
                                                 <i class="fa fa-ticket"></i>
                                             </a>
                                         </div>
@@ -70,10 +70,10 @@
                                             <h3>Profile: <?= $profile['name'] ?><br>
                                                 <?= $profile['user_count'] ?> Items
                                             </h3>
-                                            <a title="Open User by profile <?= $profile['name'] ?>" href="./?hotspot=users&profile=<?= urlencode($profile['name']) ?>">
+                                            <a title="Open User by profile <?= $profile['name'] ?>" href="<?= site_url('hotspot/users?profile=' . urlencode($profile['name'])) ?>">
                                                 <i class="fa fa-external-link"></i> Open
                                             </a>&nbsp;
-                                            <a title="Generate User by profile <?= $profile['name'] ?>" href="<?= site_url('voucher/generate')?>">
+                                            <a title="Generate User by profile <?= $profile['name'] ?>" href="<?= site_url('hotspot/users?profile=' . urlencode($profile['name']) . '&generate=true') ?>">
                                                 <i class="fa fa-users"></i> Generate
                                             </a>&nbsp;
                                         </div>

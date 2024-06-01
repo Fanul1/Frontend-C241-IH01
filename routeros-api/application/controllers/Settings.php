@@ -42,4 +42,14 @@ class Settings extends CI_Controller
         $this->load->view('setting/edittemplate', $data);
         $this->load->view('template/footer');
     }
+
+    public function saveTemplate()  
+    {
+        $template = $this->input->post('template');
+        // Save the template content to a file or a database
+        file_put_contents('path/to/template.html', $template);
+        $this->session->set_flashdata('success', 'Template saved successfully.');
+        redirect('settings/editVoucher');
+    }
+
 }
