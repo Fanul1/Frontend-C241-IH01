@@ -9,8 +9,8 @@
                 <button type="button" class="btn btn-secondary ml-3" data-toggle="modal" data-target="#modal-generate">
                     Generate User
                 </button>
-                <button type="button" class="btn btn-secondary ml-3" data-toggle="modal" data-target="">
-                    Print
+                <button type="button" class="btn btn-secondary ml-3" onclick="printAllUsers()">
+                    Print All
                 </button>
             </div>
             <div class="row">
@@ -27,6 +27,7 @@
                                     <th>Bytes Out</th>
                                     <th>Comment</th>
                                     <th>ID</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -47,6 +48,11 @@
                                             </a>
                                             <a href="<?= site_url('hotspot/editUser/' . $id); ?>">
                                                 <i class="fa fa-edit" style="color:blue;"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" onclick="printUser('<?= $data['name']; ?>', '<?= $data['password']; ?>', '<?= $data['profile']; ?>', '<?= $data['validity']; ?>', '<?= $data['timelimit']; ?>', '<?= $data['datalimit']; ?>', '<?= $data['price']; ?>')">
+                                                <i class="fa fa-print" style="color:green;"></i>
                                             </a>
                                         </td>
                                     </tr>
@@ -99,6 +105,10 @@
                     <div class="form-group">
                         <label for="timelimit">Time Limit</label>
                         <input type="text" name="timelimit" class="form-control" autocomplete="off" id="timelimit">
+                    </div>
+                    <div class="form-group">
+                        <label for="datalimit">Data Limit</label>
+                        <input type="text" name="datalimit" class="form-control" autocomplete="off" id="datalimit">
                     </div>
                     <div class="form-group">
                         <label for="comment">Comment</label>
@@ -212,4 +222,70 @@ $(document).ready(function(){
         $('#modal-generate').modal('show');
     <?php endif; ?>
 });
+
+function getUserVoucherHTML(username, password, profile, validity, timelimit, datalimit, price) {
+    return `
+        <table class="voucher" style="width: 220px; display: inline-block; margin: 5px;">
+            <tbody>
+                <tr>
+                    <td style="text-align: left; font-size: 14px; font-weight: bold; border-bottom: 1px black solid;">
+                        <img src="assets/template/img/logo2.png" alt="logo" style="height: 30px; border: 0;"> ${profile}
+                        <span id="num">[1]</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table style="text-align: center; width: 210px; font-size: 12px;">
+                            <tbody>
+                                <tr>
+                                    <td>Username</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid black; font-weight: bold;">${username}</td>
+                                </tr>
+                                <tr>
+                                    <td>Password</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid black; font-weight: bold;">${password}</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="border-top: 1px solid black; font-weight: bold; font-size: 16px;">
+                                        ${validity} ${timelimit} ${datalimit} ${price}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="font-weight: bold; font-size: 12px;">Login: http://hotspot.local</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    `;
+}
+
+function printUser(username, password, profile, validity, timelimit, datalimit, price) {
+    var content = getUserVoucherHTML(username, password, profile, validity, timelimit, datalimit, price);
+    var printWindow = window.open('', 'Print User', 'height=600,width=800');
+    printWindow.document.write('<html><head><title>Print User</title></head><body>');
+    printWindow.document.write(content);
+    printWindow.document.write('</body></html>');
+    printWindow.document.close();
+    printWindow.print();
+}
+function printAllUsers() {
+    var allVouchers = '';
+    <?php foreach ($hotspotuser as $data) { ?>
+        allVouchers += getUserVoucherHTML('<?= $data['name']; ?>', '<?= $data['password']; ?>', '<?= $data['profile']; ?>', '<?= $data['validity']; ?>', '<?= $data['timelimit']; ?>', '<?= $data['datalimit']; ?>', '<?= $data['price']; ?>');
+    <?php } ?>
+    
+    var printWindow = window.open('', 'Print All Users', 'height=600,width=800');
+    printWindow.document.write('<html><head><title>Print All Users</title></head><body>');
+    printWindow.document.write(allVouchers);
+    printWindow.document.write('</body></html>');
+    printWindow.document.close();
+    printWindow.print();
+}
 </script>

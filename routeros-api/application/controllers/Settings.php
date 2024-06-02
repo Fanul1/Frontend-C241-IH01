@@ -24,6 +24,7 @@ class Settings extends CI_Controller
         }
         return $API;
     }
+
     public function uploadLogo() {
         $API = $this->connectAPI();
         $data = [
@@ -33,10 +34,20 @@ class Settings extends CI_Controller
         $this->load->view('setting/uploadlogo', $data);
         $this->load->view('template/footer');
     }
+
     public function editVoucher() {
         $API = $this->connectAPI();
+        // Load the current template content
+        $templatePath = APPPATH . '../templatevoucher/template.html';
+        if (file_exists($templatePath)) {
+            $template = file_get_contents($templatePath);
+        } else {
+            $template = '';
+        }
+
         $data = [
-            'title' => 'Edit template Voucher',
+            'title' => 'Edit Template Voucher',
+            'template' => $template,
         ];
         $this->load->view('template/main', $data);
         $this->load->view('setting/edittemplate', $data);
@@ -46,10 +57,10 @@ class Settings extends CI_Controller
     public function saveTemplate()  
     {
         $template = $this->input->post('template');
-        // Save the template content to a file or a database
-        file_put_contents('path/to/template.html', $template);
+        // Save the template content to a file
+        $templatePath = APPPATH . '../templatevoucher/template.html';
+        file_put_contents($templatePath, $template);
         $this->session->set_flashdata('success', 'Template saved successfully.');
         redirect('settings/editVoucher');
     }
-
 }

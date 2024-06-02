@@ -28,31 +28,59 @@ class Hotspot extends CI_Controller
 	public function users()
 	{
 		$API = $this->connectAPI();
+		$hotspotuser = $API->comm('/ip/hotspot/user/print');
+		$hotspotprofile = $API->comm('/ip/hotspot/user/profile/print');
+	
+		// Create a mapping of profiles by name
+		$profilesMap = [];
+		foreach ($hotspotprofile as $profile) {
+			$profilesMap[$profile['name']] = $profile;
+		}
+	
+		// Add validity, timelimit, datalimit, price, and additional on-login data to each user
+		foreach ($hotspotuser as &$user) {
+			$profileName = isset($user['profile']) ? $user['profile'] : '';
+	
+			// Initialize default values if profile does not exist
+			$user['validity'] = isset($profilesMap[$profileName]['validity']) ? $profilesMap[$profileName]['validity'] : '';
+			$user['timelimit'] = isset($user['limit-uptime']) ? $user['limit-uptime'] : '';
+			$user['datalimit'] = isset($user['limit-bytes-total']) ? $user['limit-bytes-total'] : '';
+			$user['price'] = isset($profilesMap[$profileName]['price']) ? $profilesMap[$profileName]['price'] : '';
+	
+			// Parse on-login string for additional data
+			if (isset($profilesMap[$profileName]['on-login'])) {
+				$onLoginData = $this->parseOnLogin($profilesMap[$profileName]['on-login']);
+				$user = array_merge($user, $onLoginData);
+			}
+		}
+	
 		$data = [
 			'title' => 'Users Hotspot',
-			'totalhotspotuser' => count($hotspotuser = $API->comm('/ip/hotspot/user/print')),
+			'totalhotspotuser' => count($hotspotuser),
 			'hotspotuser' => $hotspotuser,
 			'server' => $API->comm('/ip/hotspot/print'),
-			'profile' => $API->comm('/ip/hotspot/user/profile/print'),
+			'profile' => $hotspotprofile,
 		];
+	
 		$this->load->view('template/main', $data);
 		$this->load->view('hotspot/users', $data);
 		$this->load->view('template/footer');
-	}
-
+	}	
+	
 	public function addUser()
 	{
 		$post = $this->input->post(null, true);
 		$API = $this->connectAPI();
 
-		$timelimit = empty($post['timelimit']) ? '0' : $post['timelimit'];
-
+		$timelimit = empty($post['timelimit']) ? '0' : $this->formatTimeLimit($post['timelimit']);
+		$datalimit = empty($post['datalimit']) ? '0' : $this->formatDataLimit($post['datalimit']);
 		$API->comm('/ip/hotspot/user/add', [
 			'name' => $post['user'],
 			'password' => $post['password'],
 			'server' => $post['server'],
 			'profile' => $post['profile'],
 			'limit-uptime' => $timelimit,
+			'limit-bytes-total' => $datalimit,
 			'comment' => $post['comment'],
 		]);
 		redirect('hotspot/users');
@@ -247,7 +275,7 @@ class Hotspot extends CI_Controller
 			'totalhotspotprofile' => count($hotspotprofile),
 			'hotspotprofile' => $hotspotprofile,
 			'address_pools' => $address_pools,
-			'parent_queues' => $parent_queues
+			'parent_queues' => $parent_queues,
 		];
 
 		$this->load->view('template/main', $data);
@@ -383,7 +411,6 @@ class Hotspot extends CI_Controller
 
     redirect('hotspot/profile');
 }
-
 
 	public function delProfile($id)
 	{
