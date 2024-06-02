@@ -255,7 +255,7 @@ function getUserVoucherHTML(username, password, profile, validity, timelimit, da
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" style="font-weight: bold; font-size: 12px;">Login: http://hotspot.local</td>
+                                    <td colspan="2" style="font-weight: bold; font-size: 12px;">Login: http://potcher.net</td>
                                 </tr>
                             </tbody>
                         </table>
