@@ -224,47 +224,29 @@ $(document).ready(function(){
 });
 
 function getUserVoucherHTML(username, password, profile, validity, timelimit, datalimit, price) {
-    return `
-        <table class="voucher" style="width: 220px; display: inline-block; margin: 5px;">
-            <tbody>
-                <tr>
-                    <td style="text-align: left; font-size: 14px; font-weight: bold; border-bottom: 1px black solid;">
-                        <img src="assets/template/img/logo2.png" alt="logo" style="height: 30px; border: 0;"> ${profile}
-                        <span id="num">[1]</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <table style="text-align: center; width: 210px; font-size: 12px;">
-                            <tbody>
-                                <tr>
-                                    <td>Username</td>
-                                </tr>
-                                <tr>
-                                    <td style="border: 1px solid black; font-weight: bold;">${username}</td>
-                                </tr>
-                                <tr>
-                                    <td>Password</td>
-                                </tr>
-                                <tr>
-                                    <td style="border: 1px solid black; font-weight: bold;">${password}</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2" style="border-top: 1px solid black; font-weight: bold; font-size: 16px;">
-                                        ${validity} ${timelimit} ${datalimit} ${price}
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2" style="font-weight: bold; font-size: 12px;">Login: http://potcher.net</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    `;
+    // Read the template file
+    var template = '';
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', '../templatevoucher/template.html', false);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            template = xhr.responseText;
+        }
+    };
+    xhr.send();
+
+    // Replace placeholders with actual data
+    template = template.replace('{{profile}}', profile);
+    template = template.replace('{{username}}', username);
+    template = template.replace('{{password}}', password);
+    template = template.replace('{{validity}}', validity);
+    template = template.replace('{{timelimit}}', timelimit);
+    template = template.replace('{{datalimit}}', datalimit);
+    template = template.replace('{{price}}', price);
+
+    return template;
 }
+
 
 function printUser(username, password, profile, validity, timelimit, datalimit, price) {
     var content = getUserVoucherHTML(username, password, profile, validity, timelimit, datalimit, price);

@@ -32,7 +32,8 @@ class Log extends CI_Controller
         if ($API) {
             $getlog = $API->comm("/log/print", array(
                 "?topics" => "hotspot,info,debug"
-            ));
+            )
+            );
             $log = array_reverse($getlog);
             $totalReg = count($getlog);
 
@@ -51,12 +52,42 @@ class Log extends CI_Controller
             $this->load->view('template/footer');
         }
     }
-    
-    public function logUser() {
+    public function logUser()
+    {
+        // Connect to MikroTik API
         $API = $this->connectAPI();
+
+        if (!$API) {
+            // Handle connection error
+            $data['error'] = 'Failed to connect to MikroTik API.';
+            $this->load->view('template/main', $data);
+            $this->load->view('template/footer');
+            return;
+        }
+
+        // Get log data from MikroTik API
+        $logData = [];
+        $logScript = $API->comm('/system/script/print');
+        foreach ($logScript as $script) {
+            $scriptData = explode('-|-', $script['name']);
+            $logEntry = [
+                'Date' => $scriptData[0],
+                'Time' => $scriptData[1],
+                'Username' => $scriptData[2],
+                'Address' => $scriptData[4],
+                'MacAddress' => $scriptData[5],
+                'Validity' => $scriptData[6]
+            ];
+            $logData[] = $logEntry;
+        }
+
+        // Prepare data to be passed to the view
         $data = [
             'title' => 'Log User',
+            'logData' => $logData
         ];
+
+        // Load views
         $this->load->view('template/main', $data);
         $this->load->view('log/user', $data);
         $this->load->view('template/footer');
