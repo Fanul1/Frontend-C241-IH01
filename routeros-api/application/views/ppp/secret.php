@@ -93,11 +93,11 @@
                     </div>
                     <div class="form-group">
                         <label for="localaddress">Local Address</label>
-                        <input type="text" name="localaddress" class="form-control" autocomplete="off">
+                        <input type="text" name="localaddress" class="form-control" autocomplete="off" id="localaddress">
                     </div>
                     <div class="form-group">
                         <label for="remoteaddress">Remote Address</label>
-                        <input type="text" name="remoteaddress" class="form-control" autocomplete="off">
+                        <input type="text" name="remoteaddress" class="form-control" autocomplete="off" id="remoteaddress">
                     </div>
                     <div class="form-group">
                         <label for="comment">Comment</label>

@@ -109,4 +109,64 @@ class Ppp extends CI_Controller
 		));
 		redirect('ppp/secret');
 	}
+	
+    public function profile()
+    {
+        $ip = $this->session->userdata('ip');
+        $user = $this->session->userdata('user');
+        $password = $this->session->userdata('password');
+
+        $API = new MIK_API();
+        $API->connect($ip, $user, $password);
+        $profiles = $API->comm("/ppp/profile/print");
+
+        $data = [
+            'title' => 'PPP Profile',
+            'profiles' => $profiles
+        ];
+
+        $this->load->view('template/main', $data);
+        $this->load->view('ppp/profile', $data);
+        $this->load->view('template/footer');
+    }
+
+    public function pppoe()
+    {
+        $ip = $this->session->userdata('ip');
+        $user = $this->session->userdata('user');
+        $password = $this->session->userdata('password');
+
+        $API = new MIK_API();
+        $API->connect($ip, $user, $password);
+        $pppoe_servers = $API->comm("/interface/pppoe-server/server/print");
+
+        $data = [
+            'title' => 'PPPoE Servers',
+            'pppoe_servers' => $pppoe_servers
+        ];
+
+        $this->load->view('template/main', $data);
+        $this->load->view('ppp/pppoe', $data);
+        $this->load->view('template/footer');
+    }
+	
+    public function active()
+    {
+        $ip = $this->session->userdata('ip');
+        $user = $this->session->userdata('user');
+        $password = $this->session->userdata('password');
+
+        $API = new MIK_API();
+        $API->connect($ip, $user, $password);
+        $active_connections = $API->comm("/ppp/active/print");
+
+        $data = [
+            'title' => 'Active Connection',
+            'active_connections' => $active_connections
+        ];
+
+        $this->load->view('template/main', $data);
+        $this->load->view('ppp/active', $data);
+        $this->load->view('template/footer');
+    }
 }
