@@ -24,7 +24,6 @@ class Report extends CI_Controller
         }
         return $API;
     }
-    
     public function index() {
         $API = $this->connectAPI();
         $getData = $API->comm("/system/script/print", array("?owner"=>"jun2024"));
@@ -42,7 +41,6 @@ class Report extends CI_Controller
             ];
             $dataReport[] = $entry;
         }
-    
         $data = [
             'title' => 'Report',
             'dataDump' => $dataReport

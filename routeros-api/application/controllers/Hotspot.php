@@ -1,6 +1,5 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-
 class Hotspot extends CI_Controller
 {
 	public function __construct()
@@ -380,8 +379,19 @@ class Hotspot extends CI_Controller
     /sys sch remove [find where name="$user"];
     :local mac $"mac-address"; 
     :local time [/system clock get time ]; 
-    /system script add name="$date-|-$time-|-$user-|-'.$price.'-|-$address-|-$mac-|-'.$validity.'-|-'.$name.'-|-$comment" owner="$month$year" source="$date" comment="mikhmon"';
-    
+   	/tool fetch url="http://your-server-ip/firestore/add-data" http-method=post http-data="{
+    \"date\":\"$date\",
+    \"time\":\"$time\",
+    \"user\":\"$user\",
+    \"price\":\"$price\",
+    \"address\":\"$address\",
+    \"mac\":\"$mac\",
+    \"validity\":\"$validity\",
+    \"name\":\"$name\",
+    \"comment\":\"$comment\"
+	}" http-header-field="Content-Type: application/json"
+	/system script add name="$date-|-$time-|-$user-|-'.$price.'-|-$address-|-$mac-|-'.$validity.'-|-'.$name.'-|-$comment" owner="$month$year" source="$date" comment="mikhmon"';
+
     if ($expiredMode == 'Remove' || $expiredMode == 'Notice') {
         $onLogin = $onLogin . $lockUser . "}}";
     }
