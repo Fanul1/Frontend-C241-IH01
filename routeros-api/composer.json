@@ -12,7 +12,9 @@
 	},
 	"require": {
 		"php": ">=5.3.7",
-		"google/cloud-firestore": "*"
+		"kreait/firebase-php": "*",
+		"grpc/grpc": "^v1.39.0",
+		"google/cloud-firestore": "^1.43"
 	},
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"

@@ -300,7 +300,6 @@
     src="<?= base_url('assets/template/') ?>plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
   <script
     src="<?= base_url('assets/template/') ?>plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-  <script src="<?= base_url('assets/template/') ?>plugins/chart.js/Chart.min.js"></script>
   <script>
     $(function () {
       $('#dataTable').DataTable({

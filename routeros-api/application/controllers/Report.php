@@ -1,5 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+require 'vendor/autoload.php';
+use Google\Cloud\Firestore\FirestoreClient;
 
 class Report extends CI_Controller 
 {
@@ -24,6 +26,7 @@ class Report extends CI_Controller
         }
         return $API;
     }
+
     public function index() {
         $API = $this->connectAPI();
         $getData = $API->comm("/system/script/print", array("?owner"=>"jun2024"));
@@ -48,5 +51,52 @@ class Report extends CI_Controller
         $this->load->view('template/main', $data);
         $this->load->view('report/index', $data);
         $this->load->view('template/footer');
+    }
+
+    public function export_to_firestore() {
+        // Hubungkan ke API
+        $API = $this->connectAPI();
+        // Ambil data dari API Mikrotik
+        $getData = $API->comm("/system/script/print", array("?owner" => "jun2024"));
+        $dataReport = [];
+        // Proses data
+        foreach ($getData as $record) {
+            $details = explode("-|-", $record['name']);
+            $entry = [
+                'date' => $details[0],
+                'time' => $details[1],
+                'username' => $details[2],
+                'price' => $details[3],
+                'profile' => $details[7],
+                'comment' => $details[8]
+            ];
+            $dataReport[] = $entry;
+        }
+        // Kirim data ke Firestore
+        $this->sendDataToFirestore($dataReport);
+        // Redirect kembali ke halaman report
+        redirect('report');
+    }
+    
+    public function sendDataToFirestore($data) {
+        // Inisialisasi FirestoreClient dengan kredensial dari file JSON
+        $firestore = new FirestoreClient([
+            'keyFilePath' => 'potcher-7c1b96fe11b2.json'
+        ]);
+    
+        // Mengambil referensi koleksi "reports"
+        $reportsCollection = $firestore->collection('reports');
+    
+        // Mengirim data ke Firestore
+        foreach ($data as $entry) {
+            $reportsCollection->add([
+                'date' => $entry['date'],
+                'time' => $entry['time'],
+                'username' => $entry['username'],
+                'price' => $entry['price'],
+                'profile' => $entry['profile'],
+                'comment' => $entry['comment']
+            ]);
+        }
     }
 }

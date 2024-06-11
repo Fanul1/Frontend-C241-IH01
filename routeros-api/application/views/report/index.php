@@ -3,6 +3,7 @@
         <div class="container-fluid">
             <h3>Report</h3>
             <div class="overflow box-bordered" style="max-height: 70vh">
+                <a href="<?php echo base_url('report/export_to_firestore'); ?>" class="btn btn-primary">Export to Firestore</a>
                 <table id="dataTable" class="table table-bordered table-hover text-nowrap">
                     <thead class="thead-light">
                         <tr>
