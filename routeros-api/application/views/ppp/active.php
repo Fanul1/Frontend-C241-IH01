@@ -6,7 +6,7 @@
     </div>
     <div class="content">
         <div class="container-fluid">
-            <table class="table table-striped">
+            <table class="table table-striped" id="dataTable">
                 <thead>
                     <tr>
                         <th>#</th>
@@ -16,6 +16,7 @@
                         <th>Address</th>
                         <th>Uptime</th>
                         <th>Encoding</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,11 +30,18 @@
                                 <td><?= $connection['address']; ?></td>
                                 <td><?= $connection['uptime']; ?></td>
                                 <td><?= $connection['encoding']; ?></td>
+                                <td>
+                                    <?php $id = str_replace('*', '', $connection['.id']); ?>
+                                    <a href="<?= site_url('ppp/deleteActiveConnection/' . $id); ?>"
+                                       onclick="return confirm('Are you sure you want to delete this active connection?');">
+                                        <i class="fa fa-trash" style="color:red;"></i>
+                                    </a>
+                                </td>
                             </tr>
                         <?php endforeach; ?>
                     <?php else : ?>
                         <tr>
-                            <td colspan="7">No active connections found.</td>
+                            <td colspan="8">No active connections found.</td>
                         </tr>
                     <?php endif; ?>
                 </tbody>

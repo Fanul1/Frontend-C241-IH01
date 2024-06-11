@@ -158,7 +158,7 @@
                   </li>
                   <li class="nav-item">
                     <a href="<?= site_url('ppp/pppoe') ?>"
-                      class="nav-link <?= $title == 'PPP PPPOE' ? 'active' : '' ?>">
+                      class="nav-link <?= $title == 'PPPoE Servers' ? 'active' : '' ?>">
                       <i class="far  nav-icon ml-3 fas fa-chart-bar"></i>
                       <p>PPPOE</p>
                     </a>
@@ -172,7 +172,7 @@
                   </li>
                   <li class="nav-item">
                     <a href="<?= site_url('ppp/active') ?>"
-                      class="nav-link <?= $title == 'PPP Active' ? 'active' : '' ?>">
+                      class="nav-link <?= $title == 'Active Connection' ? 'active' : '' ?>">
                       <i class="far  nav-icon ml-3 fas fa-check"></i>
                       <p>Active</p>
                     </a>
