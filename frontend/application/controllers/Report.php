@@ -77,6 +77,41 @@ class Report extends CI_Controller
         $this->session->set_flashdata('success', 'Data berhasil diexport.');
 	redirect('report');
    }
+   public function export_to_csv()
+    {
+        // Koneksi ke API Mikrotik
+        $API = $this->connectAPI();
+        // Ambil data dari API Mikrotik
+        $getData = $API->comm("/system/script/print", array("?owner" => "jun2024"));
+        
+        // Proses data
+        $dataReport = [];
+        foreach ($getData as $record) {
+            $details = explode("-|-", $record['name']);
+            $entry = [
+                'date' => $details[0],
+                'time' => $details[1],
+                'username' => $details[2],
+                'price' => $details[3],
+                'profile' => $details[7],
+                'comment' => $details[8]
+            ];
+            $dataReport[] = $entry;
+        }
+
+        // Buat konten CSV dari data
+        $csvContent = $this->generateCSVContent($dataReport);
+
+        // Definisikan nama file CSV
+        $filename = 'report.csv';
+
+        // Set header untuk respon HTTP
+        header('Content-Type: application/csv');
+        header('Content-Disposition: attachment; filename="' . $filename . '"');
+
+        // Output file CSV untuk diunduh
+        echo $csvContent;
+    }
     public function sendDataToFirestore($data) {
         // Inisialisasi FirestoreClient dengan kredensial dari file JSON
         $jsonUrl = 'https://storage.googleapis.com/potcher-storage/potcher-7c1b96fe11b2.json';
@@ -105,5 +140,19 @@ class Report extends CI_Controller
         // Tambahkan dokumen ke Firestore dengan nama yang ditentukan
         $reportsCollection->document($docName)->set($docData);
         }
+    }
+    private function generateCSVContent($data)
+    {
+        $output = fopen('php://output', 'w');
+
+        // Tulis baris header
+        fputcsv($output, array('Date', 'Time', 'Username', 'Price', 'Profile', 'Comment'));
+
+        // Tulis data
+        foreach ($data as $row) {
+            fputcsv($output, $row);
+        }
+
+        fclose($output);
     }
 }

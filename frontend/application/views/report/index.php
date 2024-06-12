@@ -4,8 +4,12 @@
             <h3>Report</h3>
             <div class="overflow box-bordered" style="max-height: 70vh">
                 
-                <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
                     <a href="<?php echo base_url('report/export_to_firestore'); ?>" class="btn btn-primary" onclick="return confirm('Apa anda yakin untuk export?')">Export to Firestore</a>
+                    <a href="<?php echo base_url('report/export_to_csv'); ?>" class="btn btn-success ml-2" onclick="return confirm('Apa anda yakin untuk export?')">Export to CSV</a>
+                </div>
+                <div>
                     <?php
                     // Calculate total earnings
                     $totalEarnings = 0;
@@ -14,10 +18,11 @@
                     }
                     ?>
                     <!-- Display total earnings -->
-                    <div>
-                        <strong>Total Earnings: Rp. </strong><?php echo number_format($totalEarnings, 2); ?>
-                    </div>
+                    <strong>Total Earnings: Rp. </strong><?php echo number_format($totalEarnings, 2); ?>
                 </div>
+            </div>
+
+
 
                 <table id="dataTable" class="table table-bordered table-hover text-nowrap">
                     <thead class="thead-light">
