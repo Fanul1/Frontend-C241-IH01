@@ -7,6 +7,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
+            <a href="<?php echo base_url('log/export_to_csv_user'); ?>" class="btn btn-success mb-5" onclick="return confirm('Apa anda yakin untuk export?')">Export to CSV</a>
                 <table class="table table-bordered">
                     <thead>
                         <tr>

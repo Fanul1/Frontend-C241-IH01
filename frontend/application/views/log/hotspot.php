@@ -1,6 +1,3 @@
-error_reporting(0);
-?>
-
 <div class="content-wrapper mt-5">
     <div class="content-header">
         <div class="container-fluid">
@@ -12,6 +9,10 @@ error_reporting(0);
                             <h3>
                                 <i class="fa fa-align-justify"></i> <?= $_hotspot_log ?> &nbsp; | &nbsp;&nbsp;
                                 <i onclick="location.reload();" class="fa fa-refresh pointer" title="Reload data"></i>
+                                <span class="float-right">
+                                <a href="<?php echo base_url('log/export_to_csv_hotspot'); ?>" class="btn btn-success" onclick="return confirm('Apa anda yakin untuk export?')">Export to CSV</a>
+                                <i onclick="location.reload();" class="fa fa-refresh pointer" title="Reload data"></i>
+                                </span>
                             </h3>
                         </div>
                         <div class="card-body">
