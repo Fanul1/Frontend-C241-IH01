@@ -72,10 +72,29 @@
             </select>
             <canvas id="trafficChart"></canvas>
             <div id="reloadtraffic"></div>
-        </div>
+            </div>
+            <div class="card card-success">
+                <div class="card-header">
+                    <h3 class="card-title"> Jumlah Penjualan Voucher</h3>
+            
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-tool" data-card-widget="remove">
+                            <i class="fas fa-times"></i>
+                        </button>
+                            </div>
+                          </div>
+                        <div class="card-body">
+                            <div class="chart">
+                              <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                            </div>
+                        </div>
+                          <!-- /.card-body -->
+            </div>
     </div>
 </div>
-
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
     $(document).ready(function () {
@@ -129,6 +148,38 @@
                     title: {
                         display: true,
                         text: 'Time'
+                    }
+                }
+            }
+        }
+    });
+    var rtx = document.getElementById('barChart').getContext('2d');
+    var barChart = new Chart(rtx, {
+        type: 'bar',
+        data: {
+            labels: ['HARIAN', 'MINGGUAN', 'BULANAN'],
+            datasets: [{
+                label: 'Jumlah Voucher',
+                data: [
+                    <?php echo $voucherData['HARIAN']; ?>,
+                    <?php echo $voucherData['MINGGUAN']; ?>,
+                    <?php echo $voucherData['BULANAN']; ?>
+                ],
+                backgroundColor: ['#3c8dbc', '#f56954', '#00a65a'],
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                x: {
+                    beginAtZero: true
+                },
+                y: {
+                    beginAtZero: true,
+                    min: 0,
+                    max: 10,
+                    ticks: {
+                        stepSize: 1,
                     }
                 }
             }

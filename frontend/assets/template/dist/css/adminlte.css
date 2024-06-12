@@ -11760,6 +11760,8 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
   text-align: center; 
   justify-content: center; /* Menempatkan elemen di tengah secara horizontal */
   align-items: center; 
+  margin-bottom: 10px;
+
 }
 
 .brand-link:hover {
@@ -11815,9 +11817,9 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
   margin-left: 1.25rem;
   margin-right: 1.25rem;
   margin-top: -3px;
-  max-height: 90px;
-  width: 90px;
-  max-height: 100px;
+  max-height: 70px;
+  width: 70px;
+  max-height: 70px;
   /* width: 40px; */
   /* max-height: none; /* Remove the height restriction */
   /* max-width: none; Remove the width restriction */ 

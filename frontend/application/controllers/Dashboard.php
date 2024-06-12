@@ -22,8 +22,14 @@ class Dashboard extends CI_Controller
             $this->handleError('Connection failed. Please check your credentials.');
         }
 
-        $this->load->view('template/main', $this->getDashboardData($API));
-        $this->load->view('dashboard');
+        $voucherData = $this->jumlahVoucher($API);
+        $dashboardData = $this->getDashboardData($API);
+
+        // Merge voucher data with dashboard data
+        $viewData = array_merge($dashboardData, ['voucherData' => $voucherData]);
+
+        $this->load->view('template/main', $viewData);
+        $this->load->view('dashboard', $viewData);
         $this->load->view('template/footer');
     }
 
@@ -65,6 +71,39 @@ class Dashboard extends CI_Controller
         echo json_encode($data); // Return data as JSON
     }
 
+    private function jumlahVoucher($API)
+    {
+        $getData = $API->comm("/system/script/print", array("?owner" => "jun2024"));
+        $dataReport = [];
+        $profileCounts = ['HARIAN' => 0, 'MINGGUAN' => 0, 'BULANAN' => 0];
+
+        date_default_timezone_set('Asia/Jakarta');
+        // Get today's date in the expected format (e.g., jun/12/2024)
+        $today = strtolower(date('M/d/Y'));
+
+        foreach ($getData as $record) {
+            $details = explode("-|-", $record['name']);
+            $entry = [
+                'date' => $details[0],      // Example: jun/01/2024
+                'time' => $details[1],      // Example: 09:57:22
+                'username' => $details[2],  // Example: ta5YA
+                'price' => $details[3],     // Example: 3000
+                'profile' => $details[7],   // Example: HARIAN
+                'comment' => $details[8]    // Example: vc-773-06.01.24-testing
+            ];
+
+            // Add to $dataReport if the date matches today's date
+            if (strtolower($entry['date']) == $today) {
+                $dataReport[] = $entry;
+                if (isset($profileCounts[$entry['profile']])) {
+                    $profileCounts[$entry['profile']]++;
+                }
+            }
+        }
+
+        return $profileCounts;
+    }
+
     private function getDashboardData($API)
     {
         $hotspotuser = $API->comm('/ip/hotspot/user/print');
@@ -97,3 +136,4 @@ class Dashboard extends CI_Controller
         redirect('auth');
     }
 }
+?>
