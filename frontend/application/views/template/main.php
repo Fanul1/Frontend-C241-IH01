@@ -22,6 +22,17 @@
   <link rel="stylesheet"
     href="<?= base_url('assets/template/') ?>plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
   <link rel="stylesheet" href="<?= base_url('assets/template/') ?>dist/css/spinner.css">
+  <style>
+    /* Custom CSS for sidebar hover effect when collapsed */
+    .nav-sidebar .nav-item>.nav-link {
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .main-sidebar.sidebar-cyan-primary {
+      background-color: #fff;
+      /* Sidebar background color when collapsed */
+    }
+  </style>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -37,7 +48,9 @@
       <!-- Left navbar links -->
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i>
+          <span>Login as: </span>
+        </a>
         </li>
       </ul>
 
@@ -260,6 +273,14 @@
                   </a>
                 </li>
               </ul>
+            </li>
+            <li class="nav-item <?= $title == 'About' ? 'menu-open' : '' ?>">
+              <a href="<?= site_url('about') ?>" class="nav-link <?= $title == 'About' ? 'active' : '' ?>">
+                <i class="fa fa-info-circle ml-1 mr-2" aria-hidden="true"></i>
+                <p>
+                  About
+                </p>
+              </a>
             </li>
           </ul>
         </nav>

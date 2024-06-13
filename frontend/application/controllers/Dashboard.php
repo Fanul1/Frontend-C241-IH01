@@ -16,6 +16,7 @@ class Dashboard extends CI_Controller
         if (empty($data['ip']) || empty($data['user']) || empty($data['password'])) {
             $this->handleError('Unauthorized access.');
         }
+        $loggedInUser = $data['user']; 
 
         $API = new MIK_API();
         if (!$API->connect($data['ip'], $data['user'], $data['password'])) {
@@ -26,7 +27,7 @@ class Dashboard extends CI_Controller
         $dashboardData = $this->getDashboardData($API);
 
         // Merge voucher data with dashboard data
-        $viewData = array_merge($dashboardData, ['voucherData' => $voucherData]);
+        $viewData = array_merge($dashboardData, ['voucherData' => $voucherData], ['loggedInUser' => $loggedInUser]);
 
         $this->load->view('template/main', $viewData);
         $this->load->view('dashboard', $viewData);
@@ -115,8 +116,6 @@ class Dashboard extends CI_Controller
 
         $board = $routerboard['0']['model'];
         $routerOS = $routerOSVersion[0]['version'];
-        $this->session->set_userdata('board', $board);
-        $this->session->set_userdata('routerOS', $routerOS);
 
         return [
             'title' => 'Dashboard PotCher',
