@@ -89,14 +89,12 @@ class Report extends CI_Controller
     for ($day = 1; $day <= 30; $day++) { // Mempertimbangkan bulan Juni dengan maksimal 30 hari
         $dateLabel = sprintf("jun/%02d/2024", $day); // Format tanggal seperti pada data
         $totalPrice = 0;
-        
         // Menghitung total harga untuk tanggal tertentu
         foreach ($dataReport as $entry) {
             if ($entry['date'] === $dateLabel) {
                 $totalPrice += $entry['price'];
             }
         }
-        
         // Menambahkan label dan data ke chart hanya jika ada data untuk tanggal ini
         if ($totalPrice > 0) {
             $chartLabels[] = $dateLabel;
@@ -121,12 +119,15 @@ class Report extends CI_Controller
     $this->load->view('report/resume', $data);
     $this->load->view('template/footer');
     }
-
-
-
-    
-
-
+    public function predict(){
+        $data = [
+            'title' => 'Predict',
+        ];
+        // Memuat view dengan data yang diperlukan
+        $this->load->view('template/main', $data);
+        $this->load->view('report/predict', $data);
+        $this->load->view('template/footer');
+    }
     public function export_to_firestore() {
         require_once FCPATH . '/vendor/autoload.php';
 	// Hubungkan ke API
