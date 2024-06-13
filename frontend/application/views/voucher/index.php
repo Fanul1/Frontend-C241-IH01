@@ -56,31 +56,8 @@
             </div>
             <div class="card-body">
                 <div class="overflow" style="max-height: 80vh">
-                    <div class="row">
-                        <?php foreach ($profiles as $profile): ?>
-                            <div class="col-4">
-                                <div class="box" style="background-color: <?= $profile['name'] == 'default' ? 'yellow' : 'purple'; ?>">
-                                    <div class="box-group">
-                                        <div class="box-group-icon">
-                                            <a title="Open User by profile <?= $profile['name'] ?>" href="<?= site_url('hotspot/users?profile=' . urlencode($profile['name'])) ?>">
-                                                <i class="fa fa-ticket"></i>
-                                            </a>
-                                        </div>
-                                        <div class="box-group-area">
-                                            <h3>Profile: <?= $profile['name'] ?><br>
-                                                <?= $profile['user_count'] ?> Items
-                                            </h3>
-                                            <a title="Open User by profile <?= $profile['name'] ?>" href="<?= site_url('hotspot/users?profile=' . urlencode($profile['name'])) ?>">
-                                                <i class="fa fa-external-link"></i> Open
-                                            </a>&nbsp;
-                                            <a title="Generate User by profile <?= $profile['name'] ?>" href="<?= site_url('hotspot/users?profile=' . urlencode($profile['name']) . '&generate=true') ?>">
-                                                <i class="fa fa-users"></i> Generate
-                                            </a>&nbsp;
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php endforeach; ?>
+                    <div class="row" id="voucherCards">
+                        <!-- Cards will be dynamically added here -->
                     </div>
                 </div>
             </div>
@@ -90,5 +67,50 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Function to generate a random color in hexadecimal format
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    $(document).ready(function () {
+        var profiles = <?php echo json_encode($profiles); ?>; // Assuming $profiles is defined in your PHP
+        var voucherCards = document.getElementById('voucherCards');
+
+        profiles.forEach(function (profile) {
+            var color = getRandomColor(); // Get a random color
+            var cardHtml = `
+                <div class="col-4">
+                    <div class="box" style="background-color: ${color}">
+                        <div class="box-group">
+                            <div class="box-group-icon">
+                                <a title="Open User by profile ${profile.name}" href="<?= site_url('hotspot/users?profile=') ?>${encodeURIComponent(profile.name)}">
+                                    <i class="fa fa-ticket"></i>
+                                </a>
+                            </div>
+                            <div class="box-group-area">
+                                <h3>Profile: ${profile.name}<br>
+                                    ${profile.user_count} Items
+                                </h3>
+                                <a title="Open User by profile ${profile.name}" href="<?= site_url('hotspot/users?profile=') ?>${encodeURIComponent(profile.name)}">
+                                    <i class="fa fa-external-link"></i> Open
+                                </a>&nbsp;
+                                <a title="Generate User by profile ${profile.name}" href="<?= site_url('hotspot/users?profile=') ?>${encodeURIComponent(profile.name)}&generate=true">
+                                    <i class="fa fa-users"></i> Generate
+                                </a>&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+            
+            voucherCards.innerHTML += cardHtml; // Append the card HTML to the container
+        });
+    });
+</script>
 </body>
 </html>
