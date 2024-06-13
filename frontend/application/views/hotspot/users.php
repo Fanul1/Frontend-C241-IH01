@@ -12,6 +12,10 @@
                 <button type="button" class="btn btn-secondary ml-3" onclick="printAllUsers()">
                     Print All
                 </button>
+                <span class="float-right">
+                    <a href="<?php echo base_url('hotspot/export_to_csv'); ?>" class="btn btn-success" onclick="return confirm('Apa anda yakin untuk export?')">Export to CSV</a>
+                    <i onclick="location.reload();" class="fa fa-refresh pointer" title="Reload data"></i>
+                </span>
             </div>
             <div class="row">
                 <div class="col-sm-12">

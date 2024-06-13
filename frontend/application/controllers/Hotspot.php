@@ -495,4 +495,70 @@ class Hotspot extends CI_Controller
 		$API->comm("/ip/hotspot/cookie/remove", [".id" => '*' . $id]);
 		redirect('hotspot/cookies');
 	}
+	//CSV Hotspot User
+	public function export_to_csv()
+    {
+        $API = $this->connectAPI();
+		$hotspotuser = $API->comm('/ip/hotspot/user/print');
+		$hotspotprofile = $API->comm('/ip/hotspot/user/profile/print');
+		// Create a mapping of profiles by name
+		$profilesMap = [];
+		foreach ($hotspotprofile as $profile) {
+			$profilesMap[$profile['name']] = $profile;
+		}
+		// Add validity, timelimit, datalimit, price, and additional on-login data to each user
+		foreach ($hotspotuser as &$user) {
+			$profileName = isset($user['profile']) ? $user['profile'] : '';
+			// Initialize default values if profile does not exist
+			$user['validity'] = isset($profilesMap[$profileName]['validity']) ? $profilesMap[$profileName]['validity'] : '';
+			$user['timelimit'] = isset($user['limit-uptime']) ? $user['limit-uptime'] : '';
+			$user['datalimit'] = isset($user['limit-bytes-total']) ? $user['limit-bytes-total'] : '';
+			$user['price'] = isset($profilesMap[$profileName]['price']) ? $profilesMap[$profileName]['price'] : '';
+			// Parse on-login string for additional data
+			if (isset($profilesMap[$profileName]['on-login'])) {
+				$onLoginData = $this->parseOnLogin($profilesMap[$profileName]['on-login']);
+				$user = array_merge($user, $onLoginData);
+			}
+		}
+		// var_dump($hotspotuser);
+		// die();
+        // Buat konten CSV dari data
+        $csvContent = $this->generateCSVContent($hotspotuser);
+
+        // Definisikan nama file CSV
+        $filename = 'HotspotUser.csv';
+
+        // Set header untuk respon HTTP
+        header('Content-Type: application/csv');
+        header('Content-Disposition: attachment; filename="' . $filename . '"');
+
+        // Output file CSV untuk diunduh
+        echo $csvContent;
+        exit; // Penting: keluar dari script setelah mengirim file CSV
+    }
+	private function generateCSVContent($data)
+    {
+		ob_start();
+        $output = fopen('php://output', 'w');
+
+        // Tulis baris header
+        fputcsv($output, array('Username', 'Password', 'Profile', 'Uptime', 'Bytes In', 'Bytes Out', 'Comment'));
+
+        // Tulis data
+        foreach ($data as $row) {
+			fputcsv($output, array(
+				isset($row['name']) ? $row['name'] : '',
+				isset($row['password']) ? $row['password'] : '',
+				isset($row['profile']) ? $row['profile'] : '',
+				isset($row['uptime']) ? $row['uptime'] : '',
+				isset($row['bytes-in']) ? $row['bytes-in'] : '',
+				isset($row['bytes-out']) ? $row['bytes-out'] : '',
+				isset($row['comment']) ? $row['comment'] : '',
+			));
+		}
+
+        fclose($output);
+		$csvContent = ob_get_clean();
+		return $csvContent;
+    }
 }
