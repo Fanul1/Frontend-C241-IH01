@@ -52,6 +52,81 @@ class Report extends CI_Controller
         $this->load->view('template/footer');
     }
 
+    public function resume()
+    {
+    // Koneksi ke API atau sumber data lainnya
+    $API = $this->connectAPI();
+
+    // Mendapatkan data dari API berdasarkan kriteria tertentu (misal: bulan Juni 2024)
+    $getData = $API->comm("/system/script/print", array("?owner" => "jun2024"));
+
+    // Inisialisasi array untuk menyimpan laporan data dan total penghasilan
+    $dataReport = [];
+    $totalIncome = 0;
+
+    // Looping untuk mengisi dataReport dan menghitung total penghasilan
+    foreach ($getData as $record) {
+        $details = explode("-|-", $record['name']);
+        $entry = [
+            'date' => $details[0],      // Contoh: jun/01/2024
+            'time' => $details[1],      // Contoh: 09:57:22
+            'username' => $details[2],  // Contoh: ta5YA
+            'price' => (int)$details[3], // Contoh: 3000
+            'profile' => $details[7],   // Contoh: HARIAN
+            'comment' => $details[8]    // Contoh: vc-773-06.01.24-testing
+        ];
+        $dataReport[] = $entry;
+        $totalIncome += (int)$details[3]; // Mengakumulasi total penghasilan
+    }
+
+    // Array untuk menyimpan label tanggal dan data harga untuk chart
+    $chartLabels = [];
+    $chartData = [];
+    date_default_timezone_set('Asia/Jakarta');
+    // Get today's date in the expected format (e.g., jun/12/2024)
+    $today = strtolower(date('M/d/Y'));
+    // Mengisi label dan data untuk chart
+    for ($day = 1; $day <= 30; $day++) { // Mempertimbangkan bulan Juni dengan maksimal 30 hari
+        $dateLabel = sprintf("jun/%02d/2024", $day); // Format tanggal seperti pada data
+        $totalPrice = 0;
+        
+        // Menghitung total harga untuk tanggal tertentu
+        foreach ($dataReport as $entry) {
+            if ($entry['date'] === $dateLabel) {
+                $totalPrice += $entry['price'];
+            }
+        }
+        
+        // Menambahkan label dan data ke chart hanya jika ada data untuk tanggal ini
+        if ($totalPrice > 0) {
+            $chartLabels[] = $dateLabel;
+            $chartData[] = $totalPrice;
+        } else {
+            $chartLabels[] = $dateLabel;
+            $chartData[] = 0; // Jika tidak ada data untuk tanggal ini, set harga ke 0
+        }
+    }
+
+    // Data yang akan dikirimkan ke view
+    $data = [
+        'title' => 'Resume',
+        'dataDump' => $dataReport,  // Data ini mungkin diperlukan untuk keperluan lain di halaman
+        'chartLabels' => $chartLabels,
+        'chartData' => $chartData,
+        'totalIncome' => $totalIncome  // Total penghasilan untuk ditampilkan di atas chart (opsional)
+    ];
+
+    // Memuat view dengan data yang diperlukan
+    $this->load->view('template/main', $data);
+    $this->load->view('report/resume', $data);
+    $this->load->view('template/footer');
+    }
+
+
+
+    
+
+
     public function export_to_firestore() {
         require_once FCPATH . '/vendor/autoload.php';
 	// Hubungkan ke API

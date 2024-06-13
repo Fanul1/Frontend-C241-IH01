@@ -2,12 +2,12 @@
     <div class="content-header">
         <div class="container-fluid">
             <h3>Report</h3>
-            <div class="overflow box-bordered" style="max-height: 70vh">
-                
+            <div class="overflow box-bordered" style="max-height: 70vh">    
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <div>
                     <a href="<?php echo base_url('report/export_to_firestore'); ?>" class="btn btn-primary" onclick="return confirm('Apa anda yakin untuk export?')">Export to Firestore</a>
                     <a href="<?php echo base_url('report/export_to_csv'); ?>" class="btn btn-success ml-2" onclick="return confirm('Apa anda yakin untuk export?')">Export to CSV</a>
+                    <a href="<?php echo base_url('report/resume'); ?>" class="btn btn-primary ml-2">Resume</a>
                 </div>
                 <div>
                     <?php

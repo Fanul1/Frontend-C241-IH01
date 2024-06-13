@@ -63,4 +63,26 @@ class Settings extends CI_Controller
         $this->session->set_flashdata('success', 'Template saved successfully.');
         redirect('settings/editVoucher');
     }
+    public function uploadLogoGambar() {
+        $data = array();
+        // Tentukan jalur penyimpanan
+        $uploadPath = './assets/template/img/';
+        $fileName = 'logovoucher.png';
+        // Konfigurasi upload file
+        $config['upload_path'] = $uploadPath;
+        $config['allowed_types'] = 'gif|jpg|png|jpeg';
+        $config['file_name'] = $fileName;
+        $config['overwrite'] = TRUE; 
+        $this->load->library('upload', $config);
+        if (!$this->upload->do_upload('UploadLogo')) {
+            // Jika gagal, tampilkan error
+            $data['galat'] = $this->upload->display_errors();
+        } else {
+            // Jika berhasil, tampilkan pesan sukses
+            $data['upload_data'] = $this->upload->data();
+            $this->session->set_flashdata('success', 'Logo berhasil diunggah.');
+        }
+        // Redirect ke halaman uploadLogo setelah upload selesai
+        redirect('settings/uploadLogo');
+    }
 }
