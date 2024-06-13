@@ -56,6 +56,10 @@ def predict_for_date(date, model, pivot_data, time_step, mean, std):
     return next_day_predict
 
 # Define API endpoint for predicting users
+@app.route('/', methods=['GET'])
+def predict():
+    return "Oke"
+
 @app.route('/predict_users', methods=['POST'])
 def predict_users():
     data = request.get_json()
@@ -81,4 +85,4 @@ def predict_users():
 
 # Run the Flask app
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port="5000",debug=True)
