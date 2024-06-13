@@ -49,7 +49,7 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i>
-          <span>Login as: </span>
+          <span style="font-weight: bold;" class="ml-2">User: <?= htmlspecialchars($this->session->userdata('loggedInUser')) ?></span>
         </a>
         </li>
       </ul>
