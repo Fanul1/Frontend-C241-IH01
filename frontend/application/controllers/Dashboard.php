@@ -44,7 +44,6 @@ class Dashboard extends CI_Controller
         $this->load->view('template/footer');
     }
 
-
     public function traffic()
     {
         $data = $this->session->userdata();

@@ -66,8 +66,7 @@
                         </div>
                         <div class="card-body2">
                             <div class="iFWrapper">
-                                <iframe
-                                    src="https://raw.githack.com/Fanul1/Frontend-C241-IH01/deploy/README.md"></iframe>
+                                <iframe src="https://raw.githack.com/Fanul1/Frontend-C241-IH01/deploy/README.md"></iframe>
                             </div>
                         </div>
                     </div>
