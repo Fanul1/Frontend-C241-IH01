@@ -119,15 +119,52 @@ class Report extends CI_Controller
     $this->load->view('report/resume', $data);
     $this->load->view('template/footer');
     }
-    public function predict(){
+    public function predict()
+    {
+        date_default_timezone_set('Asia/Jakarta');
+        // URL API Flask
+        $url = 'http://34.124.180.100:5000/predict_users';
+        
+        // Mendapatkan tanggal hari ini dalam format yyyy-mm-dd
+        $currentDate = date('Y-m-d');
+        
+        // Data yang akan dikirim dalam format JSON
+        $data = array('date' => $currentDate);
+        $options = array(
+            'http' => array(
+                'header' => "Content-Type: application/json\r\n",
+                'method' => 'POST',
+                'content' => json_encode($data)
+            )
+        );
+    
+        // Membuat context stream HTTP
+        $context = stream_context_create($options);
+        
+        // Mengirim permintaan POST ke API
+        $response = file_get_contents($url, false, $context);
+    
+        // Jika terjadi kesalahan saat mengambil respons
+        if ($response === false) {
+            die('Error fetching data from API');
+        }
+    
+        // Mendapatkan respons dalam bentuk array asosiatif
+        $responseData = json_decode($response, true);
+    
+        // Mengirim data ke view dengan menggunakan framework CodeIgniter
         $data = [
-            'title' => 'Predict',
+            'title' => 'Predicted Users Line Chart',
+            'responseData' => json_encode($responseData),  // Data ini dikirim dalam bentuk JSON
         ];
-        // Memuat view dengan data yang diperlukan
         $this->load->view('template/main', $data);
         $this->load->view('report/predict', $data);
         $this->load->view('template/footer');
     }
+    
+
+
+
     public function export_to_firestore() {
         require_once FCPATH . '/vendor/autoload.php';
 	// Hubungkan ke API
