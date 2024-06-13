@@ -16,23 +16,34 @@ class Dashboard extends CI_Controller
         if (empty($data['ip']) || empty($data['user']) || empty($data['password'])) {
             $this->handleError('Unauthorized access.');
         }
-        $loggedInUser = $data['user']; 
 
         $API = new MIK_API();
         if (!$API->connect($data['ip'], $data['user'], $data['password'])) {
             $this->handleError('Connection failed. Please check your credentials.');
         }
 
-        $voucherData = $this->jumlahVoucher($API);
+        // Fetch and set dashboard data
         $dashboardData = $this->getDashboardData($API);
 
+        // Set session data for board and routerOS
+        $this->session->set_userdata('board', $dashboardData['board']);
+        $this->session->set_userdata('routerOS', $dashboardData['routerOS']);
+
+        // Assuming $data['user'] is the API username used to connect
+        $loggedInUser = $data['user'];
+        $this->session->set_userdata('loggedInUser', $loggedInUser);
+
         // Merge voucher data with dashboard data
-        $viewData = array_merge($dashboardData, ['voucherData' => $voucherData], ['loggedInUser' => $loggedInUser]);
+        $viewData = array_merge($dashboardData, [
+            'voucherData' => $this->jumlahVoucher($API),
+            'loggedInUser' => $loggedInUser,
+        ]);
 
         $this->load->view('template/main', $viewData);
         $this->load->view('dashboard', $viewData);
         $this->load->view('template/footer');
     }
+
 
     public function traffic()
     {
