@@ -17,7 +17,6 @@ tested on :
     ```bash
     git clone https://github.com/Fanul1/Frontend-C241-IHO1.git
     cd Frontend-C241-IHO1
-    git branch deploy
     ```
 2. Create user from mikrotik because admin we're not recommended using admin by default:
     - Open winbox 
