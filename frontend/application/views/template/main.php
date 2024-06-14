@@ -49,8 +49,9 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i>
-          <span style="font-weight: bold;" class="ml-2">User: <?= htmlspecialchars($this->session->userdata('loggedInUser')) ?></span>
-        </a>
+            <span style="font-weight: bold;" class="ml-2">User:
+              <?= htmlspecialchars($this->session->userdata('loggedInUser')) ?></span>
+          </a>
         </li>
       </ul>
 
@@ -65,13 +66,9 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-            <i class="fas fa-expand-arrows-alt"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a id="logout-button" class="nav-link" href="<?= site_url('auth/logout') ?>" role="button">
-            <i class="fas fa-sign-out-alt"></i>
+          <a id="logout-button" class="nav-link" href="<?= site_url('auth/logout') ?>" role="button"
+            style="font-weight: bold;">
+            <i class="fas fa-sign-out-alt"></i> Log Out
           </a>
         </li>
       </ul>
